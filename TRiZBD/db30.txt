@@ -1,0 +1,37 @@
+* Constraint - ограничение, позволяет задать имя ограничения. Имя нужно чтобы ссылаться на это ограничение (например, чтобы удалить его в дальнейшем).
+* В случае, если не используем constraint, тогда для ограничения создаётся системное имя.
+
+* CREATE TABLE History(
+    *кодВалюты smallint NOT NULL, 
+    Дата_измен DATETIME NOT NULL DEFAULT GETDATA(),
+    Cource_pok Название,
+    curs_pok MONET,
+    CURS_PROD,
+    PRIMARY KEY(Код, Дата_изм)
+);
+
+*  ALTER TABLE Hitory ADD FOREIGN KEY KOD REFERENCIS VALUTA (KOD)
+
+
+* INSERT [INTO] <ИМ_БАМЛЬ> [(СПИСОК ПОЛЕЙ ] - INSERT [INTO] <ИМ_БАМЛЬ> [(СПИСОК ПОЛЕЙАОЛК  
+* UNSERT INTO pRODUCTIONuNIT CALUE/ МФДДГЫ (ТЕТА)
+
+* GO - отправка инструкций на сервер
+* IDENTITY - это счётчик
+
+* SET IDENTITY_INSERT <Table> ON - позволяет вставить явно заданное значение в столбец identity
+* WITH - для оперделения вставляемых данных
+
+* В таблицу влюта, с помощью команды INSERT добавить три записи
+* INSERT INTO VALUTA VALUES ('Рубль', 'EUR'),('Евро','EUR'), ('Доллар', 'DLR');
+* INSERT INTO HISTORY VALUES (2, '30.11.17', 60.50.61.50)(3,'30.11.2018', 68.1,70.8);
+
+* Из таблицы Студент1 слить все строки в Студент2 
+* INSERT INTO STUDENT1 (№ZACHET, FIO, GROUP, ADDR) SELECT №ZACHET FIO, GROUP, ADR FROM STUDENT2
+
+* DELETE PRODUCTION, PRODUCTHISTORY WHERE STANDARDCOST BETWEEN 12.00 AND 14.00 AND ENDDATE IS NULL; PRINT 'NUMBER OF ROWS '
+
+* UPDATE - позволяет обновить один или более столбцов
+* UPDATE <table_source>SET<ИМЯ ПОЛЯ>=<ИМЯ ПОЛЯ1>
+
+* Дана таблица сотрудник (*№сотр, фио, №отд, зп). Увеличить зарплату на 20% всем сотрдуникам 5-го отдела
