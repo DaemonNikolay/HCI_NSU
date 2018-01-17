@@ -31,7 +31,15 @@ function sleep(ms) {
 }
 
 function convertSymbol(step, symbol) {
-    return String.fromCodePoint((String(symbol).charCodeAt() + step));
+    var value = String.fromCodePoint((String(symbol).charCodeAt() + step));
+    if (value > "я") {
+        return String.fromCodePoint((String(symbol).charCodeAt() + step - 32));
+    } else if (value > "z" && step <= 26) {
+        return String.fromCodePoint((String(symbol).charCodeAt() + step - 26));
+    } else if (value > "z" && step > 26) {
+        return String.fromCodePoint((String(symbol).charCodeAt() + (step - 26) - 26));
+    }
+    return value;
 }
 
 messageBox.addEventListener("keypress", onkeypress);
