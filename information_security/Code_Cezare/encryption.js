@@ -15,7 +15,15 @@ async function onkeypress(e) {
     for (var i = 0; i < content.length; i++) {
         if (content[i] == ".") {
             result += convertSymbol(0, content[i]);
+        } else if (content[i] == ",") {
+            result += convertSymbol(0, content[i]);
+        } else if (content[i] == "ё") {
+            result += convertSymbol(offset, "е");
         } else if (content[i] == " ") {
+            result += convertSymbol(0, content[i]);
+        } else if (content[i] == "!") {
+            result += convertSymbol(0, content[i]);
+        } else if (content[i] == "?") {
             result += convertSymbol(0, content[i]);
         } else if (content[i] == "\n") {
             result += convertSymbol(0, content[i]);
