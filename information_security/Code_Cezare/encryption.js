@@ -1,27 +1,39 @@
 var messageBox = document.search.message;
+var keyCodeCezare = document.search.valueOffset;
 
-function onkeypress(e) {
+async function onkeypress(e) {
+
+    await sleep(10);
+
     var outBlock = document.getElementById('out');
-    var val = (String.fromCharCode(e.keyCode)).toLowerCase();
-
     var offset = Number(document.getElementById('valueOffset').value);
+    var content = document.getElementsByName("message")[0].value;
 
-    if (val.charCodeAt() == 32) {
-        outBlock.textContent += " ";
-    } else if (val.charCodeAt() + offset > 1103) {
-        outBlock.textContent += String.fromCodePoint((val.charCodeAt() + offset) - 32);
-    } else {
-        outBlock.textContent += String.fromCodePoint((val.charCodeAt() + offset));
+    outBlock.textContent = "";
+
+    var result = "";
+    for (var i = 0; i < content.length; i++) {
+        if (content[i] == ".") {
+            result += convertSymbol(0, content[i]);
+        } else if (content[i] == " ") {
+            result += convertSymbol(0, content[i]);
+        } else if (content[i] == "\n") {
+            result += convertSymbol(0, content[i]);
+        } else {
+            result += convertSymbol(offset, content[i]);
+        }
     }
+    outBlock.textContent = result;
 }
 
-function onkeydown(e) {
-    if (e.keyCode === 8) { // если нажат Backspace
-        var outBlock = document.getElementById('out'),
-            length = outBlock.textContent.length;
-        outBlock.textContent = outBlock.textContent.substring(0, length - 1);
-    }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function convertSymbol(step, symbol) {
+    return String.fromCodePoint((String(symbol).charCodeAt() + step));
 }
 
 messageBox.addEventListener("keypress", onkeypress);
-messageBox.addEventListener("keydown", onkeydown);
+messageBox.addEventListener("keydown", onkeypress);
+keyCodeCezare.addEventListener("keydown", onkeypress);
