@@ -34,10 +34,11 @@ function convertSymbol(step, symbol) {
     var value = String.fromCodePoint((String(symbol).charCodeAt() + step));
     if (value > "я") {
         return String.fromCodePoint((String(symbol).charCodeAt() + step - 32));
-    } else if (value > "z" && step <= 26) {
+    } else if (value > "z" && value < "а" && step <= 26) {
         return String.fromCodePoint((String(symbol).charCodeAt() + step - 26));
-    } else if (value > "z" && step > 26) {
-        return String.fromCodePoint((String(symbol).charCodeAt() + (step - 26) - 26));
+    } else if (value > "z" && value < "а" && step > 26) {
+        console.log(1);
+        return String.fromCodePoint((String(symbol).charCodeAt() + (step - 25) - 26));
     }
     return value;
 }
