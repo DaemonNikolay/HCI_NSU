@@ -6,7 +6,6 @@
     async function onkeypress(e) {
 
         await sleep(10);
-
         var offset = Number(document.getElementById('valueOffset').value);
         var outBlock = document.getElementById('out');
 
