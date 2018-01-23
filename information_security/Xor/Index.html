@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Инфо без</title>
+    <link rel="icon" href="http://nikulux.ru/wp-content/uploads/2017/04/cropped-logo-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+    <form name="code" class="login">
+        <fieldset>
+            <legend>Шифрование XOR</legend>
+            <p>
+                <label for="password">Ключ</label>
+                <input type="number" min="0" id="valueOffset" value="0" />
+            </p>
+            <p>
+                <label for="password">Исходник</label>
+                <textarea rows="7" cols="40" name="message"></textarea>
+            </p>
+            <p>
+                <label for="password">Результат</label>
+                <textarea rows="7" cols="40" id="out" disabled="disabled"></textarea>
+            </p>
+        </fieldset>
+    </form>
+
+    <form name="decode" class="login">
+        <fieldset>
+            <legend>Дешифрование XOR</legend>
+            <p>
+                <label for="password">Ключ</label>
+                <input type="number" min="0" id="valueOffsetDecode" value="0" />
+            </p>
+            <p>
+                <label for="password">Исходник</label>
+                <textarea rows="7" cols="40" name="messageDecode"></textarea>
+            </p>
+            <p>
+                <label for="password">Результат</label>
+                <textarea rows="7" cols="40" id="outDecode" disabled="disabled"></textarea>
+            </p>
+        </fieldset>
+    </form>
+
+    <script src="./Xor.js"></script>
+</body>
+
+</html>
