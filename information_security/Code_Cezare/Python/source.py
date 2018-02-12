@@ -17,22 +17,30 @@ def is_rus_text(text):
     return True
 
 
+def correct_step(step):
+    length_alphabet = len(rus_alphabet())
+    if step >= length_alphabet:
+        return step - length_alphabet
+    else:
+        return step
+
 def encoder_cezare(text = "", key = 0):
     if type(key) != int:
         return "Key not validation"
-    if key == 0:
+    elif key == 0:
         return text
+    elif key > 32 or key < -32:
+        key = key % len(rus_alphabet())
 
     alphabet = rus_alphabet()
     result_encoding = []
     if is_rus_text(text):
         for element in text:
-            try:
-                result_encoding.append(alphabet[alphabet.index(element) + key])
-            except ValueError:
+            if element in alphabet:
+                step = correct_step(alphabet.index(element) + key)
+                result_encoding.append(alphabet[step])
+            else:
                 result_encoding.append(element)
-            except IndexError:
-                result_encoding.append(alphabet[alphabet.index(element) + (key % len(alphabet))])
 
         return result_encoding
 
@@ -42,7 +50,9 @@ def encoder_cezare(text = "", key = 0):
 file_input = open("input.txt", "r", encoding = "UTF8")
 text_input = ''.join(file_input.readlines())
 
-result = encoder_cezare(text = text_input, key = -543)
-print(''.join(result))
+key = 1
+result = ''.join(encoder_cezare(text = text_input, key = key))
 
 file_input.close()
+
+print(result)
