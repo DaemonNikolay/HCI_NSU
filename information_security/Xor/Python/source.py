@@ -36,14 +36,30 @@ def encode_xor(value, key):
     return result
 
 
-key_file = open("key.txt", "r")
-key = key_file.readline()
-key_file.close()
+def is_exist_file(address):
+    import os
+    if os.path.exists(address):
+        return True
+    return False
 
-value_input_file = open("value.txt", "r")
-value_input = value_input_file.readline()
-value_input_file.close()
 
-result = encode_xor(value_input, key)
+def encode(path_value, path_key):
+    if is_exist_file(path_key) and is_exist_file(path_value):
 
+        key_file = open(path_key, "r")
+        key = key_file.readline()
+        key_file.close()
+
+        value_input_file = open(path_value, "r")
+        value_input = value_input_file.readline()
+        value_input_file.close()
+
+        result = encode_xor(value_input, key)
+        return result
+
+    else:
+        return "Files not found!" + "\t" + path_key + " and " + path_value
+
+
+result = encode(path_value = "value.txt", path_key = "key.txt")
 print(result)

@@ -50,7 +50,7 @@ def encoder_cezare(text = "", key = 0):
 file_input = open("input.txt", "r", encoding = "UTF8")
 text_input = ''.join(file_input.readlines())
 
-key = 1
+key = 3876543
 result = ''.join(encoder_cezare(text = text_input, key = key))
 
 file_input.close()
