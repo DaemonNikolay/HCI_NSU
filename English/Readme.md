@@ -2,7 +2,7 @@
 
 Сделать к картинкам описание по 3-4 предложения
 
-![Сделать к картинкам описание по 3-4 предложения](https://github.com/DaemonNikolay/Homework/blob/master/English/img/08.02.2018.PNG "Сделать к картинкам описание по 3-4 предложения")
+![Сделать к картинкам описание по 3-4 предложения](https://github.com/DaemonNikolay/HCI_NSU/blob/master/English/img/08.02.2018.PNG "Сделать к картинкам описание по 3-4 предложения")
 
 1. **Bar code reader** it is used to reading barcode. Uses in shops, supermarkets, hypermarkets, warehouses e.t.c. for record keeping. Official date is was created in on the seventh of october nineteenth fifty two;
 2. **Touchpad on a portable PC** uses for control cursor PC. Often used in laptops and graphical tablets. Created by the company "Psion" in nineteenth eighty nine;
