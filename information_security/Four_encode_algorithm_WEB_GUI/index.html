@@ -11,27 +11,27 @@
 </head>
 
 <body>
-    <!-- Сами вкладки -->
     <ul id="Tabs">
-        <li id="TwoTab" class="Tab"><a href="#Two" onclick="Two(); return false;">Вторая</a></li>
         <li id="OneTab" class="SelectedTab"><a href="#One" onclick="One(); return false;">Первая</a></li>
+        <li id="TwoTab" class="Tab"><a href="#Two" onclick="Two(); return false;">Вторая</a></li>
+        <li id="ThreeTab" class="Tab"><a href="#Three" onclick="Three(); return false;">Третья</a></li>
+        <li id="FourTab" class="Tab"><a href="#Four" onclick="Four(); return false;">Четвертая</a></li>
     </ul>
 
-    <!-- Содержимое вкладок -->
     <div id="Content">
-        <!-- Первая -->
         <div id="One">
-            <p>Группа символов для объема 1...</p>
+            <p>1</p>
         </div>
-
-        <!-- Вторая -->
         <div id="Two" style="display: none;">
-            <p>Группа символов для объема 2...</p>
+            <p>2</p>
+        </div>
+        <div id="Three" style="display: none;">
+            <p>3</p>
+        </div>
+        <div id="Four" style="display: none;">
+            <p>4</p>
         </div>
     </div>
-
-    <script type="text/javascript">
-    </script>
 </body>
 
 </html>
