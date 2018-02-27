@@ -62,3 +62,31 @@
 <td>10. Они также используются для передачи живого видео изображения через Интернет. В данном случае они называются сетевыми камерами, или вебкамерами.</td>
 </tr>
 </table>
+
+***
+## 22.02.2018
+
+Перевод со вставками и описать свой фотоаппарат
+
+<table>
+<tr>
+<th>English</th>
+<th>Русский</th>
+</tr>
+<tr>
+<td>1. Kodak has introduced the EasyShare M753 digital camera, with 7.0 (1)<em>megapixels</em> resolution, a huge 2.5-inch LCD screen, and a professional 3x (2)<em>optical</em> zoom lens. It is the first camera to incorporate proprietary Kodak Perfect Touch Technology.</td>
+<td>1. перевод</td>
+</tr>
+<tr>
+<td>2. At the touch of a button, this innovative feature creates better, (3)<em>colour</em> pictures by bringing out detail in shadows without affecting lighter areas. It’s ideal for underexposed pictures caused by shooting beyond the flash range or in adverse lighting conditions.</td>
+<td>2. перевод</td>
+</tr>
+<tr>
+<td>3. The M753 uses the exclusive Kodak Colour Science chip for phenomenal image quality with rich (4)<em>brighter</em> and accurate skin tones. Seventeen programmed scene modes (e.g. party, fireworks, children) and five colour modes (high, low, natural, sepia, and black and white) help capture the best (5)<em>shot</em> with the least effort. </td>
+<td>3. перевод</td>
+</tr>
+<tr>
+<td>4. Other features include cropping, auto picture rotation, digital red-eye (6)<em>reduction</em>, and blurry picture alert. For capturing  ore than just still pictures, the camera also features high-quality (VGA) (7)<em>video</em> capture and playback.</td>
+<td>4. перевод</td>
+</tr>
+</table>
