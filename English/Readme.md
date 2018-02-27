@@ -74,19 +74,21 @@
 <th>Русский</th>
 </tr>
 <tr>
-<td>1. Kodak has introduced the EasyShare M753 digital camera, with 7.0 (1)<em>megapixels</em> resolution, a huge 2.5-inch LCD screen, and a professional 3x (2)<em>optical</em> zoom lens. It is the first camera to incorporate proprietary Kodak Perfect Touch Technology.</td>
-<td>1. перевод</td>
+<td>1. Kodak has introduced the EasyShare M753 (seven hundred three) digital camera, with 7.0 (1)<em>megapixels</em> resolution, a huge 2.5-inch LCD screen, and a professional 3x (2)<em>optical</em> zoom lens. It is the first camera to incorporate proprietary Kodak Perfect Touch Technology.</td>
+<td>1. Kodak представила цифровую камеру EasyShare M753 с 7-мью мегапиксельным разрешением, 2.5-дюймовым LCD дисплеем и профессиональным 3-ёх кратным оптическим трансфокатором. </td>
 </tr>
 <tr>
 <td>2. At the touch of a button, this innovative feature creates better, (3)<em>colour</em> pictures by bringing out detail in shadows without affecting lighter areas. It’s ideal for underexposed pictures caused by shooting beyond the flash range or in adverse lighting conditions.</td>
-<td>2. перевод</td>
+<td>2. Одним нажатием кнопки, это инновационное особенность позволяет создавать более качественные, цветные фотоснимки путём внедрения теней не затрагивая светлых областей. Отлично подходит для недоэкспонированных фотоснимков вызванные съёмкой за пределами диапазона вспышки или в неблагоприятных условиях освещения.</td>
 </tr>
 <tr>
-<td>3. The M753 uses the exclusive Kodak Colour Science chip for phenomenal image quality with rich (4)<em>brighter</em> and accurate skin tones. Seventeen programmed scene modes (e.g. party, fireworks, children) and five colour modes (high, low, natural, sepia, and black and white) help capture the best (5)<em>shot</em> with the least effort. </td>
-<td>3. перевод</td>
+<td>3. The M753 (seven hundred three) uses the exclusive Kodak Colour Science chip for phenomenal image quality with rich (4)<em>brighter</em> and accurate skin tones. Seventeen programmed scene modes (e.g. party, fireworks, children) and five colour modes (high, low, natural, sepia, and black and white) help capture the best (5)<em>shot</em> with the least effort.</td>
+<td>3. М753 использует эксклюзивный чип Kodak Colour Science для феноменально качественного изображения с богатой яркостью и аккуратными цветовыми тонами. Семнадцать программируемых режимов сцен (ради примера: вечеринка, фейерверки, дети) и пять режимов цвета (контрастный, слабый свет, нормальный, сепия, и ч/б) помогает захватить лучший кадр с минимумом усилий.</td>
 </tr>
 <tr>
-<td>4. Other features include cropping, auto picture rotation, digital red-eye (6)<em>reduction</em>, and blurry picture alert. For capturing  ore than just still pictures, the camera also features high-quality (VGA) (7)<em>video</em> capture and playback.</td>
-<td>4. перевод</td>
+<td>4. Other features include cropping, auto picture rotation, digital red-eye (6)<em>reduction</em>, and blurry picture alert. For capturing more than just still pictures, the camera also features high-quality (VGA) (7)<em>video</em> capture and playback.</td>
+<td>4. Другие особенности включают обрезание, автоматический поворот кадра, цифровой эффект красных глаз, и сигнализирование размыточти изображения. Для захватывания(?) больше, чем просто кадров, камера также отличается высоким качеством (VGA) видео кадров и воспроизведения.</td>
 </tr>
 </table>
+
+`e.g. [i͟ː ʤi͟ː] от exempli gratia; "ради примера"`
