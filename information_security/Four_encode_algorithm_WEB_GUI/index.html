@@ -4,34 +4,96 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>4 алгоритма шифрования</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
-    <script src="./tab.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 
 <body>
     <ul id="Tabs">
-        <li id="OneTab" class="SelectedTab"><a href="#One" onclick="One(); return false;">Первая</a></li>
-        <li id="TwoTab" class="Tab"><a href="#Two" onclick="Two(); return false;">Вторая</a></li>
-        <li id="ThreeTab" class="Tab"><a href="#Three" onclick="Three(); return false;">Третья</a></li>
-        <li id="FourTab" class="Tab"><a href="#Four" onclick="Four(); return false;">Четвертая</a></li>
+        <li id="OneTab" class="SelectedTab"><a href="#One" onclick="One(); return false;">Шифр Цезаря</a></li>
+        <li id="TwoTab" class="Tab"><a href="#Two" onclick="Two(); return false;">XOR</a></li>
+        <li id="ThreeTab" class="Tab"><a href="#Three" onclick="Three(); return false;">Случайное перемешивание</a></li>
+        <li id="FourTab" class="Tab"><a href="#Four" onclick="Four(); return false;">Блочная перестановка</a></li>
     </ul>
 
     <div id="Content">
         <div id="One">
-            <p>1</p>
+            <form id="Cezare">
+                <fieldset>
+                    <p>
+                        <label>Смещение</label>
+                        <input type="number" id="ValueOffsetCezare" value="0" />
+                    </p>
+                    <p>
+                        <label>Исходный текст</label>
+                        <textarea rows="7" cols="40" name="InputTextCezare"></textarea>
+                    </p>
+                    <p>
+                        <label>Результат шифрования</label>
+                        <textarea rows="7" cols="40" id="OutputCezare" readonly></textarea>
+                    </p>
+                </fieldset>
+            </form>
         </div>
+
         <div id="Two" style="display: none;">
-            <p>2</p>
+            <form id="Xor">
+                <fieldset>
+                    <p>
+                        <label>Ключ</label>
+                        <input type="number" id="KeyXor" value="0" />
+                    </p>
+                    <p>
+                        <label>Исходная последовательность</label>
+                    </p>
+                    <p>
+                        <label>Результат шифрования</label>
+                    </p>
+                </fieldset>
+            </form>
         </div>
+
         <div id="Three" style="display: none;">
-            <p>3</p>
+            <form id="Randomly">
+                <fieldset>
+                    <p>
+                        <label>Исходный текст</label>
+                        <textarea rows="7" cols="40" name="InputTextRandomly"></textarea>
+                    </p>
+                    <p>
+                        <label>Результат шифрования</label>
+                        <textarea rows="7" cols="40" name="OutputTextRandomly" readonly></textarea>
+                    </p>
+                </fieldset>
+            </form>
         </div>
+
         <div id="Four" style="display: none;">
-            <p>4</p>
+            <form id="BlockPermutation">
+                <fieldset>
+                    <p>
+                        <label>Размер блока</label>
+                        <input type="number" id="LengthBlockPermutation" value="0" />
+                    </p>
+                    <p>
+                        <label>Исходный текст</label>
+                        <textarea rows="7" cols="40" name="InputTextBlockPermutation"></textarea>
+                    </p>
+                    <p>
+                        <label>Результат шифрования</label>
+                        <textarea rows="7" cols="40" name="OutputTextBlockPermutation" readonly></textarea>
+                    </p>
+                </fieldset>
+            </form>
         </div>
     </div>
+
+    <script src="./js/Tab/tab.js"></script>
+    <script src="./js/Encoding/Cezare.js"></script>
+    <script src="./js/Encoding/Xor.js"></script>
+    <script src="./js/Encoding/Randomly.js"></script>
+    <script src="./js/Encoding/BlockPermutation.js"></script>
 </body>
 
 </html>
