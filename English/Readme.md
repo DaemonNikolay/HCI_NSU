@@ -78,11 +78,11 @@
 <td>1. Kodak представила цифровую камеру EasyShare M753 с 7-мью мегапиксельным разрешением, 2.5-дюймовым LCD дисплеем и профессиональным 3-ёх кратным оптическим трансфокатором. </td>
 </tr>
 <tr>
-<td>2. At the touch of a button, this innovative feature creates better, (3)<em>colour</em> pictures by bringing out detail in shadows without affecting lighter areas. It’s ideal for underexposed pictures caused by shooting beyond the flash range or in adverse lighting conditions.</td>
+<td>2. At the touch of a button, this innovative feature creates better, (3)<em>brighter</em> pictures by bringing out detail in shadows without affecting lighter areas. It’s ideal for underexposed pictures caused by shooting beyond the flash range or in adverse lighting conditions.</td>
 <td>2. Одним нажатием кнопки, это инновационное особенность позволяет создавать более качественные, цветные фотоснимки путём внедрения теней не затрагивая светлых областей. Отлично подходит для недоэкспонированных фотоснимков вызванные съёмкой за пределами диапазона вспышки или в неблагоприятных условиях освещения.</td>
 </tr>
 <tr>
-<td>3. The M753 (seven hundred three) uses the exclusive Kodak Colour Science chip for phenomenal image quality with rich (4)<em>brighter</em> and accurate skin tones. Seventeen programmed scene modes (e.g. party, fireworks, children) and five colour modes (high, low, natural, sepia, and black and white) help capture the best (5)<em>shot</em> with the least effort.</td>
+<td>3. The M753 (seven hundred three) uses the exclusive Kodak Colour Science chip for phenomenal image quality with rich (4)<em>colour</em> and accurate skin tones. Seventeen programmed scene modes (e.g. party, fireworks, children) and five colour modes (high, low, natural, sepia, and black and white) help capture the best (5)<em>shot</em> with the least effort.</td>
 <td>3. М753 использует эксклюзивный чип Kodak Colour Science для феноменально качественного изображения с богатой яркостью и аккуратными цветовыми тонами. Семнадцать программируемых режимов сцен (ради примера: вечеринка, фейерверки, дети) и пять режимов цвета (контрастный, слабый свет, нормальный, сепия, и ч/б) помогает захватить лучший кадр с минимумом усилий.</td>
 </tr>
 <tr>
