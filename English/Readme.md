@@ -101,7 +101,11 @@
 <th>Русский</th>
 </tr>
 <tr>
-<td>My camera is called Sony Alpha 200. That's a good camera. She allows you to create high quality photos. I prefer the user mode as it allows you to fine-tune the camera system. He took more than a thousand photos. Moon, river, forests, landscapes, dogs, cats and girls - this seen my photo camera. It has a replaceable three hundred millimeter lens. It is a semi-professional camera.</td>
+<td>My camera is called Sony Alpha 200. That's a good camera. She allows you to create high quality photos. I prefer the user mode as it allows you to fine-tune the camera system. He took more than a thousand photos. Moon, river, forests, landscapes, dogs, cats and girls - that is what my camera has seen. It has a replaceable three hundred millimeter lens. It is a semi-professional camera.</td>
 <td>Мой фотоаппарат называется Sony Alpha 200. Это хороший фотоаппарат. Он позволяет создавать фотографии высокого качества. Я предпочитаю пользовательский режим так как он позволяет аккуратно настроить систему фотоаппарата. Он сделал не одну тысячу фотографий. Луна, река, леса, пейзажи, собаки, кошки и девушки - это видел мой фотоаппарат. Он имеет сменный трёхсот миллимитровый объетив. Является полупрофессиональным фотоаппаратом.</td>
 </tr>
 </table>
+
+
+
+more than 1000 photos has been taken with this camera. 
