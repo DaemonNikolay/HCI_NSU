@@ -7,13 +7,18 @@
 
         await sleep(10);
         var offset = Number(document.getElementById('valueOffset').value);
+        if (offset > 32) {
+            offset = offset % 32;
+        } else if (offset < -32) {
+            offset = -(offset % 32);
+        }
         var outBlock = document.getElementById('out');
 
-        if (Number(offset) <= 32 && Number(offset) >= 0) {
-            convertText(outBlock, offset);
-        } else {
-            outBlock.textContent = "error! max offset 32!";
-        }
+        // if (Number(offset) <= 32 && Number(offset) >= 0) {
+        convertText(outBlock, offset);
+        // } else {
+        //     outBlock.textContent = "error! max offset 32!";
+        // }
     }
 
     function sleep(ms) {
