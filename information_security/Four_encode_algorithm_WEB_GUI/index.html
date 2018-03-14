@@ -38,7 +38,7 @@
         </div>
 
         <div id="Two" style="display: none;">
-            <form id="Xor">
+            <form name="xorEncrypt" id="Xor">
                 <fieldset>
                     <p>
                         <label>Ключ</label>
@@ -46,9 +46,11 @@
                     </p>
                     <p>
                         <label>Исходная последовательность</label>
+                        <textarea name="InputXor" cols="40" rows="7"></textarea>
                     </p>
                     <p>
                         <label>Результат шифрования</label>
+                        <textarea id="OutputXor" cols="40" rows="7" readonly></textarea>
                     </p>
                 </fieldset>
             </form>
