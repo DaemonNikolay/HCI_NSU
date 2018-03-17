@@ -21,6 +21,7 @@
         <div id="One">
             <form name="cezareEncrypt" id="Cezare">
                 <fieldset>
+                    <legend>Шифр Цезаря</legend>
                     <p>
                         <label>Смещение</label>
                         <input type="number" id="ValueOffsetCezare" value="0" />
@@ -40,6 +41,7 @@
         <div id="Two" style="display: none;">
             <form name="xorEncrypt" id="Xor">
                 <fieldset>
+                    <legend>XOR</legend>
                     <p>
                         <label>Ключ</label>
                         <input type="number" id="KeyXor" value="0" />
@@ -59,6 +61,7 @@
         <div id="Three" style="display: none;">
             <form name="Randomly">
                 <fieldset>
+                    <legend>Перемешивание алфавита</legend>
                     <p>
                         <label>Исходный текст</label>
                         <textarea rows="7" cols="40" id="InputTextRandomly"></textarea>
@@ -74,17 +77,22 @@
         <div id="Four" style="display: none;">
             <form name="BlockPermutation">
                 <fieldset>
+                    <legend>Блочная перестановка</legend>
                     <p>
                         <label>Размер блока</label>
-                        <input type="number" id="LengthBlockPermutation" value="0" />
+                        <input type="number" id="LengthBlockPermutation" min="0" value="0" />
+                    </p>
+                    <p>
+                        <label>Ключ перемешивания</label>
+                        <input type="number" id="KeyBlockPermutation" min="0" value="0" />
                     </p>
                     <p>
                         <label>Исходный текст</label>
-                        <textarea rows="7" cols="40" name="InputTextBlockPermutation"></textarea>
+                        <textarea rows="7" cols="40" id="InputTextBlockPermutation"></textarea>
                     </p>
                     <p>
-                        <label>Результат шифрования</label>
-                        <textarea rows="7" cols="40" name="OutputTextBlockPermutation" readonly></textarea>
+                        <label>Результат перестановки</label>
+                        <textarea rows="7" cols="40" id="OutputTextBlockPermutation" readonly></textarea>
                     </p>
                 </fieldset>
             </form>
