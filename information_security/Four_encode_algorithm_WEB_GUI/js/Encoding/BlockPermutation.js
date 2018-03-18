@@ -9,24 +9,24 @@
         await sleep(20);
 
         var stirringKey = Number(document.getElementById("KeyBlockPermutation").value);
+        stirringKey = ConvertNumberProgrammistToUser(stirringKey);
         var lengthBox = Number(document.getElementById("LengthBlockPermutation").value);
+        var content = document.getElementById("InputTextBlockPermutation").value;
         var output = document.getElementById("OutputTextBlockPermutation");
 
-        // console.log(stirringKey.toString().length + " " + lengthBox);
+        var lengthKey = stirringKey.toString().length;
 
-        var content = document.getElementById("InputTextBlockPermutation").value;
-
-        if (lengthBox == stirringKey.toString().length && content.length != 0) {
-
+        if (content.length == 0) {
+            output.textContent = "Отсутствует текст!";
+        } else if (!IsCorrectStirringKey(lengthBox, stirringKey)) {
+            output.textContent = "Ключ перемешивания не корректен!";
+        } else if (lengthBox != lengthKey) {
+            output.textContent = "Ошибка размера блока!";
+        } else {
             var blocksText = DivideTextBlocks(content, lengthBox);
-            // console.log("blocksText = " + blocksText);
             var shuffleText = ShuffleText(blocksText, stirringKey);
-            // console.log("shuffleText = " + shuffleText);
 
             output.textContent = shuffleText;
-
-        } else {
-            output.textContent = "Ошибка ключа или размера блока!" + lengthBox + " " + stirringKey.toString().length;
         }
     }
 
@@ -34,17 +34,58 @@
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
+    function ConvertNumberProgrammistToUser(number) {
+
+        number = number.toString();
+        var result = "";
+        for (var i = 0; i < number.length; i++) {
+            result += Number(number[i]) - 1;
+        }
+
+        return Number(result);
+    }
+
+    function IsCorrectStirringKey(lengthBox, key) {
+
+        key = key.toString();
+        for (var i = 0; i < key.length; i++) {
+            if (key[i] >= lengthBox) {
+                return false;
+            }
+        }
+
+        if (!KeyUnique(key)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    function KeyUnique(key) {
+
+        key = key.toString();
+        var n = key.length;
+        for (var i = 0; i < n - 1; i++) {
+            for (var j = i + 1; j < n; j++) {
+                if (key[i] === key[j]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
     function DivideTextBlocks(baseText, numberOfBlocks) {
         baseText = String(baseText);
 
         while (baseText.length % numberOfBlocks != 0) {
-            console.log(baseText.length);
             baseText += " ";
         }
 
         var blocksText = [];
         var startingPoint = 0;
-        while (numberOfBlocks + startingPoint != baseText.length) {
+        while (startingPoint != baseText.length) {
             blocksText.push(baseText.substring(startingPoint, numberOfBlocks + startingPoint));
             startingPoint += numberOfBlocks;
         }
@@ -58,15 +99,14 @@
         key = String(key);
 
         blocksText.forEach(element => {
-            var temp = element;
-
+            var temp = [];
             for (var i = 0; i < key.length; i++) {
-                temp[i] = element[key[i]];
+                temp.push(element[key[i]]);
             }
 
-            result.push(temp);
+            result.push(temp.join(""));
         });
-        // console.log(result);
+
         return result.join("");
     }
 
@@ -79,4 +119,3 @@
     InputkeyBlockPermutation.addEventListener("click", onkeypress);
 
 })();
-f
