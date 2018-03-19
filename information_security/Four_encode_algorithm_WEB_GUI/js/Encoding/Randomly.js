@@ -19,9 +19,10 @@
     function RandomlyText(shuffleAlphabet, baseAlpabet, message, output) {
 
         var result = "";
+        var specialSymbols = [",", ".", "!", "?", "\\", "!", "/", "|", " ", "   "];
 
         for (i = 0; i < message.length; i++) {
-            if (message[i] == " ") {
+            if (specialSymbols.indexOf(message[i]) != -1) {
                 result += message[i];
                 continue;
             }
