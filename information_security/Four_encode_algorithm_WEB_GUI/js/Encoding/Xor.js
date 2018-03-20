@@ -10,8 +10,12 @@
         var outputXor = document.getElementById('OutputXor');
         var offset = Number(document.getElementById('KeyXor').value);
 
+        var content = document.getElementsByName("InputXor")[0].value;
+
         if (ValidKey(offset) == false) {
             outputXor.textContent = "Ошибка ввода!";
+        } else if (offset.toString().length > content.toString().length) {
+            outputXor.textContent = "Длина ключа не совпадает с введённой последовательностью!";
         } else {
             ValidInput() == true ? EncodingXor(outputXor, offset) : outputXor.textContent = "Ошибка ввода!";
         }
