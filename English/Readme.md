@@ -276,16 +276,16 @@
 <td>2. качество продукции, измеряется в точках на дюйм (строк 10-15) <b>dpi</b> </td>
 </tr>
 <tr>
-<td>3. a particular colour within the colour spectrum (lines 15-20) ... </td>
-<td>3. определенный цвет в пределах спектра цвета (линии 15-20) ... </td>
+<td>3. a particular colour within the colour spectrum (lines 15-20) <b>cyan, magenta, yellow and black</b> </td>
+<td>3. определенный цвет в пределах спектра цвета (линии 15-20) <b>голубой, пурпурный, жёлтый and чёрный</b>  </td>
 </tr>
 <tr>
 <td>4. an ink powder used in laser printers and copiers (lines 25-30) <b>toner</b> </td>
 <td>4. порошок чернил, используемый в лазерных принтерах и копировальных машинах (линии 25-30) <b>тонер</b> </td>
 </tr>
 <tr>
-<td>5. set of characters that can be resized (enlarged or reduced) without introducing distortion (lines 30-35) <b>cyan, magenta, yellow and black</b> </td>
-<td>5. набор символов, размер которых можно изменять (увеличивать или уменьшать) без искажений (строки 30-35) <b>голубой, пурпурный, жёлтый and чёрный</b> </td>
+<td>5. set of characters that can be resized (enlarged or reduced) without introducing distortion (lines 30-35) <b>font</b> </td>
+<td>5. набор символов, размер которых можно изменять (увеличивать или уменьшать) без искажений (строки 30-35) <b>шрифт</b> </td>
 </tr>
 <tr>
 <td>6. a rectangular pattern of black lines of magnetic ink printed on an object so that its details can be read by a computer system (lines 35-40) <b>bar
