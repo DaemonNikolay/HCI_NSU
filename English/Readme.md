@@ -248,7 +248,7 @@
 </tr>
 <tr>
 <td>9. In modern lithographic printing, images are created on a DTP computer and then output directly to the printing plates, without requiring film as an intermediate step. This technology is called computer to plate, or CTP, and the machine used is called a platesetter.</td>
-<td>9. В современной литографической печати изображения создаются на компьютере DTP <code>Настольная издательская система</code>, а затем выводятся непосредственно на печатную форму, не требуя плёнку в качестве промежуточного шага. Эта технология вызвана компьютером для того чтобы покрыть, или CTP, и используемая машина вызвана platesetter.</td>
+<td>9. В современном книгопечатании изображения создаются на компьютере DTP <code>Настольная издательская система</code>, и затем выводятся непосредственно на печатную форму, не требуя плёнки в качестве промежуточного шага. Эта технология называется "компьютер с печатной формой", или CTP <code>Computer to Plate - "Компьютер — печатная форма"</code>, а такое устройство называется "плейтсеттер".</td>
 </tr>
 <tr>
 <td>10. Finally, we have plotters. Plotters use ink and fine pens held in a carriage to draw very detailed designs on paper. They are used for construction plans, engineering drawings and other technical illustrations. Nowadays, traditional plotters are being replaced with wide-format inkjets.</td>
