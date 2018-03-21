@@ -256,7 +256,7 @@
 </tr>
 </table>
 
-Пункт C
+Пункт C 
 
 <table>
 <tr>
@@ -264,7 +264,40 @@
 <th>Русский</th>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>Find words in the article with the following meanings.</td>
+<td>Найдите в статье слова со следующими значениями.</td>
+</tr>
+<tr>
+<td>1. designs and images used in magazines, books, etc. (lines 10-15) <b>?text and graphics</b> </td>
+<td>1. конструкции и изображения, используемые в журналах, книгах и т.д. (строки 10-15) <b>?текст и графика</b> </td>
+</tr>
+<tr>
+<td>2. output quality, measured in dots per inch (lines 10-15) <b>dpi</b> </td>
+<td>2. качество продукции, измеряется в точках на дюйм (строк 10-15) <b>dpi</b> </td>
+</tr>
+<tr>
+<td>3. a particular colour within the colour spectrum (lines 15-20) ... </td>
+<td>3. определенный цвет в пределах спектра цвета (линии 15-20) ... </td>
+</tr>
+<tr>
+<td>4. an ink powder used in laser printers and copiers (lines 25-30) <b>toner</b> </td>
+<td>4. порошок чернил, используемый в лазерных принтерах и копировальных машинах (линии 25-30) <b>тонер</b> </td>
+</tr>
+<tr>
+<td>5. set of characters that can be resized (enlarged or reduced) without introducing distortion (lines 30-35) <b>cyan, magenta, yellow and black</b> </td>
+<td>5. набор символов, размер которых можно изменять (увеличивать или уменьшать) без искажений (строки 30-35) <b>голубой, пурпурный, жёлтый and чёрный</b> </td>
+</tr>
+<tr>
+<td>6. a rectangular pattern of black lines of magnetic ink printed on an object so that its details can be read by a computer system (lines 35-40) <b>bar
+codes, labels and medium-resolution graphics</b> </td>
+<td>6. прямоугольная картина черных линий магнитных чернил напечатанных на предмете так, что детали смогут быть прочитаны компьютерной системой (линиями 35-40) <b>штрих-коды, этикетки и графика среднего разрешения</b> </td>
+</tr>
+<tr>
+<td>7. surface that carries a reproduction of the image, from which the pages are printed (lines 45-50) <b>printing plates</b> </td>
+<td>7. поверхность, которая несет в себе репродукцию изображения, с которой печатаются страницы (строки 45-50) <b>печатные формы</b> </td>
+</tr>
+<tr>
+<td>8. in-between; middle (lines 50-55) <b>platesetter</b> </td>
+<td>8. между; средне (линии 50-55) <b>плейтсеттер</b> </td>
 </tr>
 </table>
