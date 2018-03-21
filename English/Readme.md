@@ -200,3 +200,71 @@
 <td>Органические светоиспускающие диоды (OLEDs) тонкопленочные дисплеи LED, которые не требуют подсветки. Материал испускает свет, простимулированный электрическим током как электролюминесценция. Они потребляют меньше энергии, производят более яркие цветы и гибки - т.е. их можно согнуть и свернуть вверх когда они не используются.</td>
 </tr>
 </table>
+
+***
+
+## 15.03.2018
+
+Страница 38 (перевод + пункт C)
+
+Перевод
+
+<table>
+<tr>
+<th>English</th>
+<th>Русский</th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+Пункт C
+
+<table>
+<tr>
+<th>English</th>
+<th>Русский</th>
+</tr>
+<tr>
+<td>1. <b>Which type of printer should i buy?</b></td>
+<td>1. <b>Какой тип принтера следует купить?</b></td>
+</tr>
+<tr>
+<td>2. Printing is the final stage in creating a document. Since the results you can obtain with different types of printer will vary substantially, here is a guide to help you decide which one is most suitable for your needs.</td>
+<td>2. Печать - это финальная стадия создания документа. В виду того, что Вы можете получить результаты, которые могут существенно меняться с различными типами принтеров, здесь есть руководство, которое поможет выбрать наиболее подходящий под Ваш запрос.</td>
+</tr>
+<tr>
+<td>3. To begin with, you should take into account that printers vary in cost, speed, print quality, and other factors such as noise or printing method. Technology is evolving so quickly that there is always a printer for every application or need.</td>
+<td>3. Для начала следует принять во внимание, что принтеры различаются по стоимости, скорости, качеству печати и другим факторам, таким как шум или способ печати. Технология эволюционирует настолько быстро, что всегда есть принтер для любой области применения или требования.</td>
+</tr>
+<tr>
+<td>4. Dot-matrix printers use pins to print the dots required to shape a character. They can print text and graphics; however, they produce relatively low resolution output — 72 to 180 dots per inch (dpi). They are used to print multi-part forms, self-copying paper and continuous-form labels. They are slower than laser printers (see below) but much cheaper.</td>
+<td>4. Матричные принтеры используют иглы для печати точек, необходимых для формирования символа. Они могут печатать текст и графику; однако, они производят относительно низкое разрешение - от 72 до 180 точек на дюйм (dpi <code>Dots per inch — мера разрешения изображения</code>). Они используются для того, чтобы напечатать составные формы, самокопирочную бумагу и ярлыки непрерывных форм. Они медлительнее, чем лазерные принтеры (см. ниже), но намного дешевле.</td>
+</tr>
+<tr>
+<td>5. Inkjet printers operate by projecting small ink droplets onto paper to form the required image. Colour and hues are created by the precise mixing of cyan, magenta, yellow and black inks. Inkjets are fairly fast, quiet, and not as expensive as laser printers. Nevertheless, you can still expect high quality results because there are some inkjet printers on the market with a resolution of 2,400 dpi.</td>
+<td>5. Струйные принтеры работают путем проецирования небольших капелек чернил на бумагу, для формирования необходимого изображения. Цвет и оттенки создаются путем точного смешивания голубых, пурпурных, желтых и черных красок. Струйник довольно быстр, тих, и не так дорог, как лазерные принтеры. Тем не менее, Вы всё ещё рассчитывать на результаты высокого качества, потому что есть, некоторые, струйные принтеры на рынке с разрешением 2400 точек на дюйм.</td>
+</tr>
+<tr>
+<td>6. Laser printers produce output at great speed and with a very high resolution of 1,200-2,400 dpi. They scan the image with a laser beam and transfer it to paper with a special ink powder called toner. They are constantly being improved. In terms of speed and image quality, laser printers are preferred by experts for various reasons; for instance, they have a wider range of scalable fonts than inkjets, can emulate different language systems, and can produce highquality graphics; however, they are still expensive for home users.</td>
+<td>6. Лазерные принтеры выпускают продукцию на большой скорости и с очень высоким разрешением dpi 1.200 до 2.400. Они сканируют изображение с помощью лазерного луча и переносят его на бумагу с помощью специального порошка чернил, называемого тонером. Они постоянно совершенствуются. С точки зрения скорости и качества изображения, эксперты предпочитают лазерные принтеры по различным причинам; например, они имеют более широкий диапазон масштабируемых шрифтов, чем струйник, могут эмулировать различные языковые системы и могут продуцировать высококачественную графику; однако они по-прежнему дороги для домашних пользователей.</td>
+</tr>
+<tr>
+<td>7. Thermal transfer printers are used to produce colour images by transferring a wax-based ink onto the paper. They are popular for printing bar codes, labels and medium-resolution graphics.</td>
+<td>7. Термотрансферные принтеры используются для получения цветных изображений путем переноса чернил на основе воска на бумагу. Они популярны для печати штрих-кодов, этикеток и графики среднего разрешения.</td>
+</tr>
+<tr>
+<td>8. Imagesetters produce very high-resolution output (up to 3,540 dpi) on paper or on the actual film for making the printing plates. In addition, they are extremely fast. Imagesetters are most often used in desktop publishing (DTP). Although they produce the highest quality output, they have one important disadvantage: they are too expensive for homes or small offices.</td>
+<td>8. Устройства фотовывода <code>устройство, способное выводить результаты работы НИС непосредственно на фотоплёнку. Обычно имеет высокое разрешение: от 1200 до 3500 (и выше) точка/дюйм и поддерживает язык PostScript</code> производят очень высококачественную продукцию (dpi до 3.540) на бумаге или на реальной плёнке для производства печатного листового проката. К тому же, они весьма быстры. Устройства фотовывода наиболее часто используются в настольной публикации (DTP). Хотя они производят продукцию самого высокого качества, у них есть один важный недостаток: они слишком дороги для домашнего использования или небольших офисов.</td>
+</tr>
+<tr>
+<td>9. In modern lithographic printing, images are created on a DTP computer and then output directly to the printing plates, without requiring film as an intermediate step. This technology is called computer to plate, or CTP, and the machine used is called a platesetter.</td>
+<td>9. В современной литографической печати изображения создаются на компьютере DTP <code>Настольная издательская система</code>, а затем выводятся непосредственно на печатную форму, не требуя плёнку в качестве промежуточного шага. Эта технология вызвана компьютером для того чтобы покрыть, или CTP, и используемая машина вызвана platesetter.</td>
+</tr>
+<tr>
+<td>10. Finally, we have plotters. Plotters use ink and fine pens held in a carriage to draw very detailed designs on paper. They are used for construction plans, engineering drawings and other technical illustrations. Nowadays, traditional plotters are being replaced with wide-format inkjets.</td>
+<td>10. Наконец, у нас есть плоттеры. Плоттеры используют чернила и мельчайшие перья, удерживаемые в карете, чтобы нарисовать очень детальные проекты на бумаге. Они используются для строительных планов, технических чертежей и других технических иллюстраций. В настоящее время традиционные плоттеры заменяются широкоформатными струйниками.</td>
+</tr>
+</table>
