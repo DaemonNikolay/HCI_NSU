@@ -215,19 +215,6 @@
 <th>Русский</th>
 </tr>
 <tr>
-<td></td>
-<td></td>
-</tr>
-</table>
-
-Пункт C
-
-<table>
-<tr>
-<th>English</th>
-<th>Русский</th>
-</tr>
-<tr>
 <td>1. <b>Which type of printer should i buy?</b></td>
 <td>1. <b>Какой тип принтера следует купить?</b></td>
 </tr>
@@ -266,5 +253,18 @@
 <tr>
 <td>10. Finally, we have plotters. Plotters use ink and fine pens held in a carriage to draw very detailed designs on paper. They are used for construction plans, engineering drawings and other technical illustrations. Nowadays, traditional plotters are being replaced with wide-format inkjets.</td>
 <td>10. Наконец, у нас есть плоттеры. Плоттеры используют чернила и мельчайшие перья, удерживаемые в карете, чтобы нарисовать очень детальные проекты на бумаге. Они используются для строительных планов, технических чертежей и других технических иллюстраций. В настоящее время традиционные плоттеры заменяются широкоформатными струйниками.</td>
+</tr>
+</table>
+
+Пункт C
+
+<table>
+<tr>
+<th>English</th>
+<th>Русский</th>
+</tr>
+<tr>
+<td></td>
+<td></td>
 </tr>
 </table>
