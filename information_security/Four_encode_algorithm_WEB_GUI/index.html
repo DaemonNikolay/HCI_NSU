@@ -15,6 +15,7 @@
         <li id="TwoTab" class="Tab"><a href="#Two" onclick="Two(); return false;">XOR</a></li>
         <li id="ThreeTab" class="Tab"><a href="#Three" onclick="Three(); return false;">Случайное перемешивание</a></li>
         <li id="FourTab" class="Tab"><a href="#Four" onclick="Four(); return false;">Блочная перестановка</a></li>
+        <li id="FiveTab" class="Tab"><a href="#Five" onclick="Five(); return false;">Комбо</a></li>
     </ul>
 
     <div id="Content">
@@ -97,13 +98,41 @@
                 </fieldset>
             </form>
         </div>
+
+        <div id="Five" style="display: none;">
+            <form name="ComboEncoding">
+                <fieldset>
+                    <legend>Комбо</legend>
+
+                    <select id="SelectValueSequenceEncoding0">
+                        <option value="0">Блочная перестановка</option>
+                        <option value="1">Случайное перемешивание</option>
+                        <option value="2">Шифр Цезаря</option>
+                    </select>
+                    <select id="SelectValueSequenceEncoding1">
+                        <option value="0">Блочная перестановка</option>
+                        <option value="1">Случайное перемешивание</option>
+                        <option value="2">Шифр Цезаря</option>
+                    </select>
+                    <select id="SelectValueSequenceEncoding2">
+                        <option value="0">Блочная перестановка</option>
+                        <option value="1">Случайное перемешивание</option>
+                        <option value="2">Шифр Цезаря</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
     </div>
+
+
+
 
     <script src="./js/Tab/tab.js"></script>
     <script src="./js/Encoding/Cezare.js"></script>
     <script src="./js/Encoding/Xor.js"></script>
     <script src="./js/Encoding/Randomly.js"></script>
     <script src="./js/Encoding/BlockPermutation.js"></script>
+    <script src="./js/Encoding/ComboEncoding.js"></script>
 </body>
 
 </html>
