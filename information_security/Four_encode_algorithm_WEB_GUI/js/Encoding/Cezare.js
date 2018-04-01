@@ -6,6 +6,7 @@
     async function onkeypress(e) {
 
         await sleep(10);
+
         var offset = Number(document.getElementById('ValueOffsetCezare').value);
         if (offset > 32) {
             offset = offset % 32;
