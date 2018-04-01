@@ -27,6 +27,7 @@
 
         OutputCezare.textContent = "";
         var result = "";
+
         for (var i = 0; i < content.length; i++) {
             if (content[i] == ".") {
                 result += convertSymbol(0, content[i]);
@@ -46,19 +47,42 @@
                 result += convertSymbol(offset, content[i]);
             }
         }
+
         OutputCezare.textContent = result;
     }
 
     function convertSymbol(step, symbol) {
-        var value = String.fromCodePoint((String(symbol).charCodeAt() + step));
-        if (value > "я") {
-            return String.fromCodePoint((String(symbol).charCodeAt() + step - 32));
-        } else if (value > "z" && value < "а" && step <= 26) {
-            return String.fromCodePoint((String(symbol).charCodeAt() + step - 26));
-        } else if (value > "z" && value < "а" && step > 26) {
-            return String.fromCodePoint((String(symbol).charCodeAt() + (step - 25) - 26));
+
+        var flag = false;
+
+        if (symbol.toUpperCase() == symbol) {
+
+            flag = true;
+            symbol = symbol.toLowerCase();
         }
-        return value;
+
+        var value = String.fromCodePoint((String(symbol).charCodeAt() + step));
+
+        if (value > "я") {
+
+            var result = String.fromCodePoint((String(symbol).charCodeAt() + step - 32));
+
+            return flag == false ? result : result.toUpperCase();
+
+        } else if (value > "z" && value < "а" && step <= 26) {
+
+            var result = String.fromCodePoint((String(symbol).charCodeAt() + step - 26));
+
+            return flag == false ? result : result.toUpperCase();
+
+        } else if (value > "z" && value < "а" && step > 26) {
+
+            var result = String.fromCodePoint((String(symbol).charCodeAt() + (step - 25) - 26));
+
+            return flag == false ? result : result.toUpperCase();
+        }
+
+        return flag == false ? value : value.toUpperCase();
     }
 
     messageBox.addEventListener("keypress", onkeypress);
