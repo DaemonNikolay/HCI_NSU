@@ -15,7 +15,7 @@
         <li id="TwoTab" class="Tab"><a href="#Two" onclick="Two(); return false;">XOR</a></li>
         <li id="ThreeTab" class="Tab"><a href="#Three" onclick="Three(); return false;">Случайное перемешивание</a></li>
         <li id="FourTab" class="Tab"><a href="#Four" onclick="Four(); return false;">Блочная перестановка</a></li>
-        <li id="FiveTab" class="Tab"><a href="#Five" onclick="Five(); return false;">Комбо</a></li>
+        <li id="FiveTab" class="Tab"><a href="#Five" onclick="Five(); return false;">Комбо шифрование</a></li>
     </ul>
 
     <div id="Content">
@@ -102,23 +102,69 @@
         <div id="Five" style="display: none;">
             <form name="ComboEncoding">
                 <fieldset>
-                    <legend>Комбо</legend>
+                    <legend>Комбо шифрование</legend>
 
-                    <select id="SelectValueSequenceEncoding0">
-                        <option value="0">Блочная перестановка</option>
+                    <h3>Выберите последовательность применяемых алгоритмов шифрования</h3>
+                    <b>1) </b>
+                    <select id="SelectValueSequenceEncodingZero">
+                        <option value="0" selected="selected">Блочная перестановка</option>
                         <option value="1">Случайное перемешивание</option>
                         <option value="2">Шифр Цезаря</option>
                     </select>
-                    <select id="SelectValueSequenceEncoding1">
+                    <b>2) </b>
+                    <select id="SelectValueSequenceEncodingOne">
                         <option value="0">Блочная перестановка</option>
-                        <option value="1">Случайное перемешивание</option>
+                        <option value="1" selected="selected">Случайное перемешивание</option>
                         <option value="2">Шифр Цезаря</option>
                     </select>
-                    <select id="SelectValueSequenceEncoding2">
+                    <b>3) </b>
+                    <select id="SelectValueSequenceEncodingTwo">
                         <option value="0">Блочная перестановка</option>
                         <option value="1">Случайное перемешивание</option>
-                        <option value="2">Шифр Цезаря</option>
+                        <option value="2" selected="selected">Шифр Цезаря</option>
                     </select>
+
+                    <hr />
+
+                    <h3>> Набор данных для алгоритма "Блочная перестановка"</h3>
+
+                    <form name="ComboBlockPermutation">
+                        <fieldset>
+                            <p>
+                                <label>Размер блока</label>
+                                <input type="number" id="LengthBlockPermutation" min="0" max="9" value="0" />
+                            </p>
+                            <p>
+                                <label>Ключ перемешивания</label>
+                                <input type="number" id="KeyBlockPermutation" min="0" value="0" />
+                        </fieldset>
+                    </form>
+
+                    <hr />
+
+                    <h3>> Набор данных для алгоритма "Шифр Цезаря"</h3>
+                    <form name="ComboCezareEncrypt" id="ComboCezare">
+                        <fieldset>
+                            <label>Смещение</label>
+                            <input type="number" id="ComboValueOffsetCezare" value="0" />
+                        </fieldset>
+                    </form>
+
+                    <hr />
+
+                    <form name="ComboResult">
+                        <fieldset>
+                            <p>
+                                <label>Исходный текст</label>
+                                <textarea rows="7" cols="40" id="InputTextCombo"></textarea>
+                            </p>
+                            <p>
+                                <label>Результат шифрования</label>
+                                <textarea rows="7" cols="40" id="OutputTextCombo" readonly></textarea>
+                            </p>
+                        </fieldset>
+                    </form>
+
                 </fieldset>
             </form>
         </div>

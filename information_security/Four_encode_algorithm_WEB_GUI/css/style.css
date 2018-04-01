@@ -108,3 +108,8 @@ textarea {
     padding-left: 3px;
     resize: vertical;
 }
+
+hr {
+    height: 3px;
+    background-color: black;
+}
