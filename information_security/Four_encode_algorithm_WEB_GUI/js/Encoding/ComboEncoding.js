@@ -38,13 +38,13 @@
 
 
         if (firstEncoding == "~~~Отсутствует исходный текст!~~~") {
-            outputCombo.textContent = firstEncoding.substr(3, firstEncoding.length - 6);
+            outputCombo.textContent = firstEncoding;
             return;
         } else if (firstEncoding == "~~~Ключ перемешивания не корректен!~~~") {
-            outputCombo.textContent = firstEncoding.substr(3, firstEncoding.length - 6);
+            outputCombo.textContent = firstEncoding;
             return;
         } else if (firstEncoding == "~~~Ошибка размера блока!~~~") {
-            outputCombo.textContent = firstEncoding.substr(3, firstEncoding.length - 6);
+            outputCombo.textContent = firstEncoding;
             return;
         }
 
