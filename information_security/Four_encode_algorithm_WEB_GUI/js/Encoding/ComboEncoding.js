@@ -8,30 +8,24 @@
 
     var ValueOffsetCezareCombo = document.ComboCezareEncrypt.ComboValueOffsetCezare;
 
-    var LengthBlockPermutationCombo = document.ComboBlockPermutation.LengthBlockPermutation;
-    var KeyBlockPermutationCombo = document.ComboBlockPermutation;
+    var LengthBlockPermutationCombo = document.ComboBlockPermutation.ComboLengthBlockPermutation;
+    var KeyBlockPermutationCombo = document.ComboBlockPermutation.ComboKeyBlockPermutation;
 
 
     async function onkeypress(e) {
-        await sleep(10);
+        await sleep(20);
 
         var valueSelectZero = document.getElementById("SelectValueSequenceEncodingZero").value;
         var valueSelectOne = document.getElementById("SelectValueSequenceEncodingOne").value;
         var valueSelectTwo = document.getElementById("SelectValueSequenceEncodingTwo").value;
 
-        // console.log(valueSelectZero + "\n" + valueSelectOne + '\n' + valueSelectTwo + "\n\n");
-
         var inputCombo = document.getElementById("InputTextCombo").value;
         var outputCombo = document.getElementById("OutputTextCombo");
 
-
-        // console.log(inputCombo + "\t" + outputCombo);
-
-        var lengthBlockPermutation = document.getElementById("LengthBlockPermutation").value;
-        var keyBlockPermutation = document.getElementById("KeyBlockPermutation").value;
+        var lengthBlockPermutation = Number(document.getElementById("ComboLengthBlockPermutation").value);
+        var keyBlockPermutation = Number(document.getElementById("ComboKeyBlockPermutation").value);
 
         var offsetCezare = document.getElementById("ComboValueOffsetCezare").value;
-
 
         var firstEncoding;
         if (valueSelectZero == 0) {
@@ -43,25 +37,37 @@
         }
 
 
-        // var secondEncoding;
-        // if (valueSelectOne == 0) {
-        //     secondEncoding = BlockPermutationEncoding(firstEncoding, lengthBlockPermutation, keyBlockPermutation);
-        // } else if (valueSelectOne == 1) {
-        //     secondEncoding = Randomly(firstEncoding);
-        // } else if (valueSelectOne == 2) {
-        //     secondEncoding = Cezare(offsetCezare, firstEncoding);
-        // }
+        if (firstEncoding == "~~~Отсутствует исходный текст!~~~") {
+            outputCombo.textContent = firstEncoding.substr(3, firstEncoding.length - 6);
+            return;
+        } else if (firstEncoding == "~~~Ключ перемешивания не корректен!~~~") {
+            outputCombo.textContent = firstEncoding.substr(3, firstEncoding.length - 6);
+            return;
+        } else if (firstEncoding == "~~~Ошибка размера блока!~~~") {
+            outputCombo.textContent = firstEncoding.substr(3, firstEncoding.length - 6);
+            return;
+        }
 
-        // var thirdEncoding;
-        // if (valueSelectTwo == 0) {
-        //     thirdEncoding = BlockPermutationEncoding(secondEncoding, lengthBlockPermutation, keyBlockPermutation);
-        // } else if (valueSelectTwo == 1) {
-        //     thirdEncoding = Randomly(secondEncoding);
-        // } else if (valueSelectTwo == 2) {
-        //     thirdEncoding = Cezare(offsetCezare, secondEncoding);
-        // }
 
-        outputCombo.textContent = firstEncoding;
+        var secondEncoding;
+        if (valueSelectOne == 0) {
+            secondEncoding = BlockPermutationEncoding(firstEncoding, lengthBlockPermutation, keyBlockPermutation);
+        } else if (valueSelectOne == 1) {
+            secondEncoding = Randomly(firstEncoding);
+        } else if (valueSelectOne == 2) {
+            secondEncoding = Cezare(offsetCezare, firstEncoding);
+        }
+
+        var thirdEncoding;
+        if (valueSelectTwo == 0) {
+            thirdEncoding = BlockPermutationEncoding(secondEncoding, lengthBlockPermutation, keyBlockPermutation);
+        } else if (valueSelectTwo == 1) {
+            thirdEncoding = Randomly(secondEncoding);
+        } else if (valueSelectTwo == 2) {
+            thirdEncoding = Cezare(offsetCezare, secondEncoding);
+        }
+
+        outputCombo.textContent = thirdEncoding;
     }
 
 
@@ -75,24 +81,42 @@
 
     function BlockPermutationEncoding(content, lengthBox, stirringKey) {
 
-        stirringKey = ConvertNumberProgrammistToUser(stirringKey);
+        // console.log(stirringKey);
 
+        stirringKey = ConvertNumberProgrammistToUser(stirringKey);
         var lengthKey = stirringKey.toString().length;
 
-        var blocksText = DivideTextBlocks(content, lengthBox);
-        var shuffleText = ShuffleText(blocksText, stirringKey);
+        // console.log("stirringKey: " + stirringKey + "\tlengthKey: " + lengthKey);
 
-        return shuffleText;
+        if (content.length == 0) {
+            return "~~~Отсутствует исходный текст!~~~";
+        } else if (!IsCorrectStirringKey(lengthBox, stirringKey)) {
+            return "~~~Ключ перемешивания не корректен!~~~"
+        } else if (lengthBox != lengthKey) {
+
+            // console.log(lengthBox + "\t" + stirringKey);
+
+            return "~~~Ошибка размера блока!~~~";
+        } else {
+            var blocksText = DivideTextBlocks(content, lengthBox);
+            var shuffleText = ShuffleText(blocksText, stirringKey);
+
+            return shuffleText;
+        }
     }
 
     function ConvertNumberProgrammistToUser(number) {
+
+        if (number == 0) {
+            return 0;
+        }
 
         number = number.toString();
         var result = "";
         for (var i = 0; i < number.length; i++) {
             result += Number(number[i]) - 1;
         }
-
+        console.log("result: " + result);
         return Number(result);
     }
 
