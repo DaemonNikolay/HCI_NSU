@@ -81,21 +81,14 @@
 
     function BlockPermutationEncoding(content, lengthBox, stirringKey) {
 
-        // console.log(stirringKey);
-
         stirringKey = ConvertNumberProgrammistToUser(stirringKey);
         var lengthKey = stirringKey.toString().length;
-
-        // console.log("stirringKey: " + stirringKey + "\tlengthKey: " + lengthKey);
 
         if (content.length == 0) {
             return "~~~Отсутствует исходный текст!~~~";
         } else if (!IsCorrectStirringKey(lengthBox, stirringKey)) {
             return "~~~Ключ перемешивания не корректен!~~~"
         } else if (lengthBox != lengthKey) {
-
-            // console.log(lengthBox + "\t" + stirringKey);
-
             return "~~~Ошибка размера блока!~~~";
         } else {
             var blocksText = DivideTextBlocks(content, lengthBox);
@@ -116,8 +109,8 @@
         for (var i = 0; i < number.length; i++) {
             result += Number(number[i]) - 1;
         }
-        console.log("result: " + result);
-        return Number(result);
+
+        return String(result);
     }
 
     function IsCorrectStirringKey(lengthBox, key) {
