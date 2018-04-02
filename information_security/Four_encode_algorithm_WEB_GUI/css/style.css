@@ -11,7 +11,7 @@ ul#Tabs {
 #Tabs li.Tab {
     float: left;
     height: 25px;
-    background-color: #deedfb;
+    background-color: rgb(250, 247, 247);
     margin: 2px 0px 0px 5px;
     border: 1px solid #a2b6cb;
 }
