@@ -21,7 +21,7 @@
 
         // console.log(valueSelectZero + "\n" + valueSelectOne + '\n' + valueSelectTwo + "\n\n");
 
-        var inputCombo = document.getElementById("InputTextCombo").textContent;
+        var inputCombo = document.getElementById("InputTextCombo").value;
         var outputCombo = document.getElementById("OutputTextCombo");
 
 
@@ -42,25 +42,26 @@
             firstEncoding = Cezare(offsetCezare, inputCombo);
         }
 
-        var secondEncoding;
-        if (valueSelectOne == 0) {
-            secondEncoding = BlockPermutationEncoding(firstEncoding, lengthBlockPermutation, keyBlockPermutation);
-        } else if (valueSelectOne == 1) {
-            secondEncoding = Randomly(firstEncoding);
-        } else if (valueSelectOne == 2) {
-            secondEncoding = Cezare(offsetCezare, firstEncoding);
-        }
 
-        var thirdEncoding;
-        if (valueSelectTwo == 0) {
-            thirdEncoding = BlockPermutationEncoding(secondEncoding, lengthBlockPermutation, keyBlockPermutation);
-        } else if (valueSelectTwo == 1) {
-            thirdEncoding = Randomly(secondEncoding);
-        } else if (valueSelectTwo == 2) {
-            thirdEncoding = Cezare(offsetCezare, secondEncoding);
-        }
+        // var secondEncoding;
+        // if (valueSelectOne == 0) {
+        //     secondEncoding = BlockPermutationEncoding(firstEncoding, lengthBlockPermutation, keyBlockPermutation);
+        // } else if (valueSelectOne == 1) {
+        //     secondEncoding = Randomly(firstEncoding);
+        // } else if (valueSelectOne == 2) {
+        //     secondEncoding = Cezare(offsetCezare, firstEncoding);
+        // }
 
-        outputCombo.textContent = thirdEncoding;
+        // var thirdEncoding;
+        // if (valueSelectTwo == 0) {
+        //     thirdEncoding = BlockPermutationEncoding(secondEncoding, lengthBlockPermutation, keyBlockPermutation);
+        // } else if (valueSelectTwo == 1) {
+        //     thirdEncoding = Randomly(secondEncoding);
+        // } else if (valueSelectTwo == 2) {
+        //     thirdEncoding = Cezare(offsetCezare, secondEncoding);
+        // }
+
+        outputCombo.textContent = firstEncoding;
     }
 
 
@@ -165,7 +166,7 @@
 
     function Randomly(inputText) {
 
-        var message = document.getElementById(inputText);
+        var message = inputText;
 
         var baseAlpabet = CreateAlphabet(message);
         var shuffleAlphabet = ShuffleArray(Object.assign([], baseAlpabet));
