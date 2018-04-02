@@ -6,10 +6,10 @@
 
     var InputTextCombo = document.ComboResult.InputTextCombo;
 
-    var ValueOffsetCezare = document.ComboCezareEncrypt.ComboValueOffsetCezare;
+    var ValueOffsetCezareCombo = document.ComboCezareEncrypt.ComboValueOffsetCezare;
 
-    var LengthBlockPermutation = document.ComboBlockPermutation.LengthBlockPermutation;
-    var KeyBlockPermutation = document.ComboBlockPermutation;
+    var LengthBlockPermutationCombo = document.ComboBlockPermutation.LengthBlockPermutation;
+    var KeyBlockPermutationCombo = document.ComboBlockPermutation;
 
 
     async function onkeypress(e) {
@@ -126,11 +126,11 @@
     InputTextCombo.addEventListener("keypress", onkeypress);
     InputTextCombo.addEventListener("keydown", onkeypress);
 
-    ValueOffsetCezare.addEventListener("keydown", onkeypress);
-    ValueOffsetCezare.addEventListener("click", onkeypress);
+    ValueOffsetCezareCombo.addEventListener("keydown", onkeypress);
+    ValueOffsetCezareCombo.addEventListener("click", onkeypress);
 
-    LengthBlockPermutation.addEventListener("keypress", onkeypress);
-    LengthBlockPermutation.addEventListener("keydown", onkeypress);
-    KeyBlockPermutation.addEventListener("keydown", onkeypress);
-    KeyBlockPermutation.addEventListener("click", onkeypress);
+    LengthBlockPermutationCombo.addEventListener("keypress", onkeypress);
+    LengthBlockPermutationCombo.addEventListener("keydown", onkeypress);
+    KeyBlockPermutationCombo.addEventListener("keydown", onkeypress);
+    KeyBlockPermutationCombo.addEventListener("click", onkeypress);
 })();
