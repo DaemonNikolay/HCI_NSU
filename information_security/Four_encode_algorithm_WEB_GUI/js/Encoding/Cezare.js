@@ -7,19 +7,25 @@
 
         await sleep(10);
 
-        var offset = Number(document.getElementById('ValueOffsetCezare').value);
+        validData('ValueOffsetCezare', 'OutputCezare');
+
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function validData(valueOffset, Output) {
+        var offset = Number(document.getElementById(valueOffset).value);
         if (offset > 32) {
             offset = offset % 32;
         } else if (offset < -32) {
             offset = -(offset % 32);
         }
-        var OutputCezare = document.getElementById('OutputCezare');
+
+        var OutputCezare = document.getElementById(Output);
 
         convertText(OutputCezare, offset);
-    }
-
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     function convertText(OutputCezare, offset) {
