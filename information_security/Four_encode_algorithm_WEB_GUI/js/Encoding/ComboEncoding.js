@@ -311,8 +311,6 @@
 
         } else if (value > "z" && value < "а" && step < 0) {
 
-            console.log(22);
-
             var result = String.fromCodePoint((String(symbol).charCodeAt() + step + 26 + 6));
 
             return flag == false ? result : result.toUpperCase();

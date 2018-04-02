@@ -80,23 +80,17 @@
 
         } else if (value > "z" && value < "а" && step <= 26 && step >= 0) {
 
-            console.log(2);
-
             var result = String.fromCodePoint((String(symbol).charCodeAt() + step - 26));
 
             return flag == false ? result : result.toUpperCase();
 
         } else if (value > "z" && value < "а" && step < 0) {
 
-            console.log(22);
-
             var result = String.fromCodePoint((String(symbol).charCodeAt() + step + 26 + 6));
 
             return flag == false ? result : result.toUpperCase();
 
         } else if (value > "z" && value < "а" && step > 26) {
-
-            console.log(3);
 
             var result = String.fromCodePoint((String(symbol).charCodeAt() + (step - 25) - 26));
 
