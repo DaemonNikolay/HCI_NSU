@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<test number="6">
+  <student>
+    <name>Екатерина</name>
+    <surname>Кузнецова</surname>
+    <group-number>603с</group-number>
+  </student>
+  <tasks>
+    <task number="1">
+      <item number="1">scanner;</item>
+      <item number="2">digital camera;</item>
+      <item number="3">camcorder;</item>
+    </task>
+    <task number="2">
+      <item number="1">Op;</item>
+      <item number="2">F;</item>
+      <item number="3">Op;</item>
+      <item number="4">F;</item>
+      <item number="5">F;</item>
+    </task>
+    <task number="3">
+      <item number="1">best;</item>
+      <item number="2">most sharp;</item>
+      <item number="3">highest;</item>
+      <item number="4">brightest;</item>
+      <item number="5">most natural;</item>
+    </task>
+    <task number="4">
+      <item number="1">additional;</item>
+      <item number="2">player;</item>
+      <item number="3">controler;</item>
+      <item number="4">processor;</item>
+      <item number="5">optimized;</item>
+      <item number="6">powerful;</item>
+    </task>
+    <task number="5">
+      <item number="1">powerful;</item>
+      <item number="2">processor;</item>
+      <item number="3">controller;</item>
+      <item number="4">optimized;</item>
+      <item number="5">additional;</item>
+      <item number="6">player;</item>
+    </task>
+  </tasks>
+</test>

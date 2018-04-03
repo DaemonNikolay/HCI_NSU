@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<test id="5">
+  <student>
+    <name>Екатерина</name>
+    <surname>Кузнецова</surname>
+    <group-number>603с</group-number>
+  </student>
+  <tasks>
+    <task id="1">
+      <item id="1">features; keyboard;</item>
+      <item id="2">works; mouse;</item>
+      <item id="3">for; graphics table;</item>
+      <item id="4">used; game controller;</item>
+      <item id="5">by; trackball;</item>
+      <item id="6">allows; to; scanner;</item>
+      <item id="7">can; light pen;</item>
+      <item id="8">which; microphone;</item>
+    </task>
+    <task id="2">
+      <item id="1">return;</item>
+      <item id="2">backspace;</item>
+      <item id="3">arrow;</item>
+      <item id="4">shift; Caps Lock;</item>
+    </task>
+    <task id="3">
+      <item id="1">double - click</item>
+      <item id="2">click;</item>
+      <item id="3">select;</item>
+      <item id="4">drag;</item>
+      <item id="5">double - click;</item>
+    </task>
+  </tasks>
+</test>
