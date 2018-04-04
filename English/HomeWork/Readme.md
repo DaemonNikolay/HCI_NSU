@@ -301,3 +301,75 @@ codes, labels and medium-resolution graphics</b> </td>
 <td>8. между; средне (линии 50-55) <b>плейтсеттер</b> </td>
 </tr>
 </table>
+
+***
+## 29.04.2018
+
+Стр. 43-44 (упражение 2a + перевод)
+
+<table>
+<tr>
+<th>English</th>
+<th>Русский</th>
+</tr>
+<tr>
+<td>Computers for the disabled</td>
+<td>Компьютеры для инвалидов</td>
+</tr>
+<tr>
+<td>Computers have taken a dominant role in our society,meaning most jobs now require access to computers and the Internet. But what happens if a person is blind, deaf or motor-disabled? They needn't worry. The latest assistive technology is designed to help them use computers and dotheir jobs in the office, learn at school, or interact with their families at home. In addition, new laws oblige companiesto adapt the workplace to accommodate disabled people.For example, the Americans with Disabilities Act (ADA)and the UK's Disability Discrimination Act make it illegal for employers to discriminate against people with disabilities.</td>
+<td>Компьютеры играют доминирующую роль в нашем обществе,а это означает, что большинство рабочих мест в настоящее время требуют доступа к компьютерам и Интернету. Но что происходит, если человек слепой, глухой или мотор-инвалид? Им не нужно беспокоиться. Новейшие технологии вспомогательные предназначен, чтобы помочь им использовать компьютеры и никаких рабочих мест в офисе, учитесь в школе, или взаимодействовать со своими семьями дома. Кроме того, новые законы обязывают companiesto адаптировать рабочее место для инвалидов.Например, закон Об американцах с инвалидностью (ADA)и Закон Великобритании о дискриминации по инвалидности запрещают работодателям дискриминировать людей с инвалидностью.</td>
+</tr>
+<tr>
+<td>To work effectively, most blind users need to have theircomputers adapted with technologies such as Braille,screen magnifiers, speech synthesis and Optical Character Recognition (OCR).</td>
+<td>Для эффективной работы большинству слепых пользователей необходимо адаптировать их к таким технологиям,как шрифт Брайля, экранные лупы, синтез речи и Оптическое Распознавание символов (OCR).</td>
+</tr>
+<tr>
+<td>Braille keyboards have Braille lettering on keyboard overlays, allowing the blind user to easily identify each key.For output, there are printers, called Braille embossers, that produce tactile Braille symbols on both sides of a page at high speed.</td>
+<td>Клавиатуры Брайля имеют надписи Брайля на накладках клавиатуры, что позволяет слепому пользователю легко идентифицировать каждую клавишу.Для вывода, есть принтеры, называется Брайля принтеры, которые производят тактильный шрифт Брайля символы на обеих сторонах страницы на высокой скорости.</td>
+</tr>
+<tr>
+<td>For someone with limited but usable vision, a screen magnifier may be appropriate. This type of software can enlarge text and images appearing on the screen by up to 16 times.</td>
+<td>Для кого-то с ограниченным, но удобным зрением, экранная лупа может быть подходящей. Этот тип программного обеспечения может увеличить текст и изображения, появляющиеся на экране до 16 раз.</td>
+</tr>
+<tr>
+<td>A Braille embosser prints a hard copy of a text document in Braille</td>
+<td>Тиснитель Брайля печатает печатную копию текстового документа шрифтом Брайля</td>
+</tr>
+<tr>
+<td>A speech synthesis system is used to read aloud the work on the computer. It has a speech synthesizer, which produces the audio output, and a screen reader - the program which reads aloud text and menus from word processors, data basesand the Web.</td>
+<td>Система синтеза речи используется для чтения вслух работы на компьютере. Он имеет синтезатор речи, который производит аудио выход, и чтения с экрана-программа, которая читает вслух текст и меню из текстовых процессоров, баз данных и веб.</td>
+</tr>
+<tr>
+<td>OCR uses a flatbed scanner and specialized OCR software to read printed material and send the text to the computer. The PC can then produce a copy of the text in Braille, a magnifiedcopy, or a version that can be read aloud by a speech synthesis system.</td>
+<td>OCR использует планшетный блок развертки и специализированное програмное обеспечение OCR для того чтобы прочитать напечатанный материал и послать текст к компьютеру. Затем ПК может создать копию текста шрифтом Брайля, увеличительную копию или версию, которую можно прочитать вслух с помощью системы синтеза речи.</td>
+</tr>
+<tr>
+<td>Deaf computer users can overcome many communication difficulties with the aid of visual alerts,electronic notetakers and text phones. Visual alerts are indicators that alert the deaf user when they receive new mail or when there is a system error. So instead of hearing a sound, the user is alerted by a blinking menu bar or by a message on the screen. Electronic notetakers use software that types a summary of what is said in meetings onto thecomputer screen.</td>
+<td>Глухие пользователи компьютеров могут преодолеть многие трудности связи с помощью визуальных предупреждений, электронных нотариусов и текстовых телефонов. Визуальные оповещения-это индикаторы, предупреждающие глухого пользователя о получении Новой почты или системной ошибке. Таким образом, вместо того, чтобы слышать звук, пользователь предупрежден мигающей строке меню или сообщением на экране. Электронные нотариусы используют программное обеспечение, которое печатает резюме того, что говорится на собраниях на экране компьютера.</td>
+</tr>
+<tr>
+<td>Text phones allow the deaf to type and read phone conversations. They are also called TDDs (Telephone Devices for the Deaf) or TTYs (TeleTypewriters). They can be used in combination with relay services, where an operator says what the text user types, and typeswhat a voice phone user says. Deaf people can also communicate via SMS and instant messaging.</td>
+<td>Текстовые телефоны позволяют глухим печатать и читать телефонные разговоры. Они также вызваны TDDs (приборами телефона для глухих) или TTYs (TeleTypewriters). Они могут быть использованы в сочетании с услугами ретрансляции, где оператор говорит, что текстовые типы пользователей, и печатает то, что говорит пользователь голосового телефона. Глухие люди также могут общаться с помощью SMS и мгновенных сообщений.</td>
+</tr>
+<tr>
+<td>Motor-impaired workers unable to type on a standard keyboard can employ expanded or ergonomic keyboards, on-screen keyboards, adaptive switches and voice recognition systems.</td>
+<tdРаботники с двигательными нарушениями, неспособные печатать на стандартной клавиатуре, могут использовать расширенные или эргономичные клавиатуры, экранные клавиатуры, адаптивные переключатели и системы распознавания голоса.></td>
+</tr>
+<tr>
+<td>On-screen keyboards are software images of a keyboard that appear on the screen and may be activated with a track ball, touch screen, screen-pointing device, or eye movements. In an eyegaze system, the keys on the virtual keyboard are activated by the user's eyes whenthey pause on a key for two or three seconds.</td>
+<td>Экранные клавиатуры-это программные изображения клавиатуры, которые появляются на экране и могут быть активированы с помощью трекового шара, сенсорного экрана, устройства наведения экрана или движений глаз. В системе eyegaze клавиши на виртуальной клавиатуре активируются глазами пользователя, которые останавливаются на клавише в течение двух или трех секунд.</td>
+</tr>
+<tr>
+<td>Eyegaze technology consists of a video camera and image processing software, which determines the eye's gaze point on the screen.</td>
+<td>Технология Eyegaze состоит из видеокамеры и программного обеспечения для обработки изображений, которое определяет точку взгляда глаза на экране.</td>
+</tr>
+<tr>
+<td>Switches come in many shapes and sizes. They are operated by muscle movements or breath control. For example, a pneumatic switch - known as a sip and puff- allows someone with quadriplegia to control the PC by puffing and sipping air through a pneumatic tube. People with quadriplegia can also use sip and puff joysticks.</td>
+<td>Переключатели приходят в много формы и размеров. Они эксплуатируются движениями мышцы или управлением дыхания. Например, пневматический переключатель-известный как глоточек и слойка-позволяет кто-то с quadriplegia контролировать ПК путем сопеть и потягивать воздух через пневматическую трубку. Люди с quadriplegia могут также использовать кнюппели глоточка и слойки.</td>
+</tr>
+<tr>
+<td>Finally, there's voice recognition, which allows thecomputer to interpret human speech, transforming thewords into digitized text or instructions.</td>
+<td>Наконец, есть распознавание голоса, которое позволяет компьютеру интерпретировать человеческую речь, превращая слова в оцифрованный текст или инструкции.</td>
+</tr>
+</table>
