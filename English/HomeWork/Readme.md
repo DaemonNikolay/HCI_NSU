@@ -307,6 +307,8 @@ codes, labels and medium-resolution graphics</b> </td>
 
 Стр. 43-44 (упражение 2a + перевод)
 
+### 2a
+
 <table>
 <tr>
 <th>English</th>
@@ -341,6 +343,8 @@ codes, labels and medium-resolution graphics</b> </td>
 <td>7. функция прибора опознавающего голос</td>
 </tr>
 </table>
+
+### Translate
 
 <table>
 <tr>
