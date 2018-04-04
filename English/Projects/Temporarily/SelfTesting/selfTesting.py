@@ -10,7 +10,7 @@ def AutoTest(number):
                 if file.find(number) != -1:
                     listFiles.append(os.path.join(root, file))
 
-    answersFile = open("answerTest" + number + ".txt", "r", encoding = "UTF8")
+    answersFile = open(r"Teacher\answerTest" + number + ".txt", "r", encoding = "UTF8")
 
     answers = []
     for element in answersFile.readlines():
