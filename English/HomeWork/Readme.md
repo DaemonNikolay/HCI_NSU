@@ -313,6 +313,41 @@ codes, labels and medium-resolution graphics</b> </td>
 <th>Русский</th>
 </tr>
 <tr>
+<td>1. the laws which ensure equal opportunities for people with disabilities in the USA and the UK</td>
+<td>1. законы, обеспечивающие равные возможности для людей с ограниченными возможностями в США и Великобритании</td>
+</tr>
+<tr>
+<td>2. how the blind student in the photo interacts with the machine</td>
+<td>2. как слепой студент на фото взаимодействует с машиной</td>
+</tr>
+<tr>
+<td>3. the systems which type on the screen what is being said in meetings</td>
+<td>3. системы, которые печатают на экране то, что говорится на собраниях</td>
+</tr>
+<tr>
+<td>4. the type of software which reads printed material, recognizes the text and then sends it to the PC</td>
+<td>4. тип програмного обеспечения, которое читает напечатанный материал, узнает текст и после этого посылает его к ПК</td>
+</tr>
+<tr>
+<td>5. the system which is activated by the user's eye movements</td>
+<td>5. система, которая активируется движениями глаз пользователя</td>
+</tr>
+<tr>
+<td>6. the switch which can be used by someone with quadriplegia</td>
+<td>6. переключатель, который может быть использован кем-то при квадриплегии</td>
+</tr>
+<tr>
+<td>7. the function of voice recognition device</td>
+<td>7. функция прибора опознавающего голос</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th>English</th>
+<th>Русский</th>
+</tr>
+<tr>
 <td>Computers for the disabled</td>
 <td>Компьютеры для инвалидов</td>
 </tr>
