@@ -1,23 +1,29 @@
 Tyrtova Anastasia 603с
-Unit 5
-№1.
-1. features;keyboard
-2. works;mouse
-3. for;graphics tablet
-4. used;game controller
-5. by;trackball
-6. allows;to;scanner
-7. can;light pen
-8. which;microphone
-№2.
-1. return
-2. backspase
-3. arrow
-4. shift
-5. Caps Lock
-№3.
-1.double-click
-2.click
-3.select
-4.drag
-5.double-click
+
+Тест№5
+
+№1
+
+1. features;keyboard;
+2. works;mouse;
+3. for;graphics tablet;
+4. used;game controller;
+5. by;trackball;
+6. allows;to;scanner;
+7. can;light pen;
+8. which;microphone;
+
+№2
+
+1. return;
+2. backspase;
+3. arrow;
+4. shift; Caps Lock;
+
+№3
+
+1.double-click;
+2.click;
+3.select;
+4.drag;
+5.double-click;
