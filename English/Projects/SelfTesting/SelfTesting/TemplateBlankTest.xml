@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<test number="">
+  <student>
+    <name></name>
+    <surname></surname>
+    <group_number></group_number>
+  </student>
+  <tasks>
+    <task number="">
+      <item number=""></item>
+    </task>
+  </tasks>
+</test>
