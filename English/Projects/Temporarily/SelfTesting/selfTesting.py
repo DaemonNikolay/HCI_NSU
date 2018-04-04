@@ -53,9 +53,12 @@ def AutoTest(number):
             # else:
             #     print(answers[j] + "\t" + instance + "\t|\t" + str(answers[j] == instance))
             # print(instance)
-            if (answers[j] == instance and str(instance).find("№") == -1):
-                student["CountTrueAnswer"] += 1
-                # print(answers[j] + "\t" + instance)
+            try:
+                if (answers[j] == instance and str(instance).find("№") == -1):
+                    student["CountTrueAnswer"] += 1
+                    # print(answers[j] + "\t" + instance)
+            except:
+                pass
 
             j += 1
         # print("\n---\n")
@@ -65,4 +68,4 @@ def AutoTest(number):
     for element in trueAnswer:
         print(element)
 
-AutoTest(6)
+AutoTest(5)

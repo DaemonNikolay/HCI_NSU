@@ -4,40 +4,32 @@
 
 №1
 
-1. scanner;
-2. camcorder;
-3. digital camera;
+1. laser;
+2. plotter;
+3. thermal transfer;
+4. inkjet;
+5. imagesetter;
+6. dot-matrix;
+7. platesetter;
 
 №2
 
-1. opinion;
-2. fact;
-3. opinion;
-4. fact;
-5. fact;
+1. more expensive;
+2. better;
+3. smaller;
+4. noisier;
+5. less convenient;
 
 №3
 
-1. best;
-2. sharpest;
-3. highest;
-4. brightest;
-5. most natural;
+1. such as; for instance;
+2. to begin with; then; finally;
+3. since; because;
 
 №4
 
-1. additional;
-2. player;
-3. controller;
-4. processor;
-5. optimized;
-6. powerful;
-
-№5
-
-1. powerful;
-2. processor;
-3. controller;
-4. optimized;
-5. additional;
-6. player;
+1. since;
+2. such as;
+3. to begin with;
+4. then;
+5. finally;
