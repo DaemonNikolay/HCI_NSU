@@ -1,0 +1,43 @@
+Воронцов Максим 603c
+
+Тест №6
+
+№1
+
+1. scanner;
+2. camcorder;
+3. digital camera;
+
+№2
+
+1. Opinion;
+2. Fact;
+3. Opinion;
+4. Fact;
+5. Fact;
+
+№3
+
+1. best;
+2. sharpest;
+3. highest;
+4. most bright;
+5. most natura;
+
+№4
+
+1. additional;
+2. player;
+3. controller;
+4. processer;
+5. optimized;
+6. powerful;
+
+№5
+
+1. additional;
+2. powerful;
+3. controller;
+4. processor;
+5. optimized;
+6. player;

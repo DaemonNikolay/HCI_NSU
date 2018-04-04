@@ -5,10 +5,10 @@ listFiles = []
 for root, dirs, files in os.walk(r"Answers"):
     for file in files:
         if file.endswith(".txt"):
-            if file.find("6") != -1:
+            if file.find("7") != -1:
                 listFiles.append(os.path.join(root, file))
 
-answersFile = open("answerTest6.txt", "r", encoding = "UTF8")
+answersFile = open("answerTest7.txt", "r", encoding = "UTF8")
 
 answers = []
 for element in answersFile.readlines():
@@ -46,21 +46,20 @@ for element in validation:
     j = 0
     student = {"name": element[0], "CountTrueAnswer": 0}
     for instance in element:
-        # if (str(instance).find("№") != -1):
-        #     print("\t" + answers[j] + "\t" + instance)
-        # else:
-        #     print(answers[j] + "\t" + instance + "\t|\t" + str(answers[j] == instance))
-        # print(instance)
+        if (str(instance).find("№") != -1):
+            print("\t" + answers[j] + "\t" + instance)
+        else:
+            print(answers[j] + "\t" + instance + "\t|\t" + str(answers[j] == instance))
+
         if (answers[j] == instance and str(instance).find("№") == -1):
             student["CountTrueAnswer"] += 1
             # print(answers[j] + "\t" + instance)
 
         j += 1
-    # print("\n---\n")
+    print("\n---\n")
     student["CountTrueAnswer"] = str((student["CountTrueAnswer"] / 25) * 100) + "%"
     trueAnswer.append(student)
 
-
-
+print("\n\n\n")
 for element in trueAnswer:
     print(element)

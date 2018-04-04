@@ -1,0 +1,24 @@
+Filimontseva
+
+Тест №7
+
+№1
+	1. resolution;
+	2. aspect;
+	3. screen;
+	4. color;
+	5. bright;
+№2
+	1. pixel;
+	2. plasma screen;
+	3. liquid crystal display (LCD);
+	4. video adapter;
+	5. video projector;
+№3
+	1.ache;
+	2.strain;
+	3.repetitive;Get; Ask;
+	4.footrest;
+	5.swivel;Should be; should be, sit;
+	6.idea;	Shouldn't work;
+	7. copyholder;	Don't forget;

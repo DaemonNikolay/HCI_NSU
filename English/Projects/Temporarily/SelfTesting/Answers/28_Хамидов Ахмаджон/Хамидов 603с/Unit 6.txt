@@ -1,0 +1,38 @@
+Хамидов Ахмаджон 
+
+Тест №6
+
+№1
+	1. Scanner; 
+	2. Digital camera;
+	3. Camcorder;
+
+№2
+	1. Opinion;
+	2. Fact;
+	3. Opinion;
+	4. Fact;
+	5. Fact;
+
+№3
+	1. Best;
+	2. Most sharp;
+	3. Highest;
+	4. Brightest;
+	5. Most natural;
+
+№4
+	1. Additional; 
+	2. Player;
+	3. Controller;
+	4. Processor; 
+	5. Optimized; 
+	6. Powerful;
+
+№5
+	1. Powerful;
+	2. Processor;
+	3. Controller;
+	4. Optimized;
+	5. Additional;
+	6. Player;

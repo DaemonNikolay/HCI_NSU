@@ -1,0 +1,24 @@
+Хамидов Ахмаджон 603с
+№1.
+	1. Features;	keyboard;
+	2. Works;	mouse;
+	3. For;		graphic tablet;
+	4. Used;	game controller;
+	5. By;		trackball;
+	6. Allows to;	scanner;
+	7. Can;		light pen;
+	8. Which;	microphone;
+
+
+№2.
+	1. Return;
+	2. Backspace;
+	3. Arrow;
+	4. Shift; caps lock;
+
+
+№3.	1. Double-click;
+	2. Click;
+	3. Select;
+	4. Drag;
+	5. Double-click;
