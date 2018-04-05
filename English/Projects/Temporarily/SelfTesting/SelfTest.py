@@ -1,5 +1,5 @@
 class SelfTest:
-    def AutoTest(self, number):
+    def AutoTest(self, number, flag):
         import os
 
         number = str(number)
@@ -49,11 +49,13 @@ class SelfTest:
             j = 0
             student = {"name": element[0], "CountTrueAnswer": 0}
             for instance in element:
-                # if (str(instance).find("№") != -1):
-                #     print("\t" + answers[j] + "\t" + instance)
-                # else:
-                #     print(answers[j] + "\t" + instance + "\t|\t" + str(answers[j] == instance))
-                # print(instance)
+                if (flag):
+                    if (str(instance).find("№") != -1):
+                        print("\t" + answers[j] + "\t" + instance)
+
+                    else:
+                        print(answers[j] + "\t" + instance + "\t|\t" + str(answers[j] == instance))
+
                 try:
                     if (answers[j] == instance and str(instance).find("№") == -1):
                         student["CountTrueAnswer"] += 1
@@ -65,6 +67,5 @@ class SelfTest:
             # print("\n---\n")
             student["CountTrueAnswer"] = str((student["CountTrueAnswer"] / 25) * 100) + "%"
             trueAnswer.append(student)
-
 
         return trueAnswer
