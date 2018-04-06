@@ -1,0 +1,23 @@
+{
+    "Student": {
+        "Name": "Катя",
+        "Surname": "Кузнецова",
+        "Group_number": "603c"
+    },
+    "Tasks": {
+        "1": {
+            "Items": {
+                "1": "One",
+                "2": "Two",
+                "3": "Three"
+            }
+        },
+        "2": {
+            "Items": {
+                "1": "One",
+                "2": "Two",
+                "3": "Three"
+            }
+        }
+    }
+}
