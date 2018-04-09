@@ -1,4 +1,7 @@
 Хамидов Ахмаджон 603с
+
+тест 5
+
 №1.
 	1. Features;	keyboard;
 	2. Works;	mouse;

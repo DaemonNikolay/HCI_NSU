@@ -13,16 +13,18 @@ class SelfTest:
 
         answersFile = open(r"Teacher\answerTest" + number + ".txt", "r", encoding = "UTF8")
 
+        countItems = 0
         answers = []
         for element in answersFile.readlines():
             temp = element.replace("\n", "").lower().replace(" ", "").replace(";", "")
             if len(temp) > 0:
+                if (temp[0:2][1] == "."):
+                    countItems += 1
                 answers.append(temp)
 
         answersFile.close()
 
         result = []
-
         for element in listFiles:
             file = open(element, "r")
             result.append(file.readlines())
@@ -52,9 +54,11 @@ class SelfTest:
                 if (flag):
                     if (str(instance).find("№") != -1):
                         print("\t" + answers[j] + "\t" + instance)
+                        Separator()
 
                     else:
                         print(answers[j] + "\t" + instance + "\t|\t" + str(answers[j] == instance))
+                        Separator()
 
                 try:
                     if (answers[j] == instance and str(instance).find("№") == -1):
@@ -64,8 +68,14 @@ class SelfTest:
                     pass
 
                 j += 1
-            # print("\n---\n")
-            student["CountTrueAnswer"] = str((student["CountTrueAnswer"] / 25) * 100) + "%"
+
+            temp = round((student["CountTrueAnswer"] / countItems * 100), 2)
+
+            student["CountTrueAnswer"] = str(temp) + "%"
             trueAnswer.append(student)
 
         return trueAnswer
+
+
+def Separator():
+    print("\n*****\n")
