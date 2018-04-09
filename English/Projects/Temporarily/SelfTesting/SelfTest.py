@@ -33,7 +33,13 @@ class SelfTest:
         validation = []
         for element in result:
             temp = []
+            i = 0
             for instance in element:
+                if (i == 0 and len(str(instance)) > 0):
+                    temp.append(str(instance).replace("\n", ""))
+                    i = + 1
+                    continue
+
                 cleaningSpecSymbols = str(instance)\
                     .replace("\n", "")\
                     .lower()\
@@ -46,7 +52,7 @@ class SelfTest:
             validation.append(temp)
 
         trueAnswer = []
-        # for i in range(0, len(answers) - 1):
+
         for element in validation:
             j = 0
             student = {"name": element[0], "CountTrueAnswer": 0}

@@ -13,10 +13,8 @@ def GenerationMark(markToProcent):
     else:
         return 2
 
-
 def Separator():
     return "\n" + "-" * 10 + "\n"
-
 
 def PrintResult(numberTest, flag):
     tableResult = PrettyTable()
@@ -29,11 +27,13 @@ def PrintResult(numberTest, flag):
     file = open(nameTest + ".txt", "w", encoding = "UTF8")
     file.write(nameTest + "\n\n")
 
+    separator = "-" * 7
     for element in instance:
         temp = GenerationMark(element["CountTrueAnswer"])
         tableResult.add_row([element["name"], element["CountTrueAnswer"], temp])
-        separator = "-" * 7
-        tableResult.add_row([separator, separator, separator])
+
+        if (element != instance[len(instance) - 1]):
+            tableResult.add_row([separator, separator, separator])
 
     tableResult = str(tableResult)
     file.write(tableResult)
