@@ -1,0 +1,33 @@
+Рубанов Василий 503а1
+
+Тест №7 
+
+№1
+1)resolution
+2)aspect
+3)screen
+4)color
+5)brightness
+
+№2
+1)pixel
+2)plasma screen
+3)cathode ray tube (CRT)
+4)video adapter
+5)video projector
+
+№3
+1)strain
+2)ache
+3)repetitive
+*)get
+*)ask
+4)footrest
+5)swivel
+*)should be 
+*)should be 
+*)Sit
+6)idea
+*)shouldn’t work
+7)copyholder
+*)Don’t forget

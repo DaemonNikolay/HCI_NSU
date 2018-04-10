@@ -1,0 +1,28 @@
+7 Unit
+
+1. 
+	1 resolution
+	2 aspect
+	3 screen
+	4 coold
+	5 bright
+2.
+	1 pixel
+	2 plasma screen
+	3 cathode ray tube (CRT)
+	4 video adapter
+	5 video projector
+3.
+	(1) strain
+	(2) ache
+	(3) repetitive
+	ask
+	get
+	(4) footrest
+	(5) swivel
+	should be
+	sit
+	(6)idea
+	SHOULDN'T WORK
+	(7) copiholder
+	don't forget

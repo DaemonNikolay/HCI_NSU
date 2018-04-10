@@ -1,0 +1,26 @@
+Черных Александр 503а1
+
+Тест №5
+
+№1
+1. features; keyboard
+2. used; mouse
+3. for; graphics tablet
+4. allows; game controller
+5. which; trackball
+6. can; to; scanner 
+7. works; light pen
+8. by; microphone
+
+№2 
+1. return
+2. backspace
+3. arrow
+4. shift; caps lock
+
+№3
+1. double-click
+2. click
+3. select
+4. drag
+5. double-click

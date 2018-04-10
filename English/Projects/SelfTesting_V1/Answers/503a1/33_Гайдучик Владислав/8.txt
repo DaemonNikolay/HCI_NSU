@@ -1,0 +1,35 @@
+Гайдучик Владислав Валерьевич 503а1
+
+Тест №8
+
+#1
+
+1. laser;
+2. plotter;
+3. thermal transfer;
+4. inkjet;
+5. imagesetter;
+6. dot-matrix;
+7. platesetter;
+
+#2
+
+1. more expensive;
+2. the best;
+3. smaller;
+4. the noisiest;
+5. the most convenient;
+
+#3
+
+such as		|	to begin with		|	because
+for instance	|	then			|	finally
+		|	since			|
+
+#4
+
+1. to begin with;
+2. for instance;
+3. since;
+4. then;
+5. finally;

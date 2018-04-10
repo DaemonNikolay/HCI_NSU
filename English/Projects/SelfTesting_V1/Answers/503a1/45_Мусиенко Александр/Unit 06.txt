@@ -1,0 +1,32 @@
+Мусиенко Александр 503а1
+
+№1.scanner 
+   camcorder
+   digital camera
+
+№2.Opinion
+   Opinion
+   Fact
+   Fact
+   Fact
+
+№3.the best
+   the sharpest
+   the highest
+   the brightest	
+   the most natural
+
+№4.al
+   er
+   ler
+   or
+   ed
+   ful
+
+№5.optimized
+   processor
+   controller
+   powerful
+   additional
+   player
+ 

@@ -12,3 +12,6 @@ C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesting\SelfTesting\
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesting\SelfTesting\obj\Debug\SelfTesting.csproj.GenerateResource.Cache
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesting\SelfTesting\obj\Debug\SelfTesting.exe
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesting\SelfTesting\obj\Debug\SelfTesting.pdb
+C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesting_V2\SelfTesting\bin\Debug\SelfTesting.exe.config
+C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesting_V2\SelfTesting\obj\Debug\SelfTesting.exe
+C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesting_V2\SelfTesting\obj\Debug\SelfTesting.pdb

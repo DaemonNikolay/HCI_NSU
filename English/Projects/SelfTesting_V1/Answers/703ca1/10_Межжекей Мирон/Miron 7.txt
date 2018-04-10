@@ -1,0 +1,28 @@
+1:
+1-resolution
+2-relation
+3-scale
+4-color
+5-brightness
+
+2:
+1-pixel
+2-video projector
+3-LCD
+4-video adapter
+5-video projector
+
+3:
+1-ache
+2-copyholder
+3-repeitve
+4-Get
+5-ASk
+6-footrest
+7-swivel
+8,9-should be
+10-sit
+11-idea
+12-should work
+13-strain
+14-Don't forget

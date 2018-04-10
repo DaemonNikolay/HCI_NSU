@@ -1,0 +1,43 @@
+Гайдучик Владислав Валерьевич 503а1
+
+Тест №6
+
+#1
+
+1. scanner;
+2. camcorder;
+3. digital camera;
+
+#2
+
+1. Opinion;
+2. Opinion;
+3. Fact;
+4. Fact;
+5. Fact;
+
+#3
+
+1. best;
+2. sharpest;
+3. higher;
+4. brightest;
+5. most natural;
+
+#4
+
+1. al;
+2. er;
+3. ler;
+4. or;
+5. d;
+6. ful;
+
+#5
+
+1. powerful;
+2. processor;
+3. controller;
+4. optimized;
+5. additional;
+6. player;

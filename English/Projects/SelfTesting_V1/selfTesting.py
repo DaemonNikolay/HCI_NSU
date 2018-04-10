@@ -4,11 +4,11 @@ from prettytable import PrettyTable
 
 def GenerationMark(markToProcent):
     temp = float(markToProcent.replace("%", ""))
-    if (temp > 95):
+    if (temp >= 90):
         return 5
-    elif (temp > 71):
+    elif (temp >= 75):
         return 4
-    elif (temp > 51):
+    elif (temp >= 51):
         return 3
     else:
         return 2
@@ -46,7 +46,7 @@ tableResult.field_names = ["Студент", "Результат", "Оценка
 
 file = open("Result_SelfTesting_V1.txt", "w", encoding = "UTF8")
 
-for i in range(5, 8):
+for i in range(5, 9):
     PrintResult(i, False)
 
 file.close()

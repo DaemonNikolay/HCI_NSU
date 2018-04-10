@@ -1,0 +1,21 @@
+Мусиенко Александр 503а1
+
+№1.resolution
+   aspect
+   screen
+   colour
+   brightness
+
+№2.pixel
+   plasma screen
+   cathode ray tube (CRT)
+   video adapter
+   video projector
+
+№3. ache
+    strain
+    repetitive;Get;Ask 
+    footrest
+    swivel;should be;should be;Sit;
+    idea;shouldn’t work
+    copyholder;Don’t forget
