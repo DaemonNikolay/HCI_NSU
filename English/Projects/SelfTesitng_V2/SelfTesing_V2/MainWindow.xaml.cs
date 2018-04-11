@@ -31,10 +31,5 @@ namespace SelfTesing_V2
         {
             
         }
-
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
