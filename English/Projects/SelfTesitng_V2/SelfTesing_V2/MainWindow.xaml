@@ -5,108 +5,146 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SelfTesing_V2"
         mc:Ignorable="d"
-        Title="SelfTesting V.2.0" Height="1266.781" Width="712.139" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="788" Margin="10,72,0,0" VerticalAlignment="Top" Width="686">
-            <TabItem Header="Тест8">
-                <Grid Background="#FFE5E5E5" Margin="0,0,-0.2,0.2">
-                    <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="749" VerticalAlignment="Top" Width="681" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible">
+        Title="SelfTesting V.2.0" Height="1894.181" Width="712.139" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" SizeToContent="Width">
+    <ScrollViewer>
+        <Grid>
+            <TabControl x:Name="tabControl" Height="1716" Margin="15,72,-12.2,0" VerticalAlignment="Top" Width="686" VerticalContentAlignment="Top">
+                <TabItem Header="Тест8">
+                    <Grid Background="#FFE5E5E5" Margin="0,0,-0.2,0.2">
+                        <ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Margin="0" Padding="0" Grid.IsSharedSizeScope="True">
 
-                        <TextBlock x:Name="textBlock1" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify"><Run Text="1. Look at these extracts from people talking about printing jobs. Which type of printer is each"/><Run Text=" person talking about? Choose from the drop-down menu."/></TextBlock>
-                        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" Text="1.1. &quot;Can you order some more toner for the printer on the third floor?&quot;" VerticalAlignment="Top" Height="25" Width="604" FontSize="16"/>
-                        <ComboBox x:Name="ComboBox_task_1_1" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
-                            <ComboBox.GroupStyle>
-                                <GroupStyle/>
-                            </ComboBox.GroupStyle>
-                            <ListBoxItem Content="laser"/>
-                            <ListBoxItem Content="dot-matrix"/>
-                            <ListBoxItem Content="inkjet"/>
-                            <ListBoxItem Content="Я выше этого..."/>
-                        </ComboBox>
-                        <TextBlock x:Name="textBlock3_Copy" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="604" FontSize="16"><Run Text="1."/><Run Text="2"/><Run Text=". &quot;The plans for the new office building on Vyner Street are almost ready. Shall I print a copy for the meeting tomorrow?&quot;"/></TextBlock>
-                        <ComboBox x:Name="ComboBox_task_1_2" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
-                            <ComboBox.GroupStyle>
-                                <GroupStyle/>
-                            </ComboBox.GroupStyle>
-                            <ListBoxItem Content="thermal transfer"/>
-                            <ListBoxItem Content="platesetter"/>
-                            <ListBoxItem Content="plotter"/>
-                            <ListBoxItem Content="Я выше этого..."/>
-                        </ComboBox>
-                        <TextBlock x:Name="textBlock3_Copy1" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="604" FontSize="16"><Run Text="1."/><Run Text="3"/><Run Text=". &quot;We're almost out of bar codes. Simon, can you print some more?&quot;"/></TextBlock>
-                        <ComboBox x:Name="ComboBox_task_1_3" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
-                            <ComboBox.GroupStyle>
-                                <GroupStyle/>
-                            </ComboBox.GroupStyle>
-                            <ListBoxItem Content="laser"/>
-                            <ListBoxItem Content="thermal transfer"/>
-                            <ListBoxItem Content="inkjet"/>
-                            <ListBoxItem Content="Я выше этого..."/>
-                        </ComboBox>
-                        <TextBlock x:Name="textBlock3_Copy2" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="604" FontSize="16"><Run Text="1.4. &quot;I couldn't believe it – I was in the middle of printing my report"/><Run Text=" "/><Run Text="and I ran out of ink!&quot;"/></TextBlock>
-                        <ComboBox x:Name="ComboBox_task_1_4" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
-                            <ComboBox.GroupStyle>
-                                <GroupStyle/>
-                            </ComboBox.GroupStyle>
-                            <ListBoxItem Content="plotter"/>
-                            <ListBoxItem Content="thermal transfer"/>
-                            <ListBoxItem Content="inkjet"/>
-                            <ListBoxItem Content="Я выше этого..."/>
-                        </ComboBox>
-                        <TextBlock x:Name="textBlock3_Copy3" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="604" FontSize="16"><Run Text="1."/><Run Text="5"/><Run Text=". &quot;As soon as the client approves this version, you need to print a high-quality colour copy for them to check.&quot;"/></TextBlock>
-                        <ComboBox x:Name="ComboBox_task_1_5" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
-                            <ComboBox.GroupStyle>
-                                <GroupStyle/>
-                            </ComboBox.GroupStyle>
-                            <ListBoxItem Content="inkjet"/>
-                            <ListBoxItem Content="imagesetter"/>
-                            <ListBoxItem Content="dot-matrix"/>
-                            <ListBoxItem Content="Я выше этого..."/>
-                        </ComboBox>
-                        <TextBlock x:Name="textBlock3_Copy4" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="604" FontSize="16" Text="1.6. &quot;Andrew, can you print off another set of address labels for me?&quot;" Margin="43,10,0,0"/>
-                        <ComboBox x:Name="ComboBox_task_1_6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic" Margin="43,3,0,0">
-                            <ComboBox.GroupStyle>
-                                <GroupStyle/>
-                            </ComboBox.GroupStyle>
-                            <ListBoxItem Content="plotter"/>
-                            <ListBoxItem Content="platesetter"/>
-                            <ListBoxItem Content="dot-matrix"/>
-                            <ListBoxItem Content="Я выше этого..."/>
-                        </ComboBox>
-                        <TextBlock x:Name="textBlock3_Copy5" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="604" FontSize="16" Text="1.7. &quot;Lisa, this job's ready to go. Can you output it directly to the printing plates for me?&quot;" Margin="43,10,0,0"/>
-                        <ComboBox x:Name="ComboBox_task_1_7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic" Margin="43,3,0,0">
-                            <ComboBox.GroupStyle>
-                                <GroupStyle/>
-                            </ComboBox.GroupStyle>
-                            <ListBoxItem Content="laser"/>
-                            <ListBoxItem Content="plotter"/>
-                            <ListBoxItem Content="platesetter"/>
-                            <ListBoxItem Content="Я выше этого..."/>
-                        </ComboBox>
-                    </ListBox>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Заглушка">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-        </TabControl>
-        <Button x:Name="CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Left" Margin="225,1174,0,0" VerticalAlignment="Top" Width="234" Height="53"/>
-        <ToolBar x:Name="toolBar" Margin="0,0,-0.4,0" Height="60" Width="706" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <ToolBar.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF0096FF" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </ToolBar.Background>
-            <TextBlock x:Name="UserName" HorizontalAlignment="Left" Margin="0,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="61" FontSize="20" RenderTransformOrigin="0.734,-0.106"><Run Text="Name:"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
-            <TextBox x:Name="InputUserName" HorizontalAlignment="Left" Height="23" Margin="0,16,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" CharacterCasing="Upper" IsUndoEnabled="False"/>
-            <Separator Height="35" Margin="5" VerticalAlignment="Center" Width="4" Background="{x:Null}"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,14,0,0" TextWrapping="Wrap" Text="Surname:" VerticalAlignment="Top" FontSize="20"/>
-            <TextBox x:Name="InputUserSurname" HorizontalAlignment="Left" Height="23" Margin="0,18,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" CharacterCasing="Upper" IsUndoEnabled="False"/>
-            <Separator Height="35" Margin="5" VerticalAlignment="Center" Width="4" Background="{x:Null}"/>
-            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Group:" VerticalAlignment="Top" FontSize="20" Margin="0,14,0,0"/>
-            <TextBox x:Name="InputUserGroup" HorizontalAlignment="Left" Height="23" Margin="0,18,0,0" VerticalAlignment="Top" Width="137" FontSize="16" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" CharacterCasing="Upper" IsUndoEnabled="False"/>
-        </ToolBar>
+                            <TextBlock x:Name="textBlock1" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify"><Run Text="1. Look at these extracts from people talking about printing jobs. Which type of printer is each"/><Run Text=" person talking about? Choose from the drop-down menu."/></TextBlock>
+                            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" Text="1.1. &quot;Can you order some more toner for the printer on the third floor?&quot;" VerticalAlignment="Top" Height="25" Width="604" FontSize="16"/>
+                            <ComboBox x:Name="ComboBox_task_1_1" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
+                                <ComboBox.GroupStyle>
+                                    <GroupStyle/>
+                                </ComboBox.GroupStyle>
+                                <ListBoxItem Content="laser"/>
+                                <ListBoxItem Content="dot-matrix"/>
+                                <ListBoxItem Content="inkjet"/>
+                                <ListBoxItem Content="Я выше этого..."/>
+                            </ComboBox>
+                            <TextBlock x:Name="textBlock3_Copy" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="604" FontSize="16"><Run Text="1."/><Run Text="2"/><Run Text=". &quot;The plans for the new office building on Vyner Street are almost ready. Shall I print a copy for the meeting tomorrow?&quot;"/></TextBlock>
+                            <ComboBox x:Name="ComboBox_task_1_2" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
+                                <ComboBox.GroupStyle>
+                                    <GroupStyle/>
+                                </ComboBox.GroupStyle>
+                                <ListBoxItem Content="thermal transfer"/>
+                                <ListBoxItem Content="platesetter"/>
+                                <ListBoxItem Content="plotter"/>
+                                <ListBoxItem Content="Я выше этого..."/>
+                            </ComboBox>
+                            <TextBlock x:Name="textBlock3_Copy1" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="604" FontSize="16"><Run Text="1."/><Run Text="3"/><Run Text=". &quot;We're almost out of bar codes. Simon, can you print some more?&quot;"/></TextBlock>
+                            <ComboBox x:Name="ComboBox_task_1_3" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
+                                <ComboBox.GroupStyle>
+                                    <GroupStyle/>
+                                </ComboBox.GroupStyle>
+                                <ListBoxItem Content="laser"/>
+                                <ListBoxItem Content="thermal transfer"/>
+                                <ListBoxItem Content="inkjet"/>
+                                <ListBoxItem Content="Я выше этого..."/>
+                            </ComboBox>
+                            <TextBlock x:Name="textBlock3_Copy2" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="604" FontSize="16"><Run Text="1.4. &quot;I couldn't believe it – I was in the middle of printing my report"/><Run Text=" "/><Run Text="and I ran out of ink!&quot;"/></TextBlock>
+                            <ComboBox x:Name="ComboBox_task_1_4" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
+                                <ComboBox.GroupStyle>
+                                    <GroupStyle/>
+                                </ComboBox.GroupStyle>
+                                <ListBoxItem Content="plotter"/>
+                                <ListBoxItem Content="thermal transfer"/>
+                                <ListBoxItem Content="inkjet"/>
+                                <ListBoxItem Content="Я выше этого..."/>
+                            </ComboBox>
+                            <TextBlock x:Name="textBlock3_Copy3" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="604" FontSize="16"><Run Text="1."/><Run Text="5"/><Run Text=". &quot;As soon as the client approves this version, you need to print a high-quality colour copy for them to check.&quot;"/></TextBlock>
+                            <ComboBox x:Name="ComboBox_task_1_5" HorizontalAlignment="Left" Margin="43,3,0,0" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic">
+                                <ComboBox.GroupStyle>
+                                    <GroupStyle/>
+                                </ComboBox.GroupStyle>
+                                <ListBoxItem Content="inkjet"/>
+                                <ListBoxItem Content="imagesetter"/>
+                                <ListBoxItem Content="dot-matrix"/>
+                                <ListBoxItem Content="Я выше этого..."/>
+                            </ComboBox>
+                            <TextBlock x:Name="textBlock3_Copy4" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="604" FontSize="16" Text="1.6. &quot;Andrew, can you print off another set of address labels for me?&quot;" Margin="43,10,0,0"/>
+                            <ComboBox x:Name="ComboBox_task_1_6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic" Margin="43,3,0,0">
+                                <ComboBox.GroupStyle>
+                                    <GroupStyle/>
+                                </ComboBox.GroupStyle>
+                                <ListBoxItem Content="plotter"/>
+                                <ListBoxItem Content="platesetter"/>
+                                <ListBoxItem Content="dot-matrix"/>
+                                <ListBoxItem Content="Я выше этого..."/>
+                            </ComboBox>
+                            <TextBlock x:Name="textBlock3_Copy5" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="604" FontSize="16" Text="1.7. &quot;Lisa, this job's ready to go. Can you output it directly to the printing plates for me?&quot;" Margin="43,10,0,0"/>
+                            <ComboBox x:Name="ComboBox_task_1_7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic" Margin="43,3,0,0">
+                                <ComboBox.GroupStyle>
+                                    <GroupStyle/>
+                                </ComboBox.GroupStyle>
+                                <ListBoxItem Content="laser"/>
+                                <ListBoxItem Content="plotter"/>
+                                <ListBoxItem Content="platesetter"/>
+                                <ListBoxItem Content="Я выше этого..."/>
+                            </ComboBox>
+                            <TextBlock x:Name="textBlock1_Copy" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Text="2. Complete these descriptions of the printers in Exercise 1 by typing in the comparative form of the adjectives in brackets." Margin="22,23,0,0"/>
+                            <TextBlock x:Name="textBlock3_Copy6" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="2.1. Laser printers are (expensive)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_2_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=" than inkjets"/></TextBlock>
+                            <TextBlock x:Name="textBlock3_Copy7" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="2.2. Thermal transfer printers are (good)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_2_2" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,0,4,-6" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="for printing bar codes than dot-matrix printers."/></TextBlock>
+                            <TextBlock x:Name="textBlock3_Copy8" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="2.3. Inkjets are (small)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_2_3" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,0,4,-6" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="than imagesetters."/></TextBlock>
+                            <TextBlock x:Name="textBlock3_Copy9" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="2.4. Dot-matrix printers are (noisy)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_2_4" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,0,4,-6" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="than laser printers."/></TextBlock>
+                            <TextBlock x:Name="textBlock3_Copy10" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="2.5. Imagesetters are (convenient)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_2_5" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,0,4,-6" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="than platesetters, as you still need to print to film before making the printing plates."/></TextBlock>
+                            <TextBlock x:Name="textBlock1_Copy1" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Margin="22,23,0,0"><Run Text="3. Type these connectors into the correct column of the table."/><LineBreak/><Run Text=""/></TextBlock>
+                            <TextBlock x:Name="textBlock1_Copy2" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="587" FontSize="18" HorizontalAlignment="Left" TextAlignment="Justify" Margin="46,0,0,0" Text="to begin with | since | such as | because | for instance | then | finally" FontStyle="Italic"/>
+                            <TextBlock x:Name="textBlock3_Copy11" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" Margin="43,10,0,0" TextAlignment="Center"><Run FontWeight="Bold" Text="Giving examples:" TextDecorations="Underline"/></TextBlock>
+                            <TextBox x:Name="textBox_3_1" Height="46" TextWrapping="Wrap" Width="592" Margin="43,10,0,0" CharacterCasing="Lower" FontStyle="Italic" FontSize="14"/>
+                            <TextBlock x:Name="textBlock3_Copy12" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" Margin="43,10,0,0" TextAlignment="Center"><Run FontWeight="Bold" Text="Listing/Sequencing:" TextDecorations="Underline"/></TextBlock>
+                            <TextBox x:Name="textBox_3_2" Height="46" TextWrapping="Wrap" Width="592" Margin="43,10,0,0" CharacterCasing="Lower" FontStyle="Italic" FontSize="14"/>
+                            <TextBlock x:Name="textBlock3_Copy13" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" Margin="43,10,0,0" TextAlignment="Center"><Run FontWeight="Bold" Text="Giving reason/cause:" TextDecorations="Underline"/></TextBlock>
+                            <TextBox x:Name="textBox_3_3" Height="46" TextWrapping="Wrap" Width="592" Margin="43,10,0,0" CharacterCasing="Lower" FontStyle="Italic" FontSize="14"/>
+                            <TextBlock x:Name="textBlock1_Copy3" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Margin="22,23,0,0" Text="4. Complete this customer review from a website by typing in connectors from Exercise 3. There may be more than one possible answer for some of the gaps."/>
+                            <TextBlock x:Name="textBlock3_Copy14" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="189" Width="604" FontSize="16" Margin="43,0,0,0"><Run Text="I bought this printer after reading some positive reviews here and on other sites. (1)"/><Run Text=" "/><InlineUIContainer>
+                                <TextBox x:Name="textBox_4_1" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,5,4,-5" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="my"/><Run Text=" budget was only £50,1 was looking for something that would be fine for day-to-day jobs, (2)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_4_2" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,5,4,-5" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="printing Word"/><Run Text=" "/><Run Text="documents and maps from the Internet. (3)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_4_3" CharacterCasing="Lower" FontStyle="Italic" FontSize="14" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,5,4,-5" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True"/>
+                            </InlineUIContainer><Run Text=", everything worked fine"/><Run Text=" (4)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_4_4" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,5,4,-5" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="the problems started: paper jams, error messages, etc. (5)"/><InlineUIContainer>
+                                <TextBox x:Name="textBox_4_5" CharacterCasing="Lower" FontStyle="Italic" FontSize="14" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,5,4,-5" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True"/>
+                            </InlineUIContainer><Run Text="I had to send it back. It might have just been a defective model, but I don't think I'd risk buying one again."/></TextBlock>
+                        </ListBox>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Заглушка">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+            </TabControl>
+            <Button x:Name="CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Left" Margin="235,1798,0,0" VerticalAlignment="Top" Width="234" Height="53"/>
+            <ToolBar x:Name="toolBar" Margin="0,0,-0.4,0" Height="60" Width="706" HorizontalContentAlignment="Center" VerticalAlignment="Top">
+                <ToolBar.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0096FF" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </ToolBar.Background>
+                <TextBlock x:Name="UserName" HorizontalAlignment="Left" Margin="0,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="61" FontSize="20" RenderTransformOrigin="0.734,-0.106"><Run Text="Name:"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                <TextBox x:Name="InputUserName" HorizontalAlignment="Left" Height="23" Margin="0,16,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" CharacterCasing="Upper" IsUndoEnabled="False"/>
+                <Separator Height="35" Margin="5" VerticalAlignment="Center" Width="4" Background="{x:Null}"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,14,0,0" TextWrapping="Wrap" Text="Surname:" VerticalAlignment="Top" FontSize="20"/>
+                <TextBox x:Name="InputUserSurname" HorizontalAlignment="Left" Height="23" Margin="0,18,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" CharacterCasing="Upper" IsUndoEnabled="False"/>
+                <Separator Height="35" Margin="5" VerticalAlignment="Center" Width="4" Background="{x:Null}"/>
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Group:" VerticalAlignment="Top" FontSize="20" Margin="0,14,0,0"/>
+                <TextBox x:Name="InputUserGroup" HorizontalAlignment="Left" Height="23" Margin="0,18,0,0" VerticalAlignment="Top" Width="137" FontSize="16" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" CharacterCasing="Upper" IsUndoEnabled="False"/>
+            </ToolBar>
 
-    </Grid>
+        </Grid>
+    </ScrollViewer>
 </Window>
