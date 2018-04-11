@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="SelfTesting V.2.0 (beta)" Height="1894.181" Width="751.339" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" WindowState="Maximized" Icon="Images/logo_selfTestingV20.png" Background="Black" WindowStyle="ThreeDBorderWindow">
     <ScrollViewer>
-        <Grid Margin="0" Height="1876">
+        <Grid Margin="0" Height="1865">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FFB900BA"/>
                     <GradientStop Color="#FFBDBF00" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <TabControl x:Name="tabControl" Height="1716" Margin="15,72,-12.2,0" VerticalAlignment="Top" Width="686" VerticalContentAlignment="Top">
+            <TabControl x:Name="tabControl" Height="1794" Margin="35,72,7,0" VerticalAlignment="Top" Width="686" VerticalContentAlignment="Top">
                 <TabItem Header="Unit 8">
                     <Grid Background="#FFE5E5E5" Margin="0,0,-0.2,0.2">
                         <ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Margin="0" Padding="0" Grid.IsSharedSizeScope="True">
@@ -126,21 +126,99 @@
                             </InlineUIContainer><Run Text="the problems started: paper jams, error messages, etc. (5)"/><InlineUIContainer>
                                 <TextBox x:Name="Unit8_TextBox_4_5" CharacterCasing="Lower" FontStyle="Italic" FontSize="14" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,5,4,-5" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True"/>
                             </InlineUIContainer><Run Text="I had to send it back. It might have just been a defective model, but I don't think I'd risk buying one again."/></TextBlock>
+                            <Button x:Name="Unit8_CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Width="625" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" Click="Unit8_CreateFileWithAnswers_Click" VerticalAlignment="Top" Margin="22,0,0,0">
+                                <Button.Background>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#FFFF6F6F" Offset="0"/>
+                                        <GradientStop Color="#FF3C53FF" Offset="1"/>
+                                    </RadialGradientBrush>
+                                </Button.Background>
+                            </Button>
                         </ListBox>
                     </Grid>
                 </TabItem>
-                <TabItem Header="Заглушка">
-                    <Grid Background="#FFE5E5E5"/>
+                <TabItem Header="Unit 9">
+                    <Grid Background="#FFE5E5E5">
+                        <ListBox x:Name="listBox_Copy" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Margin="0" Padding="0" Grid.IsSharedSizeScope="True">
+
+                            <TextBlock x:Name="textBlock4" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Text="1. Type in the missing letters to make noun phrases common to assistive technology. The first and last letters are given."/>
+                            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="118" Width="604" FontSize="16"><Run Text="1.1. Braille:"/><LineBreak/><Run Text="  1.1.1 p"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_1_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="r"/><LineBreak/><Run Text="  1.1.2. k"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_1_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="d"/><LineBreak/><Run Text="  1.1.3 e"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_1_3" Height="24" TextWrapping="Wrap" Width="163" Margin="4,6,4,-4" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="r"/></TextBlock>
+                            <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.2. screen:"/><LineBreak/><Run Text="  1.2.1 .m"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_2_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="r"/><LineBreak/><Run Text="  1.2.2. r"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_2_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="r"/></TextBlock>
+                            <TextBlock x:Name="textBlock5_Copy1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="120" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.3. keyboard:"/><LineBreak/><Run Text="  1.3.1. e"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_3_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="c"/><LineBreak/><Run Text="  1.3.2. e"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_3_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="d"/><LineBreak/><Run Text="  1.3.3. o"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_3_3" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="n"/></TextBlock>
+                            <TextBlock x:Name="textBlock5_Copy2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.4. switch:"/><LineBreak/><Run Text="   1.4.1. p"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_4_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="c"/><LineBreak/><Run Text="   1.4.2 a"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_4_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="e"/></TextBlock>
+                            <TextBlock x:Name="textBlock5_Copy3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.5. system:"/><LineBreak/><Run Text="  1.5.1. v"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_5_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="e recognition"/><LineBreak/><Run Text="  1.5.2. e"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_5_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="e"/></TextBlock>
+                            <TextBlock x:Name="textBlock4_Copy" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Margin="22,23,0,0" Text="2. Decide whether the technology from Exercise 1 would be most useful for blind or motor-impaired computer users. One piece of technology can go in both columns of the table. Type in your choice."/>
+                            <TextBlock x:Name="textBlock3_Copy15" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" TextAlignment="Center" Margin="43,10,0,0"><Run FontWeight="Bold" Text="Blind users:" TextDecorations="Underline"/></TextBlock>
+                            <TextBox x:Name="Unit9_TextBox_2_1" Height="46" TextWrapping="Wrap" Width="592" CharacterCasing="Lower" FontStyle="Italic" FontSize="14" Margin="43,10,0,0"/>
+                            <TextBlock x:Name="textBlock3_Copy16" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" TextAlignment="Center" Margin="43,10,0,0"><Run FontWeight="Bold" Text="Motor-impaired users:" TextDecorations="Underline"/></TextBlock>
+                            <TextBox x:Name="Unit9_TextBox_2_2" Height="46" TextWrapping="Wrap" Width="592" CharacterCasing="Lower" FontStyle="Italic" FontSize="14" Margin="43,10,0,0"/>
+                            <TextBlock x:Name="textBlock4_Copy1" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Margin="22,23,0,0"><Run Text="3. Complete these descriptions of assistive technology for deaf users with the correct terms. "/><Run Text="Choose from the drop-down menu."/></TextBlock>
+                            <TextBlock x:Name="textBlock3_Copy17" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="3.1. "/><InlineUIContainer>
+                                    <ComboBox x:Name="Unit9_ComboBox_task_3_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic" Margin="0,0,0,-6">
+                                        <ComboBox.GroupStyle>
+                                            <GroupStyle/>
+                                        </ComboBox.GroupStyle>
+                                        <ListBoxItem Content="Visual alerts"/>
+                                        <ListBoxItem Content="Electronic notetakers"/>
+                                        <ListBoxItem Content="Textphones"/>
+                                    </ComboBox>
+                                </InlineUIContainer><Run Text=" help deaf users see when they have new email or when there has been a system"/><Run Text=" e"/><Run Text="rror."/></TextBlock>
+                            <TextBlock x:Name="textBlock3_Copy18" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="3.2. "/><InlineUIContainer>
+                                    <ComboBox x:Name="Unit9_ComboBox_task_3_2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic" Margin="0,0,0,-6">
+                                        <ComboBox.GroupStyle>
+                                            <GroupStyle/>
+                                        </ComboBox.GroupStyle>
+                                        <ListBoxItem Content="Visual alerts"/>
+                                        <ListBoxItem Content="Electronic notetakers"/>
+                                        <ListBoxItem Content="Textphones"/>
+                                    </ComboBox>
+                                </InlineUIContainer><Run Text=" allo"/><Run Text="w deaf users to make calls by typing and reading."/></TextBlock>
+                            <TextBlock x:Name="textBlock3_Copy19" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="3.3. "/><InlineUIContainer>
+                                    <ComboBox x:Name="Unit9_ComboBox_task_3_3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontStyle="Italic" Margin="0,0,0,-6">
+                                        <ComboBox.GroupStyle>
+                                            <GroupStyle/>
+                                        </ComboBox.GroupStyle>
+                                        <ListBoxItem Content="Visual alerts"/>
+                                        <ListBoxItem Content="Electronic notetakers"/>
+                                        <ListBoxItem Content="Textphones"/>
+                                    </ComboBox>
+                                </InlineUIContainer><Run Text=" are used in meetings to summarize what is being said."/></TextBlock>
+                            <Button x:Name="Unit9_CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Width="625" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" VerticalAlignment="Top" Margin="22,0,0,0" Click="Unit9_CreateFileWithAnswers_Click">
+                                <Button.Background>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#FFFF6F6F" Offset="0"/>
+                                        <GradientStop Color="#FF3C53FF" Offset="1"/>
+                                    </RadialGradientBrush>
+                                </Button.Background>
+                            </Button>
+                        </ListBox>
+                    </Grid>
                 </TabItem>
             </TabControl>
-            <Button x:Name="Unit8_CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Margin="35,1793,7,0" VerticalAlignment="Top" Width="686" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" Click="Unit8_CreateFileWithAnswers_Click">
-                <Button.Background>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFFF6F6F" Offset="0"/>
-                        <GradientStop Color="#FF3C53FF" Offset="1"/>
-                    </RadialGradientBrush>
-                </Button.Background>
-            </Button>
             <ToolBar x:Name="toolBar" Margin="10,0,-17.2,0" Height="60" VerticalAlignment="Top" HorizontalAlignment="Center">
                 <ToolBar.Background>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">

@@ -17,12 +17,13 @@ using System.Windows.Shapes;
 namespace SelfTesing_V2
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// unit 8
     /// </summary>
     public partial class MainWindow : Window
     {
         private const String pathRoot = "./Answers";
         private const String fileNameUnitEight = "Answers_to_unit_8.txt";
+        private const String fileNameUnitNine = "Answers_to_unit_9.txt";
 
         public static string PathRoot
         {
@@ -37,6 +38,14 @@ namespace SelfTesing_V2
             get
             {
                 return fileNameUnitEight;
+            }
+        }
+
+        public static string FileNameUnitNine
+        {
+            get
+            {
+                return fileNameUnitNine;
             }
         }
 
@@ -205,6 +214,7 @@ namespace SelfTesing_V2
                     WriteLine(fstream, ($"Name: {InputUserName.Text.Trim()}"));
                     WriteLine(fstream, ($"Surname: {InputUserSurname.Text.Trim()}"));
                     WriteLine(fstream, ($"Group: {InputUserGroup.Text.Trim()}"));
+
                     WriteLine(fstream, ($"1.1. {Unit8_ComboBox_task_1_1.Text.Trim()}"));
                     WriteLine(fstream, ($"1.2. {Unit8_ComboBox_task_1_2.Text.Trim()}"));
                     WriteLine(fstream, ($"1.3. {Unit8_ComboBox_task_1_3.Text.Trim()}"));
@@ -239,6 +249,163 @@ namespace SelfTesing_V2
         {
             byte[] array = Encoding.Default.GetBytes(text + Environment.NewLine);
             fstream.Write(array, 0, array.Length);
+        }
+
+
+        /// <summary>
+        /// Unit 9
+        /// </summary>
+
+        private void Unit9_CreateFileWithAnswers_Click(object sender, RoutedEventArgs e)
+        {
+            var Unit9_isAllFieldsFilled = Unit9_IsAllFieldsFilled();
+            if (Unit9_isAllFieldsFilled == "0")
+            {
+                if (!IsOk())
+                {
+                    return;
+                }
+
+                CreateDirectory();
+
+                var result = Unit9_WriteInFile(FileNameUnitNine);
+                if (result == "Успех!")
+                {
+                    MessageBox.Show($"Ответы записаны в файл {FileNameUnitNine}");
+                }
+                else
+                {
+                    MessageBox.Show(result);
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Не заполнено поле {Unit9_isAllFieldsFilled}");
+            }
+        }
+
+        private String Unit9_IsAllFieldsFilled()
+        {
+            if (InputUserName.Text.Length == 0)
+            {
+                return "Name";
+            }
+            if (InputUserSurname.Text.Length == 0)
+            {
+                return "Surname";
+            }
+            if (InputUserGroup.Text.Length == 0)
+            {
+                return "Group";
+            }
+
+            if (Unit9_TextBox_1_1_1.Text.Length == 0)
+            {
+                return "1.1.1.";
+            }
+            if (Unit9_TextBox_1_1_2.Text.Length == 0)
+            {
+                return "1.1.2.";
+            }
+            if (Unit9_TextBox_1_1_3.Text.Length == 0)
+            {
+                return "1.1.3.";
+            }
+            if (Unit9_TextBox_1_2_1.Text.Length == 0)
+            {
+                return "1.2.1.";
+            }
+            if (Unit9_TextBox_1_2_2.Text.Length == 0)
+            {
+                return "1.2.2.";
+            }
+            if (Unit9_TextBox_1_3_1.Text.Length == 0)
+            {
+                return "1.3.1.";
+            }
+            if (Unit9_TextBox_1_3_2.Text.Length == 0)
+            {
+                return "1.3.2.";
+            }
+            if (Unit9_TextBox_1_3_3.Text.Length == 0)
+            {
+                return "1.3.3.";
+            }
+            if (Unit9_TextBox_1_4_1.Text.Length == 0)
+            {
+                return "1.4.1.";
+            }
+            if (Unit9_TextBox_1_4_2.Text.Length == 0)
+            {
+                return "1.4.2.";
+            }
+            if (Unit9_TextBox_1_5_1.Text.Length == 0)
+            {
+                return "1.5.1.";
+            }
+            if (Unit9_TextBox_1_5_2.Text.Length == 0)
+            {
+                return "1.5.2.";
+            }
+            if (Unit9_TextBox_2_1.Text.Length == 0)
+            {
+                return "2.1.";
+            }
+            if (Unit9_TextBox_2_2.Text.Length == 0)
+            {
+                return "2.2.";
+            }
+            if (Unit9_ComboBox_task_3_1.SelectedValue == null)
+            {
+                return "3.1.";
+            }
+            if (Unit9_ComboBox_task_3_2.SelectedValue == null)
+            {
+                return "3.2.";
+            }
+            if (Unit9_ComboBox_task_3_3.SelectedValue == null)
+            {
+                return "3.3.";
+            }
+
+            return "0";
+        }
+
+        private String Unit9_WriteInFile(String nameFile)
+        {
+            try
+            {
+                using (FileStream fstream = new FileStream($@"{PathRoot}/{nameFile}", FileMode.Create))
+                {
+                    WriteLine(fstream, ($"Name: {InputUserName.Text.Trim()}"));
+                    WriteLine(fstream, ($"Surname: {InputUserSurname.Text.Trim()}"));
+                    WriteLine(fstream, ($"Group: {InputUserGroup.Text.Trim()}"));
+
+                    WriteLine(fstream, ($"1.1.1. {Unit9_TextBox_1_1_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.1.2. {Unit9_TextBox_1_1_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.1.3. {Unit9_TextBox_1_1_3.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.2.1. {Unit9_TextBox_1_2_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.2.2. {Unit9_TextBox_1_2_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.3.1. {Unit9_TextBox_1_3_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.3.2. {Unit9_TextBox_1_3_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.3.3. {Unit9_TextBox_1_3_3.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.4.1. {Unit9_TextBox_1_4_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.4.2. {Unit9_TextBox_1_4_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.5.1. {Unit9_TextBox_1_5_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.5.2. {Unit9_TextBox_1_5_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"2.1. {Unit9_TextBox_2_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"2.2. {Unit9_TextBox_2_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.1. {Unit9_ComboBox_task_3_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.2. {Unit9_ComboBox_task_3_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.3. {Unit9_ComboBox_task_3_3.Text.Trim()}"));
+                }
+
+                return "Успех!";
+            }
+            catch (Exception ex)
+            {
+                return $"Error: {Environment.NewLine}{ex}";
+            }
         }
     }
 }
