@@ -1,23 +1,23 @@
-Name: 
-Surname: 
-Group: 
-1.1. 
-1.2. 
-1.3. 
-1.4. 
-1.5. 
-1.6. 
-1.7. 
-2.1. fdsfds   fdsfdsfds
-2.2. 
-2.3. 
-2.4. 
-2.5. 
-3.1. 
-3.1. 
-3.1. 
-4.1. 
-4.2. 
-4.3. 
-4.4. 
-4.5. 
+Name: TEACHER
+Surname: TEACHER
+Group: 000
+1.1. laser
+1.2. plotter
+1.3. thermal transfer
+1.4. inkjet
+1.5. imagesetter
+1.6. dot-matrix
+1.7. platesetter
+2.1. more expensive
+2.2. better
+2.3. smaller
+2.4. noisier
+2.5. less convenient
+3.1. such as; for instance;
+3.1. to begin with; then; finally;
+3.1. since; because;
+4.1. since
+4.2. such as
+4.3. to begin with
+4.4. then
+4.5. finally

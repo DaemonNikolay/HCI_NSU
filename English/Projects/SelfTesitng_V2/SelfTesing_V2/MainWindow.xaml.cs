@@ -45,32 +45,32 @@ namespace SelfTesing_V2
             InitializeComponent();
         }
 
-        private void CreateFileWithAnswers_Click(object sender, RoutedEventArgs e)
+        private void Unit8_CreateFileWithAnswers_Click(object sender, RoutedEventArgs e)
         {
-            //var isAllFieldsFilled = IsAllFieldsFilled();
-            //if (isAllFieldsFilled == "0")
-            //{
-            if (!IsOk())
+            var Unit8_isAllFieldsFilled = Unit8_IsAllFieldsFilled();
+            if (Unit8_isAllFieldsFilled == "0")
             {
-                return;
-            }
+                if (!IsOk())
+                {
+                    return;
+                }
 
-            CreateDirectory();
+                CreateDirectory();
 
-            var result = WriteInFile(FileNameUnitEight);
-            if (result == "Успех!")
-            {
-                MessageBox.Show($"Ответы записаны в файл {FileNameUnitEight}");
+                var result = Unit8_WriteInFile(FileNameUnitEight);
+                if (result == "Успех!")
+                {
+                    MessageBox.Show($"Ответы записаны в файл {FileNameUnitEight}");
+                }
+                else
+                {
+                    MessageBox.Show(result);
+                }
             }
             else
             {
-                MessageBox.Show(result);
+                MessageBox.Show($"Не заполнено поле {Unit8_isAllFieldsFilled}");
             }
-            //}
-            //else
-            //{
-            //    MessageBox.Show($"Не заполнено поле {isAllFieldsFilled}");
-            //}
         }
 
         private void CreateDirectory()
@@ -97,7 +97,7 @@ namespace SelfTesing_V2
             return false;
         }
 
-        private String IsAllFieldsFilled()
+        private String Unit8_IsAllFieldsFilled()
         {
             if (InputUserName.Text.Length == 0)
             {
@@ -196,7 +196,7 @@ namespace SelfTesing_V2
             return "0";
         }
 
-        private String WriteInFile(String nameFile)
+        private String Unit8_WriteInFile(String nameFile)
         {
             try
             {

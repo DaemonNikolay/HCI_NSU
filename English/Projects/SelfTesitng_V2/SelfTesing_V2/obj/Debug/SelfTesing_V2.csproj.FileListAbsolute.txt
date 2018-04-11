@@ -19,7 +19,6 @@ C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesin
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\SelfTesing_V2.pdb
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\bin\Debug\SelfTesing_V2.exe
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\bin\Debug\SelfTesing_V2.pdb
-C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\SelfTesing_V2.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\MainWindow.g.cs
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\App.g.cs
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\SelfTesing_V2_MarkupCompile.cache

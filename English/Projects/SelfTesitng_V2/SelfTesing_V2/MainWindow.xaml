@@ -133,7 +133,7 @@
                     <Grid Background="#FFE5E5E5"/>
                 </TabItem>
             </TabControl>
-            <Button x:Name="CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Margin="35,1793,7,0" VerticalAlignment="Top" Width="686" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" Click="CreateFileWithAnswers_Click">
+            <Button x:Name="Unit8_CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Margin="35,1793,7,0" VerticalAlignment="Top" Width="686" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" Click="Unit8_CreateFileWithAnswers_Click">
                 <Button.Background>
                     <RadialGradientBrush>
                         <GradientStop Color="#FFFF6F6F" Offset="0"/>
