@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,21 +28,37 @@ namespace SelfTesing_V2
 
         private void CreateFileWithAnswers_Click(object sender, RoutedEventArgs e)
         {
-            if (IsAllFieldsFilled())
-            {
-                MessageBoxButton buttonMessageBox = MessageBoxButton.YesNo;
-                MessageBoxImage iconMessageBox = MessageBoxImage.Question;
-                MessageBoxResult resultMessageBox = MessageBox.Show("Уверены в своих результатах?", "Кря-кря", buttonMessageBox, iconMessageBox);
+            //if (IsAllFieldsFilled())
+            //{
+            MessageBoxButton buttonMessageBox = MessageBoxButton.YesNo;
+            MessageBoxImage iconMessageBox = MessageBoxImage.Question;
+            MessageBoxResult resultMessageBox = MessageBox.Show("Уверены в своих результатах?", "Кря-кря", buttonMessageBox, iconMessageBox);
 
-                if (resultMessageBox == MessageBoxResult.Yes)
-                {
-                    MessageBox.Show("" + (ComboBox_task_1_1.SelectedValue == null));
-                }
-            }
-            else
+            if (resultMessageBox == MessageBoxResult.No)
             {
-                MessageBox.Show("Не все поля заполнены!");
+                return;
             }
+
+            String pathRoot = "./Answers";
+            DirectoryInfo dirInfo = new DirectoryInfo(pathRoot);
+            if (!dirInfo.Exists)
+            {
+                dirInfo.Create();
+            }
+
+            using (FileStream fstream = new FileStream($@"{pathRoot}/Answers_to_unit_8.txt", FileMode.Create))
+            {
+                byte[] array = Encoding.Default.GetBytes("Hello!");
+                fstream.Write(array, 0, array.Length);
+
+                MessageBox.Show("Ответы записаны в файл!");
+            }
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Не все поля заполнены!");
+            //}
         }
 
         private bool IsAllFieldsFilled()
