@@ -126,7 +126,7 @@
                             </InlineUIContainer><Run Text="the problems started: paper jams, error messages, etc. (5)"/><InlineUIContainer>
                                 <TextBox x:Name="Unit8_TextBox_4_5" CharacterCasing="Lower" FontStyle="Italic" FontSize="14" Height="24" InputMethod.IsInputMethodEnabled="False" Margin="4,5,4,-5" Padding="0" TextWrapping="Wrap" UseLayoutRounding="True" Width="163" d:DesignUseLayoutRounding="True"/>
                             </InlineUIContainer><Run Text="I had to send it back. It might have just been a defective model, but I don't think I'd risk buying one again."/></TextBlock>
-                            <Button x:Name="Unit8_CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Width="625" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" Click="Unit8_CreateFileWithAnswers_Click" VerticalAlignment="Top" Margin="22,0,0,0">
+                            <Button x:Name="Unit8_CreateFileWithAnswers" Content="Сформировать файл с ответами восьмого юнита" HorizontalAlignment="Center" Width="625" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" Click="Unit8_CreateFileWithAnswers_Click" VerticalAlignment="Top" Margin="22,0,0,0">
                                 <Button.Background>
                                     <RadialGradientBrush>
                                         <GradientStop Color="#FFFF6F6F" Offset="0"/>
@@ -142,14 +142,14 @@
                         <ListBox x:Name="listBox_Copy" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Margin="0" Padding="0" Grid.IsSharedSizeScope="True">
 
                             <TextBlock x:Name="textBlock4" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Text="1. Type in the missing letters to make noun phrases common to assistive technology. The first and last letters are given."/>
-                            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="118" Width="604" FontSize="16"><Run Text="1.1. Braille:"/><LineBreak/><Run Text="  1.1.1 p"/><InlineUIContainer>
+                            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="118" Width="604" FontSize="16"><Run Text="1.1. Braille:"/><LineBreak/><Run Text="  1.1.1"/><Run Text="."/><Run Text=" p"/><InlineUIContainer>
                                     <TextBox x:Name="Unit9_TextBox_1_1_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
                                 </InlineUIContainer><Run Text="r"/><LineBreak/><Run Text="  1.1.2. k"/><InlineUIContainer>
-                                    <TextBox x:Name="Unit9_TextBox_1_1_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
-                                </InlineUIContainer><Run Text="d"/><LineBreak/><Run Text="  1.1.3 e"/><InlineUIContainer>
-                                    <TextBox x:Name="Unit9_TextBox_1_1_3" Height="24" TextWrapping="Wrap" Width="163" Margin="4,6,4,-4" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                    <TextBox x:Name="Unit9_TextBox_1_1_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                                </InlineUIContainer><Run Text="d"/><LineBreak/><Run Text="  1.1.3"/><Run Text="."/><Run Text=" e"/><InlineUIContainer>
+                                    <TextBox x:Name="Unit9_TextBox_1_1_3" Height="24" TextWrapping="Wrap" Width="163" Margin="4,6,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
                                 </InlineUIContainer><Run Text="r"/></TextBlock>
-                            <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.2. screen:"/><LineBreak/><Run Text="  1.2.1 .m"/><InlineUIContainer>
+                            <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.2. screen:"/><LineBreak/><Run Text="  1.2.1."/><Run Text=" "/><Run Text="m"/><InlineUIContainer>
                                     <TextBox x:Name="Unit9_TextBox_1_2_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
                                 </InlineUIContainer><Run Text="r"/><LineBreak/><Run Text="  1.2.2. r"/><InlineUIContainer>
                                     <TextBox x:Name="Unit9_TextBox_1_2_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
@@ -163,7 +163,7 @@
                                 </InlineUIContainer><Run Text="n"/></TextBlock>
                             <TextBlock x:Name="textBlock5_Copy2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.4. switch:"/><LineBreak/><Run Text="   1.4.1. p"/><InlineUIContainer>
                                     <TextBox x:Name="Unit9_TextBox_1_4_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
-                                </InlineUIContainer><Run Text="c"/><LineBreak/><Run Text="   1.4.2 a"/><InlineUIContainer>
+                                </InlineUIContainer><Run Text="c"/><LineBreak/><Run Text="   1.4.2"/><Run Text="."/><Run Text=" a"/><InlineUIContainer>
                                     <TextBox x:Name="Unit9_TextBox_1_4_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
                                 </InlineUIContainer><Run Text="e"/></TextBlock>
                             <TextBlock x:Name="textBlock5_Copy3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="604" FontSize="16" Margin="43,10,0,0"><Run Text="1.5. system:"/><LineBreak/><Run Text="  1.5.1. v"/><InlineUIContainer>
@@ -171,7 +171,7 @@
                                 </InlineUIContainer><Run Text="e recognition"/><LineBreak/><Run Text="  1.5.2. e"/><InlineUIContainer>
                                     <TextBox x:Name="Unit9_TextBox_1_5_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,10,4,-3" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
                                 </InlineUIContainer><Run Text="e"/></TextBlock>
-                            <TextBlock x:Name="textBlock4_Copy" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Margin="22,23,0,0" Text="2. Decide whether the technology from Exercise 1 would be most useful for blind or motor-impaired computer users. One piece of technology can go in both columns of the table. Type in your choice."/>
+                            <TextBlock x:Name="textBlock4_Copy" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Margin="22,23,0,0"><Run Text="2. Decide whether the technology from Exercise 1 would be most useful for blind or motor-impaired computer users. One piece of technology can go in both columns of the table. Type in your choice."/><Run Text=" "/><Run/><LineBreak/><Run Text="("/><Run Text="ответы "/><Run Text="прописывать через "/><Run Text="'"/><Run Text="точку с запятой"/><Run Text="' "/><Run Text="; "/><Run Text=")"/></TextBlock>
                             <TextBlock x:Name="textBlock3_Copy15" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" TextAlignment="Center" Margin="43,10,0,0"><Run FontWeight="Bold" Text="Blind users:" TextDecorations="Underline"/></TextBlock>
                             <TextBox x:Name="Unit9_TextBox_2_1" Height="46" TextWrapping="Wrap" Width="592" CharacterCasing="Lower" FontStyle="Italic" FontSize="14" Margin="43,10,0,0"/>
                             <TextBlock x:Name="textBlock3_Copy16" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="604" FontSize="16" TextAlignment="Center" Margin="43,10,0,0"><Run FontWeight="Bold" Text="Motor-impaired users:" TextDecorations="Underline"/></TextBlock>
@@ -207,7 +207,7 @@
                                         <ListBoxItem Content="Textphones"/>
                                     </ComboBox>
                                 </InlineUIContainer><Run Text=" are used in meetings to summarize what is being said."/></TextBlock>
-                            <Button x:Name="Unit9_CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Width="625" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" VerticalAlignment="Top" Margin="22,0,0,0" Click="Unit9_CreateFileWithAnswers_Click">
+                            <Button x:Name="Unit9_CreateFileWithAnswers" Content="Сформировать файл с ответами девятого юнита" HorizontalAlignment="Center" Width="625" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" VerticalAlignment="Top" Margin="22,0,0,0" Click="Unit9_CreateFileWithAnswers_Click">
                                 <Button.Background>
                                     <RadialGradientBrush>
                                         <GradientStop Color="#FFFF6F6F" Offset="0"/>
