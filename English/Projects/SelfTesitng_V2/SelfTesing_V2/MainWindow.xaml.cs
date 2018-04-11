@@ -23,7 +23,6 @@ namespace SelfTesing_V2
     {
         private const String pathRoot = "./Answers";
         private const String fileNameUnitEight = "Answers_to_unit_8.txt";
-        private List<String> answers;
 
         public static string PathRoot
         {
@@ -48,30 +47,30 @@ namespace SelfTesing_V2
 
         private void CreateFileWithAnswers_Click(object sender, RoutedEventArgs e)
         {
-            var isAllFieldsFilled = IsAllFieldsFilled();
-            if (isAllFieldsFilled == "0")
+            //var isAllFieldsFilled = IsAllFieldsFilled();
+            //if (isAllFieldsFilled == "0")
+            //{
+            if (!IsOk())
             {
-                if (!IsOk())
-                {
-                    return;
-                }
+                return;
+            }
 
-                CreateDirectory();
+            CreateDirectory();
 
-                var result = WriteInFile(FileNameUnitEight);
-                if (result == "Успех!")
-                {
-                    MessageBox.Show($"Ответы записаны в файл {FileNameUnitEight}");
-                }
-                else
-                {
-                    MessageBox.Show(result);
-                }
+            var result = WriteInFile(FileNameUnitEight);
+            if (result == "Успех!")
+            {
+                MessageBox.Show($"Ответы записаны в файл {FileNameUnitEight}");
             }
             else
             {
-                MessageBox.Show($"Не заполнено поле {isAllFieldsFilled}");
+                MessageBox.Show(result);
             }
+            //}
+            //else
+            //{
+            //    MessageBox.Show($"Не заполнено поле {isAllFieldsFilled}");
+            //}
         }
 
         private void CreateDirectory()
@@ -203,29 +202,29 @@ namespace SelfTesing_V2
             {
                 using (FileStream fstream = new FileStream($@"{PathRoot}/{nameFile}", FileMode.Create))
                 {
-                    WriteLine(fstream, ($"Name: {InputUserName.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"Surname: {InputUserSurname.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"Group: {InputUserGroup.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"1.1. {Unit8_ComboBox_task_1_1.SelectedValue}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"1.2. {Unit8_ComboBox_task_1_2.SelectedValue}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"1.3. {Unit8_ComboBox_task_1_3.SelectedValue}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"1.4. {Unit8_ComboBox_task_1_4.SelectedValue}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"1.5. {Unit8_ComboBox_task_1_5.SelectedValue}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"1.6. {Unit8_ComboBox_task_1_6.SelectedValue}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"1.7. {Unit8_ComboBox_task_1_7.SelectedValue}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"2.1. {Unit8_TextBox_2_1.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"2.2. {Unit8_TextBox_2_2.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"2.3. {Unit8_TextBox_2_3.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"2.4. {Unit8_TextBox_2_4.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"2.5. {Unit8_TextBox_2_5.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_1.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_2.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_3.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"4.1. {Unit8_TextBox_4_1.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"4.2. {Unit8_TextBox_4_2.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"4.3. {Unit8_TextBox_4_3.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"4.4. {Unit8_TextBox_4_4.Text}{Environment.NewLine}"));
-                    WriteLine(fstream, ($"4.5. {Unit8_TextBox_4_5.Text}{Environment.NewLine}"));
+                    WriteLine(fstream, ($"Name: {InputUserName.Text.Trim()}"));
+                    WriteLine(fstream, ($"Surname: {InputUserSurname.Text.Trim()}"));
+                    WriteLine(fstream, ($"Group: {InputUserGroup.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.1. {Unit8_ComboBox_task_1_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.2. {Unit8_ComboBox_task_1_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.3. {Unit8_ComboBox_task_1_3.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.4. {Unit8_ComboBox_task_1_4.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.5. {Unit8_ComboBox_task_1_5.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.6. {Unit8_ComboBox_task_1_6.Text.Trim()}"));
+                    WriteLine(fstream, ($"1.7. {Unit8_ComboBox_task_1_7.Text.Trim()}"));
+                    WriteLine(fstream, ($"2.1. {Unit8_TextBox_2_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"2.2. {Unit8_TextBox_2_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"2.3. {Unit8_TextBox_2_3.Text.Trim()}"));
+                    WriteLine(fstream, ($"2.4. {Unit8_TextBox_2_4.Text.Trim()}"));
+                    WriteLine(fstream, ($"2.5. {Unit8_TextBox_2_5.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_3.Text.Trim()}"));
+                    WriteLine(fstream, ($"4.1. {Unit8_TextBox_4_1.Text.Trim()}"));
+                    WriteLine(fstream, ($"4.2. {Unit8_TextBox_4_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"4.3. {Unit8_TextBox_4_3.Text.Trim()}"));
+                    WriteLine(fstream, ($"4.4. {Unit8_TextBox_4_4.Text.Trim()}"));
+                    WriteLine(fstream, ($"4.5. {Unit8_TextBox_4_5.Text.Trim()}"));
                 }
 
                 return "Успех!";
@@ -238,8 +237,7 @@ namespace SelfTesing_V2
 
         private void WriteLine(FileStream fstream, String text)
         {
-            text = text.Trim();
-            byte[] array = Encoding.Default.GetBytes(text);
+            byte[] array = Encoding.Default.GetBytes(text + Environment.NewLine);
             fstream.Write(array, 0, array.Length);
         }
     }
