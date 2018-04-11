@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SelfTesing_V2"
         mc:Ignorable="d"
-        Title="SelfTesting V.2.0 (beta)" Height="1894.181" Width="712.139" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" WindowState="Maximized" Icon="Images/logo_selfTestingV20.png">
+        Title="SelfTesting V.2.0 (beta)" Height="1894.181" Width="751.339" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" WindowState="Maximized" Icon="Images/logo_selfTestingV20.png" Background="Black" WindowStyle="ThreeDBorderWindow">
     <ScrollViewer>
-        <Grid>
+        <Grid Margin="0" Height="1876">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FFB900BA"/>
@@ -133,7 +133,14 @@
                     <Grid Background="#FFE5E5E5"/>
                 </TabItem>
             </TabControl>
-            <Button x:Name="CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Margin="241,1802,213.8,0" VerticalAlignment="Top" Width="234" Height="53" Cursor="Hand"/>
+            <Button x:Name="CreateFileWithAnswers" Content="Сформировать файл с ответами" HorizontalAlignment="Center" Margin="35,1793,7,0" VerticalAlignment="Top" Width="686" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFFF6F6F" Offset="0"/>
+                        <GradientStop Color="#FF3C53FF" Offset="1"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
             <ToolBar x:Name="toolBar" Margin="10,0,-17.2,0" Height="60" VerticalAlignment="Top" HorizontalAlignment="Center">
                 <ToolBar.Background>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
