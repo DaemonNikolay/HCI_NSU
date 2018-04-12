@@ -1,0 +1,25 @@
+Artyom Mayer
+Unit 888888
+	1.	1) laser
+		2) plotter
+		3) thermal transfer
+		4) inkjet
+		5) imagesetter
+		6) dot-matrix
+		7) platesetter
+
+	2.	1) more expensive
+		2) better
+		3) smaller
+		4) noisier
+		5) more convenient
+
+	3.	Giving Examples:  such as, for instance
+		Listing/Sequencing: to begin with, finally
+		Giving Reason/cause: because, then, since
+
+	4.	1) Because
+		2) such as
+		3) To begin with
+		4) Then
+		5) Finally	

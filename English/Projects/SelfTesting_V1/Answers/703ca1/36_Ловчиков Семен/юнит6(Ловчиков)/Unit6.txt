@@ -1,0 +1,28 @@
+Ловчиков 503а1
+
+№1
+	1) scanner
+	2) camcoder
+	3)digital camera
+№2
+	1)opinion
+	2)fact
+	3)fact
+	4)opinion
+	5)fact
+
+№3
+	1) best
+	2) sharpest
+	3) highest
+	4) brightest
+	5) most natural
+
+№4
+	1) powerful
+	2) processor
+	3) controller
+	4) optimized
+	5) additional
+	6) player
+		

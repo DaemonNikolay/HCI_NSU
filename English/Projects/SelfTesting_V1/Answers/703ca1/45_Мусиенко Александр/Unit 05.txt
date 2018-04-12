@@ -1,0 +1,22 @@
+Мусиенко Александр 503а1
+
+№1.features;keyboard
+   works;mouse
+   by;graphics tablet	-0/5
+   to;game controller	-0/5
+   for;trackball	-0/5
+   allow;used;scanner	-0/5
+   can;light pen
+   which;microphone
+
+№2.return
+  backspase
+  arrow
+  shift;Caps Lock
+
+
+№3.double-click
+  click						
+  select 
+  drag
+  double-click		4	

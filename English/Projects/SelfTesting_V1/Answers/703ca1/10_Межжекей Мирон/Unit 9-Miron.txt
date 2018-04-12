@@ -1,0 +1,47 @@
+Miron
+Тест №9
+
+№1
+---Braille---
+1.printer
+2.keyboard
+3.embrosser
+
+---Screen----
+1.magnifier
+2.reader
+
+---keyboard---
+1.ergonomic
+2.expanded
+3.on-screen
+
+---Switch---
+1.pnuemaric
+2.adaptive
+
+---System---
+1.voice recognition
+2.eyegaze
+
+№2
+---Blind users---
+
+1.Braille keyboard
+2.Braille embrosser
+
+---Motor-impaired users---
+
+1.Eyegaze system
+2.Pneumatic switch
+3.expanded keyboard
+4.ergonomic keyboard
+5.on-screen keyboard
+6.adaptive switches
+7.voice recognition system
+
+№3
+
+1.Visual alerts
+2.Textphones
+3.Electronic noterakers

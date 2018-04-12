@@ -228,8 +228,8 @@ namespace SelfTesing_V2
                     WriteLine(fstream, ($"2.4. {Unit8_TextBox_2_4.Text.Trim()}"));
                     WriteLine(fstream, ($"2.5. {Unit8_TextBox_2_5.Text.Trim()}"));
                     WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_3.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.2. {Unit8_TextBox_3_2.Text.Trim()}"));
+                    WriteLine(fstream, ($"3.3. {Unit8_TextBox_3_3.Text.Trim()}"));
                     WriteLine(fstream, ($"4.1. {Unit8_TextBox_4_1.Text.Trim()}"));
                     WriteLine(fstream, ($"4.2. {Unit8_TextBox_4_2.Text.Trim()}"));
                     WriteLine(fstream, ($"4.3. {Unit8_TextBox_4_3.Text.Trim()}"));

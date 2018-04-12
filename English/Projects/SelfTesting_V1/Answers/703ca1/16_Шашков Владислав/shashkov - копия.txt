@@ -1,0 +1,49 @@
+Шашков Влад 703сa
+
+Тест №8
+
+№1
+
+Braille:
+ printer
+ keyboard
+ embosser
+
+screen:
+magnifier
+reader
+
+keyboard:
+ergonomic
+expanded
+on-screen
+
+system:
+voice
+eyegaze
+
+switch:
+pnuemaric
+adaptive
+
+№2
+
+Blind users:
+Braille keyboard
+Braille embrosser
+
+
+Motor-impaired users:
+Eyegaze system
+Pneumatic switch
+expanded keyboard
+ergonomic keyboard
+on-screen keyboard
+adaptive switches
+voice recognitio
+
+№3
+
+1.Visual alerts
+2.Textphones
+3.Electronic notetakers 

@@ -1,0 +1,26 @@
+Юрасов Денис 503а1
+
+№1
+	1. Dot-matrix;
+	2. Plotter;
+	3. Thermal transfer;
+	4. Inkjet;
+	5. Imagesetter;
+	6. plotter;
+	7. platesetter;
+№2
+	1. More expensive;
+	2. Better;
+	3. Smaller;
+	4. Noisier;
+	5. Less convenient;
+№3
+	1. Such as; For instance;
+ 	2. To begin with; Then; Finally;
+	3. Since; Because;
+№4
+	1. Because;
+	2. Such as;
+	3. To begin with;
+	4. Then;
+	5. Finally;

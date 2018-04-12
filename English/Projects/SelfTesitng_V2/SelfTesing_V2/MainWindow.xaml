@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SelfTesing_V2"
         mc:Ignorable="d"
-        Title="SelfTesting V.2.0 (beta)" Height="1894.181" Width="751.339" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" WindowState="Maximized" Icon="Images/logo_selfTestingV20.png" Background="Black" WindowStyle="ThreeDBorderWindow">
+        Title="SelfTesting V.2.1 (beta)" Height="1894.181" Width="751.339" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" WindowState="Maximized" Icon="Images/logo_selfTestingV20.png" Background="Black" WindowStyle="ThreeDBorderWindow">
     <ScrollViewer>
         <Grid Margin="0" Height="1865">
             <Grid.Background>

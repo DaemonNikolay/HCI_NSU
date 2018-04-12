@@ -44,9 +44,6 @@ def PrintResult(numberTest, flag):
 tableResult = PrettyTable()
 tableResult.field_names = ["Студент", "Результат", "Оценка"]
 
-file = open("Result_SelfTesting_V1.txt", "w", encoding = "UTF8")
-
-for i in range(5, 9):
+for i in range(5, 8):
     PrintResult(i, False)
 
-file.close()

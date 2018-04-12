@@ -1,0 +1,25 @@
+¹1:
+1 - resolution;
+2 - aspect-ratio;
+3 - screen size;
+4 - color-depth;
+5 - brightness;
+
+¹2:
+
+1 - pixel;
+2 - video projector;
+3 - liquid crystal display (LCD);
+4 - video adapter;
+5 - video projector;
+
+¹3:
+
+1 - strain
+2 - ache
+3 - footrest; get; ask;
+4 - swivel;
+5 - repetitive; should be; should be; sit;
+6 - idea; should work;
+7 - copyholder; Don’t forget;
+

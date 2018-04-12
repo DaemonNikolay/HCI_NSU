@@ -1,0 +1,32 @@
+Юрасов Денис 503а1
+
+№1
+	1. Scanner;
+	2. Camcoder;
+	3. Digital camera;
+№2
+	1. Opinion;
+	2. Fact;
+	3. Opinion;
+	4. Fact;
+	5. Fact;
+№3
+	1. Best;
+	2. Sharpest;
+	3. Highest;
+	4. Brightest;
+	5. Most natural;
+№4
+	1. Additional;
+	2. Player;
+	3. Controller;
+	4. Proscessor;
+	5. Optimized;
+	6. Powerful;
+№5
+	1. Powerful;
+	2. Proscessor;
+	3. Controller;
+	4. Optimized;
+	5. Additional;
+	6. Player;

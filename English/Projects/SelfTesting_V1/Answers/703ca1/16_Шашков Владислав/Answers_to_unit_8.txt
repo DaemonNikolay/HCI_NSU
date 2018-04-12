@@ -1,0 +1,23 @@
+Name: VLAD
+Surname: SHASHKOV
+Group: 703CA
+1.1. dot-matrix
+1.2. platesetter
+1.3. inkjet
+1.4. thermal transfer
+1.5. imagesetter
+1.6. platesetter
+1.7. laser
+2.1. more
+2.2. more
+2.3. more
+2.4. more noisly
+2.5. more  conveniently
+3.1. such as,for instance
+3.1. to begin with,finally
+3.1. since,because,then
+4.1. since
+4.2. for instance
+4.3. because
+4.4. such as
+4.5. then

@@ -1,0 +1,23 @@
+¹1:
+1 - features; keyboard;
+2 - works; microphone;
+3 - allows; graphics tablet;
+4 - can; game controller;
+5 - used;trackball;
+6 - for; which; scanner;
+7 - by; keyboard;
+8 - to; microphone;
+
+¹2:
+1 - tab;
+2 - backspace
+3 - arrow
+4 - shift; Caps Lock;
+
+
+¹3:
+1 - click;
+2 - double-click;
+3 - select;
+4 - drag;
+5 - double-click;

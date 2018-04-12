@@ -1,0 +1,33 @@
+Provkin Kirill 703ca1
+Unit 6
+
+¹1
+	1. Scanner;
+	2. Camcoder;
+	3. Digital camera;
+¹2
+	1. Opinion;
+	2. Fact;
+	3. Opinion;
+	4. Fact;
+	5. Fact;
+¹3
+	1. Best;
+	2. Sharpest;
+	3. Higher;
+	4. Brightest;
+	5. Most natural;
+¹4
+	1. Additional;
+	2. Player;
+	3. Controller;
+	4. Processor;
+	5. Optimized;
+	6. Powerful;
+¹5
+	1. Processor;
+	2. Powerful;
+	3. Controller;
+	4. Optimized;
+	5. Additional;
+	6. Player;
