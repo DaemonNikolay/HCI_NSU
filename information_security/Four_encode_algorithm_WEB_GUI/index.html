@@ -165,12 +165,25 @@
                         <label>Результат шифрования</label>
                         <textarea rows="7" cols="40" id="OutputTextCombo" readonly></textarea>
                     </p>
+                    <p>
+                        <button id="SaveInBuffer">Копировать результат</button>
+                    </p>
                 </fieldset>
             </form>
         </div>
     </div>
 
+    <script>
+        var button = document.getElementById("SaveInBuffer"),
+            input = document.getElementById("OutputTextCombo");
 
+        button.addEventListener("click", function(event) {
+            event.preventDefault();
+            input.select();
+            document.execCommand("copy");
+            alert("Текст скопирован успешно!");
+        });
+    </script>
 
 
     <script src="./js/Tab/tab.js"></script>
