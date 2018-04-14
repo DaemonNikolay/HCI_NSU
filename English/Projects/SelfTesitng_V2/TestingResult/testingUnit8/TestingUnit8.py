@@ -1,13 +1,16 @@
 def yesOrNoTesting():
     from prettytable import PrettyTable
-    import os
+    import os, shutil
 
     contents = ParsingFoundFiles()
     separator = "~" * 5
     countAll = CountAll()
 
-    pathToyesOrNos = "./Results/"
+    pathToDetailedReport = "./Results/"
     pathToSmallReports = "./SmallReport/"
+
+    shutil.rmtree(pathToDetailedReport, ignore_errors = False)
+    shutil.rmtree(pathToSmallReports, ignore_errors = False)
 
     tableSmallReport = PrettyTable()
     tableSmallReport.field_names = ["Студент", "Группа", "Оценка"]
@@ -28,7 +31,7 @@ def yesOrNoTesting():
                 i += 1
                 continue
 
-            nameFileReport = pathToyesOrNos + tempName + "DetailedReport_Unit8.txt"
+            nameFileReport = pathToDetailedReport + tempName + "DetailedReport_Unit8.txt"
             actualAnswer = str(instance).split(". ")
 
             if (actualAnswer[0][0] == "1"):
@@ -87,8 +90,8 @@ def yesOrNoTesting():
                                   pointAndMark])
         tableSmallReport.add_row([separator, separator, separator])
 
-        if not os.path.exists(pathToyesOrNos):
-            os.makedirs(pathToyesOrNos)
+        if not os.path.exists(pathToDetailedReport):
+            os.makedirs(pathToDetailedReport)
         file = open(nameFileReport, "w", encoding = "UTF8")
         file.write(tempName + "(" + pointAndMark + ")" + "\n\n")
         file.write(str(tableDetailedReport))
