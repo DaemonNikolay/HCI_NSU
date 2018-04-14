@@ -1,22 +1,25 @@
 def ResultTesting():
     from prettytable import PrettyTable
+    import os
 
     contents = ParsingFoundFiles()
+    separator = "~" * 5
+    pathToResults = "./Results/"
 
     for element in contents:
         i = 0
         tempName = ""
 
         tableResult = PrettyTable()
-        tableResult.field_names = ["№", "Итог", "Полученный ответ", "Ожидаемый ответ"]
+        tableResult.field_names = ["Номер", "Итог", "Полученный ответ", "Ожидаемый ответ"]
 
         for instance in element:
             if i >= 0 and i <= 2:
-                tempName += instance[i] + " "
+                tempName += str(instance).split(": ")[1] + " "
                 i += 1
                 continue
-            nameFileReport = tempName + "DetailedReport_Unit8.txt"
 
+            nameFileReport = pathToResults + tempName + "DetailedReport_Unit8.txt"
             actualAnswer = str(instance).split(". ")
 
             if (actualAnswer[0][0] == "1"):
@@ -31,30 +34,38 @@ def ResultTesting():
                 expectedAnswer = CorrectAnsersTaskThree().get(actualAnswer[0])
                 result = ""
                 for oneOf in expectedAnswer:
-                    if actualAnswer[1].find(oneOf) != -1:
-                        result += "+"
-                    else:
-                        result += "-"
+                    result += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
 
             elif (actualAnswer[0][0] == "4"):
                 expectedAnswer = CorrectAnsersTaskFour().get(actualAnswer[0])
-                result = "+" if actualAnswer[1] == expectedAnswer else "-"
+                result = ""
+
+                if isinstance(expectedAnswer, list):
+                    for oneOf in expectedAnswer:
+                        result += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
+                elif isinstance(expectedAnswer, str):
+                    result += "+" if actualAnswer[1] == expectedAnswer else "-"
+                else:
+                    result = "-1"
 
             else:
                 result = -1
                 expectedAnswer = -1
 
             tableResult.add_row([actualAnswer[0], result, actualAnswer[1], expectedAnswer])
+            tableResult.add_row([separator, separator, separator, separator])
 
-
-            # file = open(nameFileReport, "w", encoding = "UTF8")
-            # file.close()
-        print(tableResult)
+            if not os.path.exists(pathToResults):
+                os.makedirs(pathToResults)
+            file = open(nameFileReport, "w", encoding = "UTF8")
+            file.write(str(tableResult))
+            file.close()
 
 
 def CorrectAnsersTaskOne():
     return {"1.1": "laser",
             "1.2": "plotter",
+
             "1.3": "thermal transfer",
             "1.4": "inkjet",
             "1.5": "imagesetter",
@@ -77,7 +88,11 @@ def CorrectAnsersTaskThree():
 
 
 def CorrectAnsersTaskFour():
-    return {"": ""}
+    return {"4.1": ["since", "because"],
+            "4.2": ["such as", "for instance"],
+            "4.3": "to begin with",
+            "4.4": "then",
+            "4.5": "finally"}
 
 
 def SearchFiles():
