@@ -7,7 +7,6 @@ def yesOrNoTesting():
     pathToyesOrNos = "./Results/"
     countAll = CountAll()
 
-
     for element in contents:
         i = 0
         tempName = ""
@@ -18,6 +17,7 @@ def yesOrNoTesting():
         tableyesOrNo.field_names = ["Номер", "Итог", "Полученный ответ", "Ожидаемый ответ"]
 
         for instance in element:
+
             if i >= 0 and i <= 2:
                 tempName += str(instance).split(": ")[1] + " "
                 i += 1
@@ -29,19 +29,25 @@ def yesOrNoTesting():
             if (actualAnswer[0][0] == "1"):
                 expectedAnswer = CorrectAnsersTaskOne().get(actualAnswer[0])
                 yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
-                countTrue += 1 if yesOrNo == "+" else 0
+                # countTrue += 1 if yesOrNo == "+" else 0
+                if yesOrNo.find("+") != -1:
+                    countTrue += 1
 
             elif (actualAnswer[0][0] == "2"):
                 expectedAnswer = CorrectAnsersTaskTwo().get(actualAnswer[0])
                 yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
-                countTrue += 1 if yesOrNo == "+" else 0
+                if yesOrNo.find("+") != -1:
+                    countTrue += 1
 
             elif (actualAnswer[0][0] == "3"):
                 expectedAnswer = CorrectAnsersTaskThree().get(actualAnswer[0])
                 yesOrNo = ""
-                for oneOf in expectedAnswer:
-                    yesOrNo += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
-                    countTrue += 1 if yesOrNo == "+" else 0
+                for oneOf in list(expectedAnswer):
+                    if actualAnswer[1].find(oneOf) != -1:
+                        yesOrNo += "+"
+                        countTrue += 1
+                    else:
+                        yesOrNo += "-"
 
             elif (actualAnswer[0][0] == "4"):
                 expectedAnswer = CorrectAnsersTaskFour().get(actualAnswer[0])
@@ -49,13 +55,18 @@ def yesOrNoTesting():
 
                 if isinstance(expectedAnswer, list):
                     for oneOf in expectedAnswer:
-                        yesOrNo += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
-                        countTrue += 1 if yesOrNo == "+" else 0
+                        if actualAnswer[1].find(oneOf) != -1:
+                            yesOrNo += "+"
+                            countTrue += 1
+                        else:
+                            yesOrNo += "-"
                 elif isinstance(expectedAnswer, str):
                     yesOrNo += "+" if actualAnswer[1] == expectedAnswer else "-"
-                    countTrue += 1 if yesOrNo == "+" else 0
+                    if yesOrNo.find("+") != -1:
+                        countTrue += 1
                 else:
                     yesOrNo = "-1"
+
 
             else:
                 yesOrNo = -1
@@ -68,7 +79,7 @@ def yesOrNoTesting():
             os.makedirs(pathToyesOrNos)
         file = open(nameFileReport, "w", encoding = "UTF8")
         result = countTrue * 100 / countAll
-        file.write(tempName + " - " + str(result) + "%" + "\n\n")
+        file.write(tempName + " (" + str(result) + "% = " + str(GenerationMark(result)) + ")" + "\n\n")
         file.write(str(tableyesOrNo))
         file.close()
 
@@ -163,6 +174,18 @@ def ParsingFoundFiles():
         file.close()
 
     return contents
+
+
+def GenerationMark(mark):
+    temp = float(mark)
+    if (temp >= 90):
+        return 5
+    elif (temp >= 75):
+        return 4
+    elif (temp >= 51):
+        return 3
+    else:
+        return 2
 
 
 yesOrNoTesting()
