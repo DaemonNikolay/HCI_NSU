@@ -1,4 +1,4 @@
-EVELINA BATRAK 603C (72.0% = 3)
+ALINA KOROLEVA 703CA1 (73.1% = 3)
 
 +-------+-------+------------------------------+-----------------------------+
 | Номер |  Итог |       Полученный ответ       |       Ожидаемый ответ       |
@@ -25,15 +25,15 @@ EVELINA BATRAK 603C (72.0% = 3)
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |
 |  2.4  |   +   |           noisier            |           noisier           |
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |
-|  2.5  |   -   |       less conventient       |       less convenient       |
+|  2.5  |   +   |       less convenient        |       less convenient       |
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |
 |  3.1  |   ++  |    for instance; such as     | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |
 |  3.1  |   --  | to begin with; then; finally | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |
-|  3.1  |   --  |        since; because        | ['such as', 'for instance'] |
+|  3.1  |   --  |        because; since        | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |
-|  4.1  |   +-  |            since             |     ['since', 'because']    |
+|  4.1  |   -+  |           because            |     ['since', 'because']    |
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |
 |  4.2  |   +-  |           such as            | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |            ~~~~~             |            ~~~~~            |

@@ -6,7 +6,7 @@ def yesOrNoTesting():
     separator = "~" * 5
     countAll = CountAll()
 
-    pathToDetailedReport = "./Results/Unit8/"
+    pathToDetailedReport = "./Results/Unit9/"
     pathToSmallReports = "./SmallReport/"
 
     if os.path.exists(pathToDetailedReport):
@@ -38,7 +38,7 @@ def yesOrNoTesting():
                 i += 1
                 continue
 
-            nameFileReport = pathToDetailedReport + tempName + "DetailedReport_Unit8.txt"
+            nameFileReport = pathToDetailedReport + tempName + "DetailedReport_Unit9.txt"
             actualAnswer = str(instance).split(". ")
 
             if (actualAnswer[0][0] == "1"):
@@ -49,12 +49,6 @@ def yesOrNoTesting():
 
             elif (actualAnswer[0][0] == "2"):
                 expectedAnswer = CorrectAnsersTaskTwo().get(actualAnswer[0])
-                yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
-                if yesOrNo.find("+") != -1:
-                    countTrue += 1
-
-            elif (actualAnswer[0][0] == "3"):
-                expectedAnswer = CorrectAnsersTaskThree().get(actualAnswer[0])
                 yesOrNo = ""
                 for oneOf in list(expectedAnswer):
                     if actualAnswer[1].find(oneOf) != -1:
@@ -63,24 +57,12 @@ def yesOrNoTesting():
                     else:
                         yesOrNo += "-"
 
-            elif (actualAnswer[0][0] == "4"):
-                expectedAnswer = CorrectAnsersTaskFour().get(actualAnswer[0])
-                yesOrNo = ""
+            elif (actualAnswer[0][0] == "3"):
+                expectedAnswer = CorrectAnsersTaskThree().get(actualAnswer[0])
+                yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
 
-                if isinstance(expectedAnswer, list):
-                    for oneOf in expectedAnswer:
-                        if actualAnswer[1].find(oneOf) != -1:
-                            yesOrNo += "+"
-                            countTrue += 1
-                        else:
-                            yesOrNo += "-"
-                elif isinstance(expectedAnswer, str):
-                    yesOrNo += "+" if actualAnswer[1] == expectedAnswer else "-"
-                    if yesOrNo.find("+") != -1:
-                        countTrue += 1
-                else:
-                    yesOrNo = "-1"
-
+                if yesOrNo.find("+") != -1:
+                    countTrue += 1
 
             else:
                 yesOrNo = -1
@@ -99,7 +81,6 @@ def yesOrNoTesting():
 
         if not os.path.exists(pathToDetailedReport):
             os.makedirs(pathToDetailedReport)
-
         file = open(nameFileReport, "w", encoding = "UTF8")
         file.write(tempName + "(" + pointAndMark + ")" + "\n\n")
         file.write(str(tableDetailedReport))
@@ -107,8 +88,7 @@ def yesOrNoTesting():
 
     if not os.path.exists(pathToSmallReports):
         os.makedirs(pathToSmallReports)
-
-    file = open((pathToSmallReports + "Results_Unit8.txt"), "w", encoding = "UTF8")
+    file = open((pathToSmallReports + "Results_Unit9.txt"), "w", encoding = "UTF8")
     file.write(str(tableSmallReport))
     file.close()
 
@@ -118,13 +98,13 @@ def CountAll():
 
     for element in CorrectAnsersTaskOne():
         if isinstance(CorrectAnsersTaskOne().get(element), list):
-            countAll += (len(CorrectAnsersTaskOne().get(element)))
+            countAll += (len(CorrectAnsersTaskThree().get(element)))
         else:
             countAll += 1
 
     for element in CorrectAnsersTaskTwo():
         if isinstance(CorrectAnsersTaskTwo().get(element), list):
-            countAll += (len(CorrectAnsersTaskTwo().get(element)))
+            countAll += (len(CorrectAnsersTaskTwo().get(element)) )
         else:
             countAll += 1
 
@@ -134,49 +114,45 @@ def CountAll():
         else:
             countAll += 1
 
-    for element in CorrectAnsersTaskFour():
-        if isinstance(CorrectAnsersTaskFour().get(element), list):
-            countAll += (len(CorrectAnsersTaskFour().get(element)))
-        else:
-            countAll += 1
-
     return countAll
 
 
-def CorrectAnsersTaskOne():
-    return {"1.1": "laser",
-            "1.2": "plotter",
-            "1.3": "thermal transfer",
-            "1.4": "inkjet",
-            "1.5": "imagesetter",
-            "1.6": "dot-matrix",
-            "1.7": "platesetter"}
+def CorrectAnsersTaskOne(): #12
+    return {"1.1.1": "rinte",
+            "1.1.2": "eyboar",
+            "1.1.3": "mbosse",
+            "1.2.1": "agnifie",
+            "1.2.2": "eade",
+            "1.3.1": "rgonomi",
+            "1.3.2": "xpande",
+            "1.3.3": "n-scree",
+            "1.4.1": "neumati",
+            "1.4.2": "daptiv",
+            "1.5.1": "oic",
+            "1.5.2": "yegaz",
+            }
 
 
-def CorrectAnsersTaskTwo():
-    return {"2.1": "more expensive",
-            "2.2": "better",
-            "2.3": "smaller",
-            "2.4": "noisier",
-            "2.5": "less convenient"}
+def CorrectAnsersTaskTwo(): #13
+    return {"2.1": ["braille printer",
+                    "braille keyboard",
+                    "braille embosser",
+                    "screen magnifier",
+                    "screen reader",
+                    "voice recognition system"],
+            "2.2": ["ergonomic keyboard",
+                    "expanded keyboard",
+                    "on-screen keyboard",
+                    "pneumatic switch",
+                    "adaptive switch",
+                    "eyegaze system",
+                    "voice recognition system"]}
 
 
-def CorrectAnsersTaskThree():
-    return {"3.1": ["such as",
-                    "for instance"],
-            "3.2": ["to begin with",
-                    "then",
-                    "finally"],
-            "3.3": ["since",
-                    "because"]}
-
-
-def CorrectAnsersTaskFour():
-    return {"4.1": ["since", "because"],
-            "4.2": ["such as", "for instance"],
-            "4.3": "to begin with",
-            "4.4": "then",
-            "4.5": "finally"}
+def CorrectAnsersTaskThree(): #28
+    return {"3.1": "Visual alerts",
+            "3.2": "Textphones",
+            "3.3": "Electronic notetakers"}
 
 
 def SearchFiles():
@@ -186,7 +162,7 @@ def SearchFiles():
     for root, dirs, files in os.walk(r"Answers"):
         for file in files:
             if file.endswith(".txt"):
-                if file.find("unit_8") != -1:
+                if file.find("unit_9") != -1:
                     listFiles.append(os.path.join(root, file))
 
     return listFiles

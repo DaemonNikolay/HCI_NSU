@@ -1,4 +1,4 @@
-MIRON MEZHEKKEY 703CA1 (72.0% = 3)
+KIRILL PROVKIN 703CA1 (61.5% = 3)
 
 +-------+-------+--------------------------------+-----------------------------+
 | Номер |  Итог |        Полученный ответ        |       Ожидаемый ответ       |
@@ -25,17 +25,17 @@ MIRON MEZHEKKEY 703CA1 (72.0% = 3)
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
 |  2.4  |   +   |            noisier             |           noisier           |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
-|  2.5  |   -   |         more conveient         |       less convenient       |
+|  2.5  |   -   |        more convenient         |       less convenient       |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
-|  3.1  |   ++  |     such as; for instance;     | ['such as', 'for instance'] |
+|  3.1  |   -+  |     such us; for instance;     | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
-|  3.1  |   --  | to begin with; finally; since; | ['such as', 'for instance'] |
+|  3.1  |   --  | to begin with; since; finally; | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
 |  3.1  |   --  |         because; then;         | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
 |  4.1  |   -+  |            because             |     ['since', 'because']    |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
-|  4.2  |   +-  |            such as             | ['such as', 'for instance'] |
+|  4.2  |   --  |            such us             | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |
 |  4.3  |   +   |         to begin with          |        to begin with        |
 | ~~~~~ | ~~~~~ |             ~~~~~              |            ~~~~~            |

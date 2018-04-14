@@ -1,9 +1,9 @@
-ARTEM KOPTEV 703CA1 (48.0% = 2)
+VLADISLAV KATKAEV 603C (34.6% = 2)
 
 +-------+-------+-------------------------------+-----------------------------+
 | Номер |  Итог |        Полученный ответ       |       Ожидаемый ответ       |
 +-------+-------+-------------------------------+-----------------------------+
-|  1.1  |   +   |             laser             |            laser            |
+|  1.1  |   -   |           dot-matrix          |            laser            |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
 |  1.2  |   -   |          platesetter          |           plotter           |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
@@ -15,31 +15,31 @@ ARTEM KOPTEV 703CA1 (48.0% = 2)
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
 |  1.6  |   +   |           dot-matrix          |          dot-matrix         |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  1.7  |   +   |          platesetter          |         platesetter         |
+|  1.7  |   -   |            plotter            |         platesetter         |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  2.1  |   -   |         more expansive        |        more expensive       |
+|  2.1  |   -   |          expensively          |        more expensive       |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  2.2  |   +   |             better            |            better           |
+|  2.2  |   -   |              good             |            better           |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
 |  2.3  |   +   |            smaller            |           smaller           |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
 |  2.4  |   +   |            noisier            |           noisier           |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  2.5  |   -   |        more convenient        |       less convenient       |
+|  2.5  |   -   |           convenient          |       less convenient       |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  3.1  |   -+  |     such us; for instance     | ['such as', 'for instance'] |
+|  3.1  |   ++  |     for instance; such as;    | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  3.1  |   --  | to begin with; since; finally | ['such as', 'for instance'] |
+|  3.1  |   --  | finally; then; to begin with; | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  3.1  |   --  |         because; then         | ['such as', 'for instance'] |
+|  3.1  |   --  |        because; since;        | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  4.1  |   -+  |            because            |     ['since', 'because']    |
+|  4.1  |   --  |         to begin with         |     ['since', 'because']    |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  4.2  |   --  |            such us            | ['such as', 'for instance'] |
+|  4.2  |   -+  |          for instance         | ['such as', 'for instance'] |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  4.3  |   +   |         to begin with         |        to begin with        |
+|  4.3  |   -   |            finally            |        to begin with        |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
-|  4.4  |   -   |            finally            |             then            |
+|  4.4  |   -   |             since             |             then            |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
 |  4.5  |   -   |              then             |           finally           |
 | ~~~~~ | ~~~~~ |             ~~~~~             |            ~~~~~            |
