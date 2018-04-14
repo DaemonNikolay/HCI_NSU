@@ -1,17 +1,21 @@
-def ResultTesting():
+def yesOrNoTesting():
     from prettytable import PrettyTable
     import os
 
     contents = ParsingFoundFiles()
     separator = "~" * 5
-    pathToResults = "./Results/"
+    pathToyesOrNos = "./Results/"
+    countAll = CountAll()
+
 
     for element in contents:
         i = 0
         tempName = ""
+        countTrue = 0
+        nameFileReport = ""
 
-        tableResult = PrettyTable()
-        tableResult.field_names = ["Номер", "Итог", "Полученный ответ", "Ожидаемый ответ"]
+        tableyesOrNo = PrettyTable()
+        tableyesOrNo.field_names = ["Номер", "Итог", "Полученный ответ", "Ожидаемый ответ"]
 
         for instance in element:
             if i >= 0 and i <= 2:
@@ -19,53 +23,89 @@ def ResultTesting():
                 i += 1
                 continue
 
-            nameFileReport = pathToResults + tempName + "DetailedReport_Unit8.txt"
+            nameFileReport = pathToyesOrNos + tempName + "DetailedReport_Unit8.txt"
             actualAnswer = str(instance).split(". ")
 
             if (actualAnswer[0][0] == "1"):
                 expectedAnswer = CorrectAnsersTaskOne().get(actualAnswer[0])
-                result = "+" if actualAnswer[1] == expectedAnswer else "-"
+                yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
+                countTrue += 1 if yesOrNo == "+" else 0
 
             elif (actualAnswer[0][0] == "2"):
                 expectedAnswer = CorrectAnsersTaskTwo().get(actualAnswer[0])
-                result = "+" if actualAnswer[1] == expectedAnswer else "-"
+                yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
+                countTrue += 1 if yesOrNo == "+" else 0
 
             elif (actualAnswer[0][0] == "3"):
                 expectedAnswer = CorrectAnsersTaskThree().get(actualAnswer[0])
-                result = ""
+                yesOrNo = ""
                 for oneOf in expectedAnswer:
-                    result += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
+                    yesOrNo += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
+                    countTrue += 1 if yesOrNo == "+" else 0
 
             elif (actualAnswer[0][0] == "4"):
                 expectedAnswer = CorrectAnsersTaskFour().get(actualAnswer[0])
-                result = ""
+                yesOrNo = ""
 
                 if isinstance(expectedAnswer, list):
                     for oneOf in expectedAnswer:
-                        result += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
+                        yesOrNo += "+" if actualAnswer[1].find(oneOf) != -1 else "-"
+                        countTrue += 1 if yesOrNo == "+" else 0
                 elif isinstance(expectedAnswer, str):
-                    result += "+" if actualAnswer[1] == expectedAnswer else "-"
+                    yesOrNo += "+" if actualAnswer[1] == expectedAnswer else "-"
+                    countTrue += 1 if yesOrNo == "+" else 0
                 else:
-                    result = "-1"
+                    yesOrNo = "-1"
 
             else:
-                result = -1
+                yesOrNo = -1
                 expectedAnswer = -1
 
-            tableResult.add_row([actualAnswer[0], result, actualAnswer[1], expectedAnswer])
-            tableResult.add_row([separator, separator, separator, separator])
+            tableyesOrNo.add_row([actualAnswer[0], yesOrNo, actualAnswer[1], expectedAnswer])
+            tableyesOrNo.add_row([separator, separator, separator, separator])
 
-            if not os.path.exists(pathToResults):
-                os.makedirs(pathToResults)
-            file = open(nameFileReport, "w", encoding = "UTF8")
-            file.write(str(tableResult))
-            file.close()
+        if not os.path.exists(pathToyesOrNos):
+            os.makedirs(pathToyesOrNos)
+        file = open(nameFileReport, "w", encoding = "UTF8")
+        result = countTrue * 100 / countAll
+        file.write(tempName + " - " + str(result) + "%" + "\n\n")
+        file.write(str(tableyesOrNo))
+        file.close()
+
+
+def CountAll():
+    countAll = 0
+
+    for element in CorrectAnsersTaskOne():
+        if isinstance(CorrectAnsersTaskOne().get(element), list):
+            countAll += (len(element) - 1)
+        else:
+            countAll += 1
+
+    for element in CorrectAnsersTaskTwo():
+        if isinstance(CorrectAnsersTaskTwo().get(element), list):
+            countAll += (len(element) - 1)
+        else:
+            countAll += 1
+
+    for element in CorrectAnsersTaskThree():
+        if isinstance(CorrectAnsersTaskThree().get(element), list):
+            countAll += (len(element) - 1)
+        else:
+            countAll += 1
+
+    for element in CorrectAnsersTaskFour():
+        if isinstance(CorrectAnsersTaskFour().get(element), list):
+            countAll += (len(element) - 1)
+        else:
+            countAll += 1
+
+    return countAll
 
 
 def CorrectAnsersTaskOne():
     return {"1.1": "laser",
             "1.2": "plotter",
-
             "1.3": "thermal transfer",
             "1.4": "inkjet",
             "1.5": "imagesetter",
@@ -125,4 +165,4 @@ def ParsingFoundFiles():
     return contents
 
 
-ResultTesting()
+yesOrNoTesting()
