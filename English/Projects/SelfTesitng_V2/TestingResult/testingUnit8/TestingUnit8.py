@@ -4,8 +4,13 @@ def yesOrNoTesting():
 
     contents = ParsingFoundFiles()
     separator = "~" * 5
-    pathToyesOrNos = "./Results/"
     countAll = CountAll()
+
+    pathToyesOrNos = "./Results/"
+    pathToSmallReports = "./SmallReport/"
+
+    tableSmallReport = PrettyTable()
+    tableSmallReport.field_names = ["Студент", "Группа", "Оценка"]
 
     for element in contents:
         i = 0
@@ -13,8 +18,8 @@ def yesOrNoTesting():
         countTrue = 0
         nameFileReport = ""
 
-        tableyesOrNo = PrettyTable()
-        tableyesOrNo.field_names = ["Номер", "Итог", "Полученный ответ", "Ожидаемый ответ"]
+        tableDetailedReport = PrettyTable()
+        tableDetailedReport.field_names = ["Номер", "Итог", "Полученный ответ", "Ожидаемый ответ"]
 
         for instance in element:
 
@@ -72,16 +77,27 @@ def yesOrNoTesting():
                 yesOrNo = -1
                 expectedAnswer = -1
 
-            tableyesOrNo.add_row([actualAnswer[0], yesOrNo, actualAnswer[1], expectedAnswer])
-            tableyesOrNo.add_row([separator, separator, separator, separator])
+            tableDetailedReport.add_row([actualAnswer[0], yesOrNo, actualAnswer[1], expectedAnswer])
+            tableDetailedReport.add_row([separator, separator, separator, separator])
+
+        result = countTrue * 100 / countAll
+        pointAndMark = str(result) + "% = " + str(GenerationMark(result))
+
+        tableSmallReport.add_row([str(element[1]).split(": ")[1], str(element[2]).split(": ")[1], pointAndMark])
+        tableSmallReport.add_row([separator, separator, separator])
 
         if not os.path.exists(pathToyesOrNos):
             os.makedirs(pathToyesOrNos)
         file = open(nameFileReport, "w", encoding = "UTF8")
-        result = countTrue * 100 / countAll
-        file.write(tempName + " (" + str(result) + "% = " + str(GenerationMark(result)) + ")" + "\n\n")
-        file.write(str(tableyesOrNo))
+        file.write(tempName + "(" + pointAndMark + ")" + "\n\n")
+        file.write(str(tableDetailedReport))
         file.close()
+
+    if not os.path.exists(pathToSmallReports):
+        os.makedirs(pathToSmallReports)
+    file = open((pathToSmallReports + "Results_Unit8.txt"), "w", encoding = "UTF8")
+    file.write(str(tableSmallReport))
+    file.close()
 
 
 def CountAll():
