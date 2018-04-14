@@ -1,0 +1,34 @@
+Filimontseva
+
+Тест№6
+
+№1
+	1. scanner
+	2. camcoder
+	3. digital camera
+№2
+	1. O
+	2. F
+	3. O
+	4. F
+	5. F
+№3
+	1.best
+	2.sharpest
+	3.highest
+	4.brighest
+	5.most natural
+№4
+	1.additional
+	2.player
+	3.controller
+	4.processor
+	5.optimazed
+	6.powerful
+№5
+	1.powerful
+	2.optimazed
+	3.controller
+	4.processor
+	5.additional
+	6.player

@@ -1,0 +1,29 @@
+Fedotov
+U7
+1.
+	1.resolution
+	2.?average?
+	3.screen
+	4.colour
+	5.
+2.
+	1.pixel
+	2.plasma screen
+	3.cathode ray tube (CRT)
+	4.video adapter
+	5.video projector
+3.
+	1.ache
+	2.strain
+	3.repetitive
+		Get 
+		Ask 
+	4.footrest
+	5.swevel
+		should be 
+		shouldn’t be
+		Sit  
+	6.idea
+		shouldn’t work
+	7.copyholder
+		Don’t forget

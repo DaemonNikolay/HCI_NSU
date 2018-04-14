@@ -1,0 +1,20 @@
+Name: ARTEM
+Surname: KOPTEV
+Group: 3703CA1
+1.1.1. printer
+1.1.2. keyboard
+1.1.3. embosser
+1.2.1. magnifier
+1.2.2. reader
+1.3.1. ergonomic
+1.3.2. expanded
+1.3.3. on-screen
+1.4.1. pneumatic
+1.4.2. adaptive
+1.5.1. voice
+1.5.2. eygaze
+2.1. adapted keyboard; printer; voice recognition;
+2.2. on-screen keyboard; pneumatic switch; touch screen;
+3.1. Visual alerts
+3.2. Textphones
+3.3. Electronic notetakers

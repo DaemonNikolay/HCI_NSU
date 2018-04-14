@@ -1,0 +1,36 @@
+Хайбулина Юлия 703са1
+
+Тест №7
+
+№1
+	
+1. resolution;
+2. aspect;
+3. screen;
+4. colour;
+5. brightness;
+
+№2
+	
+1. pixel;
+2. plasma screen;
+3. LCD;
+4. video adapter;
+5. video projector;
+
+№3
+	
+1. strain;
+2. ache;
+3. repetitive;
+4. get;
+5. ask;
+6. footrest;
+7. wivel;
+8. should be;
+9. should be;
+10. sit;
+11. idea;
+12. should work;
+13. copyholder;
+14. don’t forget;

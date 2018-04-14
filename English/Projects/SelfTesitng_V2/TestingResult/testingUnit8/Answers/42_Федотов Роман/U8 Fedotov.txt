@@ -1,0 +1,35 @@
+Fedotov
+U8
+1.
+	1.laser
+	2.plotter 
+	3.thermal transfer
+	4.inkjet
+	5.imagesetter
+	6.dot-matrix
+	7.platesetter
+2.
+	1.most expensive
+	2.better
+	3.smaller
+	4.noisier
+	5.less convenient
+3.
+	Giving examples:
+		such as
+		for instance
+		since
+
+	Listing/Sequencing:
+		to begin with
+
+	Giving reason/cause:
+		because
+		then
+		finally
+4.
+	1.because
+	2.such as
+	3.then
+	4.to begin with
+	5.finally

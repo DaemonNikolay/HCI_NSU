@@ -34,7 +34,6 @@ def yesOrNoTesting():
             if (actualAnswer[0][0] == "1"):
                 expectedAnswer = CorrectAnsersTaskOne().get(actualAnswer[0])
                 yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
-                # countTrue += 1 if yesOrNo == "+" else 0
                 if yesOrNo.find("+") != -1:
                     countTrue += 1
 
@@ -83,7 +82,9 @@ def yesOrNoTesting():
         result = countTrue * 100 / countAll
         pointAndMark = str(result) + "% = " + str(GenerationMark(result))
 
-        tableSmallReport.add_row([str(element[1]).split(": ")[1], str(element[2]).split(": ")[1], pointAndMark])
+        tableSmallReport.add_row([str(element[0]).split(": ")[1] + " " + str(element[1]).split(": ")[1],
+                                  str(element[2]).split(": ")[1],
+                                  pointAndMark])
         tableSmallReport.add_row([separator, separator, separator])
 
         if not os.path.exists(pathToyesOrNos):

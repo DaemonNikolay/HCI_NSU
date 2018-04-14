@@ -1,0 +1,26 @@
+Хамидов Ахмаджон 603с
+
+Тест №7
+
+№1
+	1. Resolution;
+	2. Aspect;
+	3. Screen;
+	4. Color;
+	5. Brighness;
+
+№2
+	1. Pixel;
+	2. Plasma screen;
+	3. Liquid Crystal Display;
+	4. Video adapter;
+	5. Video projector;
+
+№3
+	1. Strain;
+	2. Ache;
+	3. Repetitive; Get; Ask;
+	4. Footrest;
+	5. Swivel; Should be; *Should be ; Sit
+	6. Idea; Shouldn't work;
+	7. Copyholder; Don't forget;

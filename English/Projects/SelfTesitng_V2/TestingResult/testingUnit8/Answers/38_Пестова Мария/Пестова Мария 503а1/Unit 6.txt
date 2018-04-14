@@ -1,0 +1,40 @@
+6 Unit
+
+1.
+	a scanner 
+	b camcorder
+	c digital camera
+
+2.
+	a - o
+	b - f
+	c - f
+	d - f
+	e - o
+
+3.
+	1 best
+	2 sharpest
+	3 highest
+	4 brightest
+	5 most natural
+
+4.
+	1 additional
+	2 player
+	3 controller
+	4 processor
+	5 optimized
+	6 powerfull
+
+5.
+	1 powerful
+	2 processor
+	3 controller
+	4 optimazed
+	5 additional
+	6 player
+
+
+
+
