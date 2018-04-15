@@ -1,0 +1,8 @@
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\bin\Debug\AAS0.exe.config
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\bin\Debug\AAS0.exe
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\bin\Debug\AAS0.pdb
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.Form1.resources
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.exe
+c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.pdb
