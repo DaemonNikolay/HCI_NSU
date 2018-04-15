@@ -14,8 +14,8 @@ Group: 703CA1
 2.4. noisier
 2.5. more convenient
 3.1. such us; for instance
-3.1. to begin with; since; finally
-3.1. because; then
+3.2. to begin with; since; finally
+3.3. because; then
 4.1. because
 4.2. such us
 4.3. to begin with

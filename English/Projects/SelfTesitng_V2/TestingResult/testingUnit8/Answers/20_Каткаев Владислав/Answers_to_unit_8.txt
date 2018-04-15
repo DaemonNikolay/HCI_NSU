@@ -14,8 +14,8 @@ Group: 603C
 2.4. noisier
 2.5. convenient
 3.1. for instance; such as;
-3.1. finally; then; to begin with;
-3.1. because; since;
+3.2. finally; then; to begin with;
+3.3. because; since;
 4.1. to begin with
 4.2. for instance
 4.3. finally

@@ -15,7 +15,6 @@ def yesOrNoTesting():
             try:
                 if os.path.isfile(file_path):
                     os.unlink(file_path)
-                    # elif os.path.isdir(file_path): shutil.rmtree(file_path)
             except Exception as e:
                 print(e)
 
@@ -197,7 +196,7 @@ def ParsingFoundFiles():
     listFiles = SearchFiles()
 
     for element in listFiles:
-        file = open(element, "r")
+        file = open(element, "r", encoding = "UTF8")
         tempContents = []
 
         for instance in file.readlines():
