@@ -34,14 +34,16 @@
             System.Windows.Forms.Label кодГородаLabel;
             System.Windows.Forms.Label колВремениLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.Label номерТелефонаLabel1;
+            System.Windows.Forms.Label датаLabel1;
+            System.Windows.Forms.Label кодГородаLabel1;
+            System.Windows.Forms.Label колВремениLabel1;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem2 = new System.Windows.Forms.ToolStripButton();
             this.разговорBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.abonentsAndSpeaksDataSet = new AAS0.AbonentsAndSpeaksDataSet();
             this.bindingNavigatorCountItem2 = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator6 = new System.Windows.Forms.ToolStripSeparator();
@@ -50,14 +52,8 @@
             this.bindingNavigatorMoveNextItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.сохранитьToolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.разговорDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.разговорDataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -105,10 +101,22 @@
             this.разговорTableAdapter = new AAS0.AbonentsAndSpeaksDataSetTableAdapters.РазговорTableAdapter();
             this.tableAdapterManager = new AAS0.AbonentsAndSpeaksDataSetTableAdapters.TableAdapterManager();
             this.тарифTableAdapter = new AAS0.AbonentsAndSpeaksDataSetTableAdapters.ТарифTableAdapter();
+            this.номерТелефонаTextBox1 = new System.Windows.Forms.TextBox();
+            this.датаDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.кодГородаTextBox1 = new System.Windows.Forms.TextBox();
+            this.колВремениTextBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             номерТелефонаLabel = new System.Windows.Forms.Label();
             датаLabel = new System.Windows.Forms.Label();
             кодГородаLabel = new System.Windows.Forms.Label();
             колВремениLabel = new System.Windows.Forms.Label();
+            номерТелефонаLabel1 = new System.Windows.Forms.Label();
+            датаLabel1 = new System.Windows.Forms.Label();
+            кодГородаLabel1 = new System.Windows.Forms.Label();
+            колВремениLabel1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
@@ -182,6 +190,14 @@
             // tabPage4
             // 
             this.tabPage4.AutoScroll = true;
+            this.tabPage4.Controls.Add(номерТелефонаLabel1);
+            this.tabPage4.Controls.Add(this.номерТелефонаTextBox1);
+            this.tabPage4.Controls.Add(датаLabel1);
+            this.tabPage4.Controls.Add(this.датаDateTimePicker1);
+            this.tabPage4.Controls.Add(кодГородаLabel1);
+            this.tabPage4.Controls.Add(this.кодГородаTextBox1);
+            this.tabPage4.Controls.Add(колВремениLabel1);
+            this.tabPage4.Controls.Add(this.колВремениTextBox1);
             this.tabPage4.Controls.Add(this.bindingNavigator2);
             this.tabPage4.Controls.Add(this.разговорDataGridView);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
@@ -194,10 +210,10 @@
             // 
             // bindingNavigator2
             // 
-            this.bindingNavigator2.AddNewItem = this.bindingNavigatorAddNewItem2;
+            this.bindingNavigator2.AddNewItem = null;
             this.bindingNavigator2.BindingSource = this.разговорBindingSource;
             this.bindingNavigator2.CountItem = this.bindingNavigatorCountItem2;
-            this.bindingNavigator2.DeleteItem = this.bindingNavigatorDeleteItem2;
+            this.bindingNavigator2.DeleteItem = null;
             this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem2,
@@ -209,9 +225,6 @@
             this.bindingNavigatorMoveNextItem2,
             this.bindingNavigatorMoveLastItem2,
             this.bindingNavigatorSeparator8,
-            this.bindingNavigatorAddNewItem2,
-            this.bindingNavigatorDeleteItem2,
-            this.сохранитьToolStripButton1,
             this.toolStripSeparator1});
             this.bindingNavigator2.Location = new System.Drawing.Point(3, 3);
             this.bindingNavigator2.MoveFirstItem = this.bindingNavigatorMoveFirstItem2;
@@ -223,15 +236,6 @@
             this.bindingNavigator2.Size = new System.Drawing.Size(938, 27);
             this.bindingNavigator2.TabIndex = 1;
             this.bindingNavigator2.Text = "bindingNavigator2";
-            // 
-            // bindingNavigatorAddNewItem2
-            // 
-            this.bindingNavigatorAddNewItem2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem2.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem2.Image")));
-            this.bindingNavigatorAddNewItem2.Name = "bindingNavigatorAddNewItem2";
-            this.bindingNavigatorAddNewItem2.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem2.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem2.Text = "Добавить";
             // 
             // разговорBindingSource
             // 
@@ -249,15 +253,6 @@
             this.bindingNavigatorCountItem2.Size = new System.Drawing.Size(55, 24);
             this.bindingNavigatorCountItem2.Text = "для {0}";
             this.bindingNavigatorCountItem2.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorDeleteItem2
-            // 
-            this.bindingNavigatorDeleteItem2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem2.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem2.Image")));
-            this.bindingNavigatorDeleteItem2.Name = "bindingNavigatorDeleteItem2";
-            this.bindingNavigatorDeleteItem2.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem2.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem2.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem2
             // 
@@ -319,16 +314,6 @@
             this.bindingNavigatorSeparator8.Name = "bindingNavigatorSeparator8";
             this.bindingNavigatorSeparator8.Size = new System.Drawing.Size(6, 27);
             // 
-            // сохранитьToolStripButton1
-            // 
-            this.сохранитьToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.сохранитьToolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("сохранитьToolStripButton1.Image")));
-            this.сохранитьToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.сохранитьToolStripButton1.Name = "сохранитьToolStripButton1";
-            this.сохранитьToolStripButton1.Size = new System.Drawing.Size(24, 24);
-            this.сохранитьToolStripButton1.Text = "&Сохранить";
-            this.сохранитьToolStripButton1.Click += new System.EventHandler(this.сохранитьToolStripButton1_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -337,50 +322,21 @@
             // разговорDataGridView
             // 
             this.разговорDataGridView.AutoGenerateColumns = false;
+            this.разговорDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.разговорDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.разговорDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
+            this.разговорDataGridView.Cursor = System.Windows.Forms.Cursors.No;
             this.разговорDataGridView.DataSource = this.разговорBindingSource;
-            this.разговорDataGridView.Location = new System.Drawing.Point(16, 64);
+            this.разговорDataGridView.Location = new System.Drawing.Point(16, 192);
             this.разговорDataGridView.Name = "разговорDataGridView";
+            this.разговорDataGridView.ReadOnly = true;
             this.разговорDataGridView.RowTemplate.Height = 24;
-            this.разговорDataGridView.Size = new System.Drawing.Size(920, 488);
+            this.разговорDataGridView.Size = new System.Drawing.Size(920, 360);
             this.разговорDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "НомерРазговора";
-            this.dataGridViewTextBoxColumn1.HeaderText = "НомерРазговора";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "НомерТелефона";
-            this.dataGridViewTextBoxColumn2.HeaderText = "НомерТелефона";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Дата";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Дата";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "КодГорода";
-            this.dataGridViewTextBoxColumn4.HeaderText = "КодГорода";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "КолВремени";
-            this.dataGridViewTextBoxColumn5.HeaderText = "КолВремени";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // tabPage3
             // 
@@ -428,6 +384,7 @@
             this.dataGridViewTextBoxColumn10.FillWeight = 92.81892F;
             this.dataGridViewTextBoxColumn10.HeaderText = "НомерТелефона";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -435,6 +392,7 @@
             this.dataGridViewTextBoxColumn11.FillWeight = 102.5234F;
             this.dataGridViewTextBoxColumn11.HeaderText = "Дата";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn12
             // 
@@ -442,6 +400,7 @@
             this.dataGridViewTextBoxColumn12.FillWeight = 104.7761F;
             this.dataGridViewTextBoxColumn12.HeaderText = "КодГорода";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -449,6 +408,7 @@
             this.dataGridViewTextBoxColumn13.FillWeight = 99.88168F;
             this.dataGridViewTextBoxColumn13.HeaderText = "КолВремени";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -824,6 +784,106 @@
             // 
             this.тарифTableAdapter.ClearBeforeFill = true;
             // 
+            // номерТелефонаLabel1
+            // 
+            номерТелефонаLabel1.AutoSize = true;
+            номерТелефонаLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            номерТелефонаLabel1.Location = new System.Drawing.Point(24, 72);
+            номерТелефонаLabel1.Name = "номерТелефонаLabel1";
+            номерТелефонаLabel1.Size = new System.Drawing.Size(175, 20);
+            номерТелефонаLabel1.TabIndex = 4;
+            номерТелефонаLabel1.Text = "Номер Телефона:";
+            // 
+            // номерТелефонаTextBox1
+            // 
+            this.номерТелефонаTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.разговорBindingSource, "НомерТелефона", true));
+            this.номерТелефонаTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.номерТелефонаTextBox1.Location = new System.Drawing.Point(224, 69);
+            this.номерТелефонаTextBox1.Name = "номерТелефонаTextBox1";
+            this.номерТелефонаTextBox1.Size = new System.Drawing.Size(200, 27);
+            this.номерТелефонаTextBox1.TabIndex = 5;
+            // 
+            // датаLabel1
+            // 
+            датаLabel1.AutoSize = true;
+            датаLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            датаLabel1.Location = new System.Drawing.Point(24, 101);
+            датаLabel1.Name = "датаLabel1";
+            датаLabel1.Size = new System.Drawing.Size(62, 20);
+            датаLabel1.TabIndex = 6;
+            датаLabel1.Text = "Дата:";
+            // 
+            // датаDateTimePicker1
+            // 
+            this.датаDateTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.разговорBindingSource, "Дата", true));
+            this.датаDateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.датаDateTimePicker1.Location = new System.Drawing.Point(224, 97);
+            this.датаDateTimePicker1.Name = "датаDateTimePicker1";
+            this.датаDateTimePicker1.Size = new System.Drawing.Size(200, 27);
+            this.датаDateTimePicker1.TabIndex = 7;
+            // 
+            // кодГородаLabel1
+            // 
+            кодГородаLabel1.AutoSize = true;
+            кодГородаLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            кодГородаLabel1.Location = new System.Drawing.Point(24, 128);
+            кодГородаLabel1.Name = "кодГородаLabel1";
+            кодГородаLabel1.Size = new System.Drawing.Size(125, 20);
+            кодГородаLabel1.TabIndex = 8;
+            кодГородаLabel1.Text = "Код Города:";
+            // 
+            // кодГородаTextBox1
+            // 
+            this.кодГородаTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.разговорBindingSource, "КодГорода", true));
+            this.кодГородаTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.кодГородаTextBox1.Location = new System.Drawing.Point(224, 125);
+            this.кодГородаTextBox1.Name = "кодГородаTextBox1";
+            this.кодГородаTextBox1.Size = new System.Drawing.Size(200, 27);
+            this.кодГородаTextBox1.TabIndex = 9;
+            // 
+            // колВремениLabel1
+            // 
+            колВремениLabel1.AutoSize = true;
+            колВремениLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            колВремениLabel1.Location = new System.Drawing.Point(24, 156);
+            колВремениLabel1.Name = "колВремениLabel1";
+            колВремениLabel1.Size = new System.Drawing.Size(136, 20);
+            колВремениLabel1.TabIndex = 10;
+            колВремениLabel1.Text = "Кол Времени:";
+            // 
+            // колВремениTextBox1
+            // 
+            this.колВремениTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.разговорBindingSource, "КолВремени", true));
+            this.колВремениTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.колВремениTextBox1.Location = new System.Drawing.Point(224, 153);
+            this.колВремениTextBox1.Name = "колВремениTextBox1";
+            this.колВремениTextBox1.Size = new System.Drawing.Size(200, 27);
+            this.колВремениTextBox1.TabIndex = 11;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "НомерТелефона";
+            this.dataGridViewTextBoxColumn2.HeaderText = "НомерТелефона";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Дата";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Дата";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "КодГорода";
+            this.dataGridViewTextBoxColumn4.HeaderText = "КодГорода";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "КолВремени";
+            this.dataGridViewTextBoxColumn5.HeaderText = "КолВремени";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -871,11 +931,6 @@
         private AbonentsAndSpeaksDataSetTableAdapters.РазговорTableAdapter разговорTableAdapter;
         private AbonentsAndSpeaksDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView разговорDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.TextBox номерТелефонаTextBox;
         private System.Windows.Forms.DateTimePicker датаDateTimePicker;
         private System.Windows.Forms.TextBox кодГородаTextBox;
@@ -912,9 +967,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem3;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator11;
         private System.Windows.Forms.BindingNavigator bindingNavigator2;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem2;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem2;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem2;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem2;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem2;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator6;
@@ -923,7 +976,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem2;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem2;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator8;
-        private System.Windows.Forms.ToolStripButton сохранитьToolStripButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.DataGridView разговорDataGridView1;
         private System.Windows.Forms.ToolStripButton сохранитьToolStripButton2;
@@ -932,6 +984,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.TextBox номерТелефонаTextBox1;
+        private System.Windows.Forms.DateTimePicker датаDateTimePicker1;
+        private System.Windows.Forms.TextBox кодГородаTextBox1;
+        private System.Windows.Forms.TextBox колВремениTextBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }
 

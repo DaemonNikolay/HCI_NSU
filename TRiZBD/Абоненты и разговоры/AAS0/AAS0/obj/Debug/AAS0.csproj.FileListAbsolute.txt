@@ -6,3 +6,12 @@ c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.Pro
 c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.csproj.GenerateResource.Cache
 c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.exe
 c:\users\user\documents\visual studio 2015\Projects\AAS0\AAS0\obj\Debug\AAS0.pdb
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\bin\Debug\AAS0.exe.config
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\obj\Debug\AAS0.exe
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\obj\Debug\AAS0.pdb
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\bin\Debug\AAS0.exe
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\bin\Debug\AAS0.pdb
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\obj\Debug\AAS0.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\obj\Debug\AAS0.Form1.resources
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\obj\Debug\AAS0.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\AAS0\AAS0\obj\Debug\AAS0.csproj.GenerateResource.Cache
