@@ -1,0 +1,9 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\bin\Debug\AbonentsAndSpeaks.exe.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\bin\Debug\AbonentsAndSpeaks.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\bin\Debug\AbonentsAndSpeaks.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\obj\Debug\AbonentsAndSpeaks.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\obj\Debug\AbonentsAndSpeaks.Form1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\obj\Debug\AbonentsAndSpeaks.Properties.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\obj\Debug\AbonentsAndSpeaks.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\obj\Debug\AbonentsAndSpeaks.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\AbonentsAndSpeaks\AbonentsAndSpeaks\obj\Debug\AbonentsAndSpeaks.pdb
