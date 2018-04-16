@@ -167,10 +167,6 @@ namespace TRIZBD
             this.Validate();
             this.тарифBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.abonentsAndSpeaksDataSet);
-            
-            //тарифDataGridView.Update();
-
-            //MessageBox.Show("Данные добавлены");
         }
 
         private void AddNewCity_Click(object sender, EventArgs e)

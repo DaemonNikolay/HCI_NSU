@@ -472,6 +472,7 @@
             this.тарифDataGridView.DataSource = this.тарифBindingSource;
             this.тарифDataGridView.Location = new System.Drawing.Point(0, 40);
             this.тарифDataGridView.Name = "тарифDataGridView";
+            this.тарифDataGridView.ReadOnly = true;
             this.тарифDataGridView.RowTemplate.Height = 24;
             this.тарифDataGridView.Size = new System.Drawing.Size(616, 560);
             this.тарифDataGridView.TabIndex = 0;
@@ -651,12 +652,14 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "ЦенаЗаМин";
             this.dataGridViewTextBoxColumn3.HeaderText = "ЦенаЗаМин";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "НазваниеГорода";
             this.dataGridViewTextBoxColumn2.HeaderText = "НазваниеГорода";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // AddNewCity
             // 
