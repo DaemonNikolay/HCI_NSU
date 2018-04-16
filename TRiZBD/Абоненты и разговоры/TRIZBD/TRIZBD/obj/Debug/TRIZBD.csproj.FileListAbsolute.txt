@@ -7,3 +7,12 @@ c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZ
 c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.csproj.GenerateResource.Cache
 c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.exe
 c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.pdb
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\bin\Debug\TRIZBD.exe.config
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\obj\Debug\TRIZBD.exe
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\obj\Debug\TRIZBD.pdb
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\bin\Debug\TRIZBD.exe
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\bin\Debug\TRIZBD.pdb
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\obj\Debug\TRIZBD.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\obj\Debug\TRIZBD.Form1.resources
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\obj\Debug\TRIZBD.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\HCI_NSU\TRiZBD\Абоненты и разговоры\TRIZBD\TRIZBD\obj\Debug\TRIZBD.csproj.GenerateResource.Cache
