@@ -31,17 +31,19 @@ namespace TRIZBD
                 cn.ConnectionString = connect.ConnectionString;
                 try
                 {
-                    //Открыть подключение
                     cn.Open();
 
-                    //string strSQL = "SELECT * FROM Разговор";
                     string strSQL = "SELECT Разговор.[НомерТелефона], Разговор.Дата, Разговор.[КолВремени], Abonent.Адрес, Abonent.ФИО, Тариф.[НазваниеГорода] FROM Разговор INNER JOIN Abonent ON Разговор.[НомерТелефона] = Abonent.[Номер телефона] INNER JOIN Тариф ON Разговор.[КодГорода] = Тариф.[КодГорода]";
 
                     SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(strSQL, cn);
                     DataTable dataTable = new DataTable();
                     sqlDataAdapter.Fill(dataTable);
 
-                    DataGridAbAndSp.DataSource = dataTable;
+                    BindingSource bindingSource = new BindingSource();
+                    bindingSource.DataSource = dataTable;
+
+                    DataGridAbAndSp.DataSource = bindingSource;
+                    bindingNavigatorAbAndSp.BindingSource = bindingSource;
                 }
                 catch (SqlException ex)
                 {
