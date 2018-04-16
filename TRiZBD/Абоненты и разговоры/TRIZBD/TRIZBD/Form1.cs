@@ -161,5 +161,29 @@ namespace TRIZBD
             }
 
         }
+
+        private void сохранитьToolStripButton_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.тарифBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.abonentsAndSpeaksDataSet);
+            
+            //тарифDataGridView.Update();
+
+            //MessageBox.Show("Данные добавлены");
+        }
+
+        private void AddNewCity_Click(object sender, EventArgs e)
+        {
+            сохранитьToolStripButton_Click(sender, e);
+
+            названиеГородаComboBox1.Text = "";
+            ценаЗаМинTextBox.Text = "";
+        }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+            сохранитьToolStripButton_Click(sender, e);
+        }
     }
 }
