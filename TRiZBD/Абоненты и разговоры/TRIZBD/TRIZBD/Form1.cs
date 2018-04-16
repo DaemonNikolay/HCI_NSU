@@ -18,10 +18,47 @@ namespace TRIZBD
         public Form1()
         {
             InitializeComponent();
+
+            Load += AddSpeak_Load;
+        }
+
+        private void AddSpeak_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "abonentsAndSpeaksDataSet.Разговор". При необходимости она может быть перемещена или удалена.
+            this.разговорTableAdapter.Fill(this.abonentsAndSpeaksDataSet.Разговор);
+
+            connect.DataSource = @"(LocalDB)\MSSQLLocalDB";
+            connect.InitialCatalog = "AbonentsAndSpeaks";
+
+            using (SqlConnection cn = new SqlConnection())
+            {
+                cn.ConnectionString = connect.ConnectionString;
+                try
+                {
+                    cn.Open();
+                }
+                catch (SqlException ex)
+                {
+                    // Протоколировать исключение
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    // Гарантировать освобождение подключения
+                    cn.Close();
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "abonentsAndSpeaksDataSet.Abonent". При необходимости она может быть перемещена или удалена.
+            this.abonentTableAdapter.Fill(this.abonentsAndSpeaksDataSet.Abonent);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "abonentsAndSpeaksDataSet.Тариф". При необходимости она может быть перемещена или удалена.
+            this.тарифTableAdapter.Fill(this.abonentsAndSpeaksDataSet.Тариф);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "abonentsAndSpeaksDataSet.Тариф". При необходимости она может быть перемещена или удалена.
+            this.тарифTableAdapter.Fill(this.abonentsAndSpeaksDataSet.Тариф);
+
             connect.DataSource = @"(LocalDB)\MSSQLLocalDB";
             connect.InitialCatalog = "AbonentsAndSpeaks";
 
@@ -44,6 +81,43 @@ namespace TRIZBD
 
                     DataGridAbAndSp.DataSource = bindingSource;
                     bindingNavigatorAbAndSp.BindingSource = bindingSource;
+                }
+                catch (SqlException ex)
+                {
+                    // Протоколировать исключение
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    // Гарантировать освобождение подключения
+                    cn.Close();
+                }
+            }
+        }
+
+        private void номерТелефонаComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            connect.DataSource = @"(LocalDB)\MSSQLLocalDB";
+            connect.InitialCatalog = "AbonentsAndSpeaks";
+
+            using (SqlConnection cn = new SqlConnection())
+            {
+                cn.ConnectionString = connect.ConnectionString;
+                try
+                {
+                    cn.Open();
+
+                    string strSQL = $"SELECT ФИО FROM Abonent WHERE [Номер телефона]='{номерТелефонаComboBox.Text}'";
+
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(strSQL, cn);
+                    SqlCommand myCommand = new SqlCommand(strSQL, cn);
+                    SqlDataReader dr = myCommand.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        AdSpFIO.Text = dr[0].ToString();
+                        break;       
+                    }
                 }
                 catch (SqlException ex)
                 {
