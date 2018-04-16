@@ -1,0 +1,9 @@
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\bin\Debug\TRIZBD.exe.config
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\bin\Debug\TRIZBD.exe
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\bin\Debug\TRIZBD.pdb
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.Form1.resources
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.exe
+c:\users\user\documents\visual studio 2015\Projects\TRIZBD\TRIZBD\obj\Debug\TRIZBD.pdb
