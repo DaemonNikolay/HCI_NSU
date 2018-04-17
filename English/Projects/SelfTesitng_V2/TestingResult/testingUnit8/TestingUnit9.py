@@ -43,7 +43,7 @@ def yesOrNoTesting():
 
             if (actualAnswer[0][0] == "1"):
                 expectedAnswer = CorrectAnsersTaskOne().get(actualAnswer[0])
-                yesOrNo = "+" if actualAnswer[1] == expectedAnswer else "-"
+                yesOrNo = "+" if actualAnswer[1].find(expectedAnswer) != -1 else "-"
                 if yesOrNo.find("+") != -1:
                     countTrue += 1
 
@@ -104,7 +104,7 @@ def CountAll():
 
     for element in CorrectAnsersTaskTwo():
         if isinstance(CorrectAnsersTaskTwo().get(element), list):
-            countAll += (len(CorrectAnsersTaskTwo().get(element)) )
+            countAll += (len(CorrectAnsersTaskTwo().get(element)))
         else:
             countAll += 1
 
@@ -117,7 +117,7 @@ def CountAll():
     return countAll
 
 
-def CorrectAnsersTaskOne(): #12
+def CorrectAnsersTaskOne():  # 12
     return {"1.1.1": "rinte",
             "1.1.2": "eyboar",
             "1.1.3": "mbosse",
@@ -125,7 +125,7 @@ def CorrectAnsersTaskOne(): #12
             "1.2.2": "eade",
             "1.3.1": "rgonomi",
             "1.3.2": "xpande",
-            "1.3.3": "n-scree",
+            "1.3.3": "scree",
             "1.4.1": "neumati",
             "1.4.2": "daptiv",
             "1.5.1": "oic",
@@ -133,7 +133,7 @@ def CorrectAnsersTaskOne(): #12
             }
 
 
-def CorrectAnsersTaskTwo(): #13
+def CorrectAnsersTaskTwo():  # 13
     return {"2.1": ["braille printer",
                     "braille keyboard",
                     "braille embosser",
@@ -142,14 +142,14 @@ def CorrectAnsersTaskTwo(): #13
                     "voice recognition system"],
             "2.2": ["ergonomic keyboard",
                     "expanded keyboard",
-                    "on-screen keyboard",
+                    "screen keyboard",
                     "pneumatic switch",
                     "adaptive switch",
                     "eyegaze system",
                     "voice recognition system"]}
 
 
-def CorrectAnsersTaskThree(): #28
+def CorrectAnsersTaskThree():  # 28
     return {"3.1": "Visual alerts",
             "3.2": "Textphones",
             "3.3": "Electronic notetakers"}
