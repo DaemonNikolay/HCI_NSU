@@ -12,7 +12,7 @@
 
 1. pixel
 2. plasma screen
-3. CRT
+3. CRT			-1
 4. video adapter
 5. video projector
 
@@ -25,7 +25,7 @@
    ask
 
 4. footrest
-5. -
+5. -			-1
    should be
    should be
    sit
@@ -34,4 +34,4 @@
    shouldn`t work
 
 7. copyholder
-   don`t forget  
+   don`t forget  		-2/5-

@@ -13,8 +13,8 @@
 1. return;
 2. backspace;
 3. arrow;
-4. Caps Lock;	
-				5
+4. Caps Lock;	-0,5
+				
 
 
 ÇÀÄÀÍÈÅ 3
@@ -22,4 +22,4 @@
 2. click;
 3. select;
 4. drag;
-5. double-click;
+5. double-click;		-0,5/5

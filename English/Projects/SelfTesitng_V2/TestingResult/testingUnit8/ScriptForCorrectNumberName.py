@@ -1,7 +1,7 @@
 import os
 
 listFiles = []
-for root, dirs, files in os.walk(r"./temp/"):
+for root, dirs, files in os.walk(r"./Answers/"):
     for file in files:
         if file.endswith(".txt"):
             if file.find("unit_8") != -1:
@@ -12,6 +12,7 @@ for element in listFiles:
     file = open(element, "r")
     tempContents = []
 
+    print(element)
     for instance in file.readlines():
         tempContents.append(instance.replace("\n", ""))
 

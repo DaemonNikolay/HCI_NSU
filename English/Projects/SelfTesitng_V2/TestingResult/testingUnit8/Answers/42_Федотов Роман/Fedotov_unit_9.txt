@@ -1,0 +1,20 @@
+Name: ROMAN
+Surname: FEDOTOV
+Group: 503A1
+1.1.1. rinter
+1.1.2. ey boar
+1.1.3. mbosse
+1.2.1. agnifeie
+1.2.2. eade
+1.3.1. rgonomi
+1.3.2. xpande
+1.3.3. n scree
+1.4.1. neumati
+1.4.2. daptiv
+1.5.1. oic
+1.5.2. igeis
+2.1. printer; keyboard; embosser; magnifeier; eigeise;
+2.2. reader; ergonomic; expanded; on screen; pneumatic; adaptive; voice recognition;
+3.1. Visual alerts
+3.2. Textphones
+3.3. Electronic notetakers

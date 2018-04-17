@@ -7,7 +7,7 @@
 ¹2
 	1)opinion
 	2)fact
-	3)fact
+	3)fact		-2
 	4)opinion
 	5)fact
 
@@ -25,4 +25,4 @@
 	4) optimized
 	5) additional
 	6) player
-		
+			-2/5-

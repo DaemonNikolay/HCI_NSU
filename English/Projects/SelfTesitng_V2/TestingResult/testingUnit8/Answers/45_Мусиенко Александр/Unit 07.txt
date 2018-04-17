@@ -8,14 +8,15 @@
 
 ¹2.pixel
    plasma screen
-   cathode ray tube (CRT)
+   cathode ray tube (CRT)	-1
    video adapter
    video projector
 
 ¹3. ache
-    strain
+    strain		-2
     repetitive;Get;Ask 
     footrest
     swivel;should be;should be;Sit;
     idea;shouldn’t work
     copyholder;Don’t forget
+				-3/5-

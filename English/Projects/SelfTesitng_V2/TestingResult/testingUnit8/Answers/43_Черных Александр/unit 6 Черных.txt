@@ -14,7 +14,7 @@
 2. Fact
 3. Opinion
 4. Fact
-
+			5/-1
 ¹3
 
 1. best
@@ -36,8 +36,8 @@
 ¹5
 
 1. powerful
-2. optimized
+2. optimized		-2
 3. controller
 4. processor
 5. additional
-6. player
+6. player			-3/4

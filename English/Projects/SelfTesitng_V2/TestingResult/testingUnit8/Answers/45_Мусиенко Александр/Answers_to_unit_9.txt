@@ -1,0 +1,20 @@
+Name: ALEXANDER
+Surname: MUSIENKO
+Group: 503A1
+1.1.1. rinte
+1.1.2. eyboar
+1.1.3. mbosse
+1.2.1. agnifie
+1.2.2. eade
+1.3.1. rgonomi
+1.3.2. xpande
+1.3.3. n-scree
+1.4.1. neumati
+1.4.2. daptiv
+1.5.1. oic
+1.5.2. yegaz
+2.1. braille printer; braille keyboard; braille embosser; screen magnifier; screen reader; ergonomic keyboard
+2.2. expanded keyboard; on-screec keyboard;  pneumatic switch;  adaptive switch;  voice recognition system;  eyegaze system
+3.1. Visual alerts
+3.2. Textphones
+3.3. Electronic notetakers

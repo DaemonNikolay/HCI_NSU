@@ -12,7 +12,7 @@
 
 1. Opinion;
 2. Opinion;
-3. Fact;
+3. Fact;		-2
 4. Fact;
 5. Fact;
 
@@ -20,7 +20,7 @@
 
 1. best;
 2. sharpest;
-3. higher;
+3. higher;		-1
 4. brightest;
 5. most natural;
 
@@ -41,3 +41,4 @@
 4. optimized;
 5. additional;
 6. player;
+			-3/4

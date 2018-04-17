@@ -8,7 +8,7 @@
 «¿ƒ¿Õ»≈ 2
 1. pixel;
 2. plasma screen;
-3. cathode ray tube(CRT);
+3. cathode ray tube(CRT);	-1
 4. video adapter;
 5. video projector;
 
@@ -26,4 +26,4 @@
 6. idea;
 	shouldn`t work;
 7. copyholder;
-	Don`t forget;
+	Don`t forget;		-1/5

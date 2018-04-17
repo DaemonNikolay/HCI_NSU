@@ -9,7 +9,7 @@
 ¹2
 	1: pixel
 	2: plasma screen
-	3: cathode ray tybe (CRT)
+	3: cathode ray tybe (CRT)	-1
 	4: video adapter
 	5: video projector
 ¹3
@@ -26,4 +26,4 @@
 	6: idea
 		should't work
 	7:copyholder
-		Don't forget
+		Don't forget	-1(sp)/5

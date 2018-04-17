@@ -22,7 +22,7 @@
 
 1. strain
 2. ache
-3. reperirive
+3. reperirive	-1
 4. swivel
 5. footrest
 6. idea
@@ -31,8 +31,8 @@
 * Get
 * Ask
 * should be
-* shouldn't be
-* Don't sit
+* shouldn't be	-1
+* Don't sit	-1
 *
 * shouldn't work
-* Don't forget
+* Don't forget		-3/4

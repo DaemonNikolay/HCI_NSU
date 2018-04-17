@@ -8,7 +8,7 @@
 2.
 	a - o
 	b - f
-	c - f
+	c - f		-2
 	d - f
 	e - o
 
@@ -35,6 +35,6 @@
 	5 additional
 	6 player
 
-
+		-2/5-
 
 

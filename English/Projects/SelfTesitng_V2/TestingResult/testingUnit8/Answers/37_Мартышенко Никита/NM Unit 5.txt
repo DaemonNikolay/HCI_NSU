@@ -5,13 +5,13 @@
 3. for, graphic tablet
 4. used, game controller
 5. by, trackball
-6. features, to, scanner
+6. features, to, scanner	-2
 7. can, light pen
 8. which, microphone
 
 #2
 
-1. tab
+1. tab		-1
 2. backspace
 3. arrow
 4. shift, CapsLock
@@ -22,4 +22,4 @@
 2. click
 3. select
 4. drag
-5. double click
+5. double click		-2/5-

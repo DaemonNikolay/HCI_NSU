@@ -4,18 +4,18 @@
 
 #1
 
-1. allows; keyboard;
+1. allows; keyboard;	-0,5
 2. works; mouse;
 3. for; graphics tablet;
 4. used; game controller;
 5. by; trackball;
-6. features,to; scanner;
+6. features,to; scanner;	-0,5
 7. can; light pen;
 8. which; microphone;
 
 #2
 
-1. tab;
+1. tab;			-1
 2. backspace;
 3. arrow;
 4. shift,Caps Lock;
@@ -26,4 +26,4 @@
 2. click;
 3. select;
 4. drag;
-5. double-click;
+5. double-click;	-2балла/5-

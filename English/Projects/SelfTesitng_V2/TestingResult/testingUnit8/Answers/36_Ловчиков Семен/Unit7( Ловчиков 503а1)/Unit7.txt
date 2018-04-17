@@ -22,10 +22,10 @@
 	4) footrest
 	5) swivel
 	shouldn't be
-	should be
+	should be		-1
 	sit
 	6)idea
 	shouldn't work
 	7) copyholder
 	don't forget
-		
+				-1/5-
