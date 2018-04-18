@@ -1,0 +1,34 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    line-height: 20pt;
+}
+
+p,
+h2 {
+    padding: 7px;
+    margin: 7px 7px 5px 0px;
+}
+
+h2 {
+    font-size: 22pt;
+    font-weight: 900;
+}
+
+p,
+li {
+    font-size: 18pt;
+}
+
+li {
+    padding: 4px;
+    margin: 4px 4px 1px 0px;
+}
+
+p {
+    text-indent: 25px;
+}
+
+hr {
+    margin-bottom: 20px;
+}
