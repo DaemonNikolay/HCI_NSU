@@ -34,11 +34,11 @@
             System.Windows.Forms.Label колВремениLabel;
             System.Windows.Forms.Label названиеГородаLabel;
             System.Windows.Forms.Label фИОLabel;
+            System.Windows.Forms.Label названиеГородаLabel1;
+            System.Windows.Forms.Label ценаЗаМинLabel;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.Label названиеГородаLabel1;
-            System.Windows.Forms.Label ценаЗаМинLabel;
             this.DataGridAbAndSp = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -53,41 +53,41 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.AddNewSpeak = new System.Windows.Forms.Button();
             this.AdSpFIO = new System.Windows.Forms.TextBox();
             this.названиеГородаComboBox = new System.Windows.Forms.ComboBox();
             this.тарифBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.abonentsAndSpeaksDataSet = new TRIZBD.AbonentsAndSpeaksDataSet();
             this.номерТелефонаComboBox = new System.Windows.Forms.ComboBox();
             this.разговорBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.abonentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.датаDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.колВремениTextBox = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.AddNewCity = new System.Windows.Forms.Button();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem1 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.сохранитьToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.названиеГородаComboBox1 = new System.Windows.Forms.ComboBox();
+            this.ценаЗаМинTextBox = new System.Windows.Forms.TextBox();
+            this.тарифDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.разговорTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.РазговорTableAdapter();
             this.tableAdapterManager = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.TableAdapterManager();
             this.abonentTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.AbonentTableAdapter();
             this.тарифTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.ТарифTableAdapter();
-            this.abonentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.AddNewSpeak = new System.Windows.Forms.Button();
-            this.тарифDataGridView = new System.Windows.Forms.DataGridView();
-            this.названиеГородаComboBox1 = new System.Windows.Forms.ComboBox();
-            this.ценаЗаМинTextBox = new System.Windows.Forms.TextBox();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem1 = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.сохранитьToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AddNewCity = new System.Windows.Forms.Button();
             номерТелефонаLabel = new System.Windows.Forms.Label();
             датаLabel = new System.Windows.Forms.Label();
             колВремениLabel = new System.Windows.Forms.Label();
@@ -104,11 +104,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.тарифBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonentsAndSpeaksDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.разговорBindingSource)).BeginInit();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.abonentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.тарифDataGridView)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.тарифDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // номерТелефонаLabel
@@ -160,6 +160,26 @@
             фИОLabel.Size = new System.Drawing.Size(54, 20);
             фИОLabel.TabIndex = 11;
             фИОLabel.Text = "ФИО:";
+            // 
+            // названиеГородаLabel1
+            // 
+            названиеГородаLabel1.AutoSize = true;
+            названиеГородаLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            названиеГородаLabel1.Location = new System.Drawing.Point(680, 203);
+            названиеГородаLabel1.Name = "названиеГородаLabel1";
+            названиеГородаLabel1.Size = new System.Drawing.Size(163, 20);
+            названиеГородаLabel1.TabIndex = 3;
+            названиеГородаLabel1.Text = "Название Города:";
+            // 
+            // ценаЗаМинLabel
+            // 
+            ценаЗаМинLabel.AutoSize = true;
+            ценаЗаМинLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            ценаЗаМинLabel.Location = new System.Drawing.Point(680, 243);
+            ценаЗаМинLabel.Name = "ценаЗаМинLabel";
+            ценаЗаМинLabel.Size = new System.Drawing.Size(123, 20);
+            ценаЗаМинLabel.TabIndex = 5;
+            ценаЗаМинLabel.Text = "Цена За Мин:";
             // 
             // DataGridAbAndSp
             // 
@@ -320,6 +340,16 @@
             this.tabPage2.Text = "Добавить разговор";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // AddNewSpeak
+            // 
+            this.AddNewSpeak.Location = new System.Drawing.Point(456, 368);
+            this.AddNewSpeak.Name = "AddNewSpeak";
+            this.AddNewSpeak.Size = new System.Drawing.Size(200, 48);
+            this.AddNewSpeak.TabIndex = 13;
+            this.AddNewSpeak.Text = "Добавить разговор";
+            this.AddNewSpeak.UseVisualStyleBackColor = true;
+            this.AddNewSpeak.Click += new System.EventHandler(this.AddNewSpeak_Click);
+            // 
             // AdSpFIO
             // 
             this.AdSpFIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -371,6 +401,11 @@
             this.разговорBindingSource.DataMember = "Разговор";
             this.разговорBindingSource.DataSource = this.abonentsAndSpeaksDataSet;
             // 
+            // abonentBindingSource
+            // 
+            this.abonentBindingSource.DataMember = "Abonent";
+            this.abonentBindingSource.DataSource = this.abonentsAndSpeaksDataSet;
+            // 
             // датаDateTimePicker
             // 
             this.датаDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.разговорBindingSource, "Дата", true));
@@ -408,117 +443,15 @@
             this.tabPage3.Text = "Города и тарифы";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // AddNewCity
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1224, 603);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Платеж по датам";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // разговорTableAdapter
-            // 
-            this.разговорTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AbonentTableAdapter = this.abonentTableAdapter;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.РазговорTableAdapter = this.разговорTableAdapter;
-            this.tableAdapterManager.ТарифTableAdapter = this.тарифTableAdapter;
-            // 
-            // abonentTableAdapter
-            // 
-            this.abonentTableAdapter.ClearBeforeFill = true;
-            // 
-            // тарифTableAdapter
-            // 
-            this.тарифTableAdapter.ClearBeforeFill = true;
-            // 
-            // abonentBindingSource
-            // 
-            this.abonentBindingSource.DataMember = "Abonent";
-            this.abonentBindingSource.DataSource = this.abonentsAndSpeaksDataSet;
-            // 
-            // AddNewSpeak
-            // 
-            this.AddNewSpeak.Location = new System.Drawing.Point(456, 368);
-            this.AddNewSpeak.Name = "AddNewSpeak";
-            this.AddNewSpeak.Size = new System.Drawing.Size(200, 48);
-            this.AddNewSpeak.TabIndex = 13;
-            this.AddNewSpeak.Text = "Добавить разговор";
-            this.AddNewSpeak.UseVisualStyleBackColor = true;
-            this.AddNewSpeak.Click += new System.EventHandler(this.AddNewSpeak_Click);
-            // 
-            // тарифDataGridView
-            // 
-            this.тарифDataGridView.AutoGenerateColumns = false;
-            this.тарифDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.тарифDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.тарифDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.тарифDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.тарифDataGridView.DataSource = this.тарифBindingSource;
-            this.тарифDataGridView.Location = new System.Drawing.Point(0, 40);
-            this.тарифDataGridView.Name = "тарифDataGridView";
-            this.тарифDataGridView.ReadOnly = true;
-            this.тарифDataGridView.RowTemplate.Height = 24;
-            this.тарифDataGridView.Size = new System.Drawing.Size(616, 560);
-            this.тарифDataGridView.TabIndex = 0;
-            // 
-            // названиеГородаLabel1
-            // 
-            названиеГородаLabel1.AutoSize = true;
-            названиеГородаLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            названиеГородаLabel1.Location = new System.Drawing.Point(680, 203);
-            названиеГородаLabel1.Name = "названиеГородаLabel1";
-            названиеГородаLabel1.Size = new System.Drawing.Size(163, 20);
-            названиеГородаLabel1.TabIndex = 3;
-            названиеГородаLabel1.Text = "Название Города:";
-            // 
-            // названиеГородаComboBox1
-            // 
-            this.названиеГородаComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "НазваниеГорода", true));
-            this.названиеГородаComboBox1.DataSource = this.тарифBindingSource;
-            this.названиеГородаComboBox1.DisplayMember = "НазваниеГорода";
-            this.названиеГородаComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.названиеГородаComboBox1.FormattingEnabled = true;
-            this.названиеГородаComboBox1.Location = new System.Drawing.Point(856, 200);
-            this.названиеГородаComboBox1.Name = "названиеГородаComboBox1";
-            this.названиеГородаComboBox1.Size = new System.Drawing.Size(224, 28);
-            this.названиеГородаComboBox1.TabIndex = 4;
-            this.названиеГородаComboBox1.ValueMember = "НазваниеГорода";
-            // 
-            // ценаЗаМинLabel
-            // 
-            ценаЗаМинLabel.AutoSize = true;
-            ценаЗаМинLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            ценаЗаМинLabel.Location = new System.Drawing.Point(680, 243);
-            ценаЗаМинLabel.Name = "ценаЗаМинLabel";
-            ценаЗаМинLabel.Size = new System.Drawing.Size(123, 20);
-            ценаЗаМинLabel.TabIndex = 5;
-            ценаЗаМинLabel.Text = "Цена За Мин:";
-            // 
-            // ценаЗаМинTextBox
-            // 
-            this.ценаЗаМинTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "ЦенаЗаМин", true));
-            this.ценаЗаМинTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ценаЗаМинTextBox.Location = new System.Drawing.Point(856, 240);
-            this.ценаЗаМинTextBox.Name = "ценаЗаМинTextBox";
-            this.ценаЗаМинTextBox.Size = new System.Drawing.Size(224, 27);
-            this.ценаЗаМинTextBox.TabIndex = 6;
-            this.ценаЗаМинTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.колВремениTextBox_KeyPress);
+            this.AddNewCity.Location = new System.Drawing.Point(688, 320);
+            this.AddNewCity.Name = "AddNewCity";
+            this.AddNewCity.Size = new System.Drawing.Size(128, 48);
+            this.AddNewCity.TabIndex = 8;
+            this.AddNewCity.Text = "Добавить";
+            this.AddNewCity.UseVisualStyleBackColor = true;
+            this.AddNewCity.Click += new System.EventHandler(this.AddNewCity_Click);
             // 
             // bindingNavigator1
             // 
@@ -551,73 +484,6 @@
             this.bindingNavigator1.TabIndex = 7;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorMoveFirstItem1
-            // 
-            this.bindingNavigatorMoveFirstItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem1.Image")));
-            this.bindingNavigatorMoveFirstItem1.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveFirstItem1.Text = "Переместить в начало";
-            // 
-            // bindingNavigatorMovePreviousItem1
-            // 
-            this.bindingNavigatorMovePreviousItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
-            this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMovePreviousItem1.Text = "Переместить назад";
-            // 
-            // bindingNavigatorSeparator3
-            // 
-            this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem1
-            // 
-            this.bindingNavigatorPositionItem1.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem1.AutoSize = false;
-            this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem1.Text = "0";
-            this.bindingNavigatorPositionItem1.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorCountItem1
-            // 
-            this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(55, 24);
-            this.bindingNavigatorCountItem1.Text = "для {0}";
-            this.bindingNavigatorCountItem1.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator4
-            // 
-            this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem1
-            // 
-            this.bindingNavigatorMoveNextItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
-            this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveNextItem1.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem1
-            // 
-            this.bindingNavigatorMoveLastItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
-            this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveLastItem1.Text = "Переместить в конец";
-            // 
-            // bindingNavigatorSeparator5
-            // 
-            this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 27);
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -626,6 +492,14 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            // 
+            // bindingNavigatorCountItem1
+            // 
+            this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(55, 24);
+            this.bindingNavigatorCountItem1.Text = "для {0}";
+            this.bindingNavigatorCountItem1.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -637,6 +511,66 @@
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
+            // bindingNavigatorMoveFirstItem1
+            // 
+            this.bindingNavigatorMoveFirstItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem1.Image")));
+            this.bindingNavigatorMoveFirstItem1.Name = "bindingNavigatorMoveFirstItem1";
+            this.bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveFirstItem1.Text = "Переместить в начало";
+            // 
+            // bindingNavigatorMovePreviousItem1
+            // 
+            this.bindingNavigatorMovePreviousItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
+            this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem1";
+            this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMovePreviousItem1.Text = "Переместить назад";
+            // 
+            // bindingNavigatorSeparator3
+            // 
+            this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator3";
+            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorPositionItem1
+            // 
+            this.bindingNavigatorPositionItem1.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem1.AutoSize = false;
+            this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem1";
+            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem1.Text = "0";
+            this.bindingNavigatorPositionItem1.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator4
+            // 
+            this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator4";
+            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorMoveNextItem1
+            // 
+            this.bindingNavigatorMoveNextItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
+            this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem1";
+            this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveNextItem1.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem1
+            // 
+            this.bindingNavigatorMoveLastItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
+            this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem1";
+            this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveLastItem1.Text = "Переместить в конец";
+            // 
+            // bindingNavigatorSeparator5
+            // 
+            this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
+            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 27);
+            // 
             // сохранитьToolStripButton
             // 
             this.сохранитьToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -647,12 +581,52 @@
             this.сохранитьToolStripButton.Text = "&Сохранить";
             this.сохранитьToolStripButton.Click += new System.EventHandler(this.сохранитьToolStripButton_Click);
             // 
-            // dataGridViewTextBoxColumn3
+            // названиеГородаComboBox1
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ЦенаЗаМин";
-            this.dataGridViewTextBoxColumn3.HeaderText = "ЦенаЗаМин";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.названиеГородаComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "НазваниеГорода", true));
+            this.названиеГородаComboBox1.DataSource = this.тарифBindingSource;
+            this.названиеГородаComboBox1.DisplayMember = "НазваниеГорода";
+            this.названиеГородаComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.названиеГородаComboBox1.FormattingEnabled = true;
+            this.названиеГородаComboBox1.Location = new System.Drawing.Point(856, 200);
+            this.названиеГородаComboBox1.Name = "названиеГородаComboBox1";
+            this.названиеГородаComboBox1.Size = new System.Drawing.Size(224, 28);
+            this.названиеГородаComboBox1.TabIndex = 4;
+            this.названиеГородаComboBox1.ValueMember = "НазваниеГорода";
+            // 
+            // ценаЗаМинTextBox
+            // 
+            this.ценаЗаМинTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "ЦенаЗаМин", true));
+            this.ценаЗаМинTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ценаЗаМинTextBox.Location = new System.Drawing.Point(856, 240);
+            this.ценаЗаМинTextBox.Name = "ценаЗаМинTextBox";
+            this.ценаЗаМинTextBox.Size = new System.Drawing.Size(224, 27);
+            this.ценаЗаМинTextBox.TabIndex = 6;
+            this.ценаЗаМинTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.колВремениTextBox_KeyPress);
+            // 
+            // тарифDataGridView
+            // 
+            this.тарифDataGridView.AutoGenerateColumns = false;
+            this.тарифDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.тарифDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.тарифDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.тарифDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.тарифDataGridView.DataSource = this.тарифBindingSource;
+            this.тарифDataGridView.Location = new System.Drawing.Point(0, 40);
+            this.тарифDataGridView.Name = "тарифDataGridView";
+            this.тарифDataGridView.ReadOnly = true;
+            this.тарифDataGridView.RowTemplate.Height = 24;
+            this.тарифDataGridView.Size = new System.Drawing.Size(616, 560);
+            this.тарифDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -661,15 +635,42 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // AddNewCity
+            // dataGridViewTextBoxColumn3
             // 
-            this.AddNewCity.Location = new System.Drawing.Point(688, 320);
-            this.AddNewCity.Name = "AddNewCity";
-            this.AddNewCity.Size = new System.Drawing.Size(128, 48);
-            this.AddNewCity.TabIndex = 8;
-            this.AddNewCity.Text = "Добавить";
-            this.AddNewCity.UseVisualStyleBackColor = true;
-            this.AddNewCity.Click += new System.EventHandler(this.AddNewCity_Click);
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ЦенаЗаМин";
+            this.dataGridViewTextBoxColumn3.HeaderText = "ЦенаЗаМин";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1224, 603);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Платеж по датам";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // разговорTableAdapter
+            // 
+            this.разговорTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AbonentTableAdapter = this.abonentTableAdapter;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.РазговорTableAdapter = this.разговорTableAdapter;
+            this.tableAdapterManager.ТарифTableAdapter = this.тарифTableAdapter;
+            // 
+            // abonentTableAdapter
+            // 
+            this.abonentTableAdapter.ClearBeforeFill = true;
+            // 
+            // тарифTableAdapter
+            // 
+            this.тарифTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -692,13 +693,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.тарифBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonentsAndSpeaksDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.разговорBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.abonentBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.abonentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.тарифDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.тарифDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

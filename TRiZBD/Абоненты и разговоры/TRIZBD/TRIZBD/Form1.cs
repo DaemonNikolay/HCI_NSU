@@ -181,5 +181,10 @@ namespace TRIZBD
         {
             сохранитьToolStripButton_Click(sender, e);
         }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
