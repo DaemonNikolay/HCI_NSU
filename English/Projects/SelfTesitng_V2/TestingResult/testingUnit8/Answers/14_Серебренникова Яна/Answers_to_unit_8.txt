@@ -1,0 +1,23 @@
+Name: YANA
+Surname: SEREBRENNIKOVA
+Group: 703CA1
+1.1. dot-matrix
+1.2. plotter
+1.3. thermal transfer
+1.4. inkjet
+1.5. imagesetter
+1.6. plotter
+1.7. platesetter
+2.1. more expensive
+2.2. better
+2.3. smaller
+2.4. noisier
+2.5. more convient
+3.1. such as,for instance
+3.2. finally,to begin with,then
+3.3. since,because
+4.1. to begin with
+4.2. then
+4.3. finally
+4.4. for instance
+4.5. because
