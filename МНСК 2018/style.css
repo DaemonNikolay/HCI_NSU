@@ -4,9 +4,14 @@
     line-height: 20pt;
 }
 
+h1 {
+    font-size: 24pt;
+    font-weight: 900;
+}
+
 p,
 h2 {
-    padding: 7px;
+    padding: 8px;
     margin: 7px 7px 5px 0px;
 }
 
