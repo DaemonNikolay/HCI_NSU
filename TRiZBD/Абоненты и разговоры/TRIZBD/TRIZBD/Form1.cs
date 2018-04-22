@@ -175,62 +175,6 @@ namespace TRIZBD
             this.tableAdapterManager.UpdateAll(this.abonentsAndSpeaksDataSet);
         }
 
-        private void AddNewCity_Click(object sender, EventArgs e)
-        {
-            if (NewNameCity.Text == "")
-            {
-                MessageBox.Show("Имя нового города не может отсутствовать! \nЗаполните поле!");
-                return;
-            }
-            if (CostInMinute.Text == "")
-            {
-                MessageBox.Show($"Укажите цену за минуту для города {NewNameCity.Text}!");
-                return;
-            }
-
-            connect.DataSource = @"(LocalDB)\MSSQLLocalDB";
-            connect.InitialCatalog = "AbonentsAndSpeaks";
-
-            using (SqlConnection cn = new SqlConnection())
-            {
-                cn.ConnectionString = connect.ConnectionString;
-                try
-                {
-                    cn.Open();
-
-                    string strSQLBase = "INSERT INTO Тариф (НазваниеГорода, ЦенаЗаМин) " +
-                                        $"VALUES('{NewNameCity.Text}', {CostInMinute.Text})";
-
-                    SqlDataAdapter sqlDataAdapterBase = new SqlDataAdapter(strSQLBase, cn);
-                    SqlCommand myCommandBase = new SqlCommand(strSQLBase, cn);
-                    myCommandBase.ExecuteNonQuery();
-
-                    Form1_Load(sender, e);
-
-                    номерТелефонаComboBox.SelectedValue = "";
-                    названиеГородаComboBox.Text = "";
-                    колВремениTextBox.Text = "";
-
-                    MessageBox.Show("Данные успешно добавлены!");
-                }
-                catch (SqlException ex)
-                {
-                    // Протоколировать исключение
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    // Гарантировать освобождение подключения
-                    cn.Close();
-                }
-            }
-
-            сохранитьToolStripButton_Click(sender, e);
-
-            NewNameCity.Text = "";
-            CostInMinute.Text = "";
-        }
-
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
             try
@@ -253,16 +197,6 @@ namespace TRIZBD
             this.Validate();
             this.abonentBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.abonentsAndSpeaksDataSet);
-        }
-
-        private void номер_телефонаTextBox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // ввод в texBox только цифр, кнопки Backspace и знака тире('-')
-            char ch = e.KeyChar;
-            if (!Char.IsDigit(ch) && ch != 8 && ch != 45)
-            {
-                e.Handled = true;
-            }
         }
 
         private void фИОTextBox_KeyPress(object sender, KeyPressEventArgs e)
