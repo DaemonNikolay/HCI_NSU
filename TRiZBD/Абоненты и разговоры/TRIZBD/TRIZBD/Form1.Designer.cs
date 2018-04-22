@@ -38,10 +38,11 @@
             System.Windows.Forms.Label ценаЗаМинLabel;
             System.Windows.Forms.Label фИОLabel1;
             System.Windows.Forms.Label адресLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label номер_телефонаLabel;
+            System.Windows.Forms.Label номерТелефонаLabel1;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridAbAndSp = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -56,11 +57,12 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.номер_телефонаMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.abonentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.abonentsAndSpeaksDataSet = new TRIZBD.AbonentsAndSpeaksDataSet();
             this.SaveNewAbonent = new System.Windows.Forms.Button();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
-            this.abonentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.abonentsAndSpeaksDataSet = new TRIZBD.AbonentsAndSpeaksDataSet();
             this.bindingNavigatorCountItem2 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem2 = new System.Windows.Forms.ToolStripButton();
@@ -108,11 +110,17 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.TablesForSearch = new System.Windows.Forms.DataGridView();
+            this.Search = new System.Windows.Forms.Button();
+            this.номерТелефонаSearch = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DateTimePickerDo = new System.Windows.Forms.DateTimePicker();
+            this.DateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.разговорTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.РазговорTableAdapter();
             this.tableAdapterManager = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.TableAdapterManager();
             this.abonentTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.AbonentTableAdapter();
             this.тарифTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.ТарифTableAdapter();
-            this.номер_телефонаMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             номерТелефонаLabel = new System.Windows.Forms.Label();
             датаLabel = new System.Windows.Forms.Label();
             колВремениLabel = new System.Windows.Forms.Label();
@@ -123,16 +131,17 @@
             фИОLabel1 = new System.Windows.Forms.Label();
             адресLabel = new System.Windows.Forms.Label();
             номер_телефонаLabel = new System.Windows.Forms.Label();
+            номерТелефонаLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridAbAndSp)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorAbAndSp)).BeginInit();
             this.bindingNavigatorAbAndSp.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
-            this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.abonentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonentsAndSpeaksDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
+            this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.abonentDataGridView)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.тарифBindingSource)).BeginInit();
@@ -141,6 +150,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.тарифDataGridView)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TablesForSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // номерТелефонаLabel
@@ -233,19 +244,39 @@
             адресLabel.TabIndex = 5;
             адресLabel.Text = "Адрес:";
             // 
+            // номер_телефонаLabel
+            // 
+            номер_телефонаLabel.AutoSize = true;
+            номер_телефонаLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            номер_телефонаLabel.Location = new System.Drawing.Point(672, 112);
+            номер_телефонаLabel.Name = "номер_телефонаLabel";
+            номер_телефонаLabel.Size = new System.Drawing.Size(160, 20);
+            номер_телефонаLabel.TabIndex = 8;
+            номер_телефонаLabel.Text = "Номер телефона:";
+            // 
+            // номерТелефонаLabel1
+            // 
+            номерТелефонаLabel1.AutoSize = true;
+            номерТелефонаLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            номерТелефонаLabel1.Location = new System.Drawing.Point(48, 40);
+            номерТелефонаLabel1.Name = "номерТелефонаLabel1";
+            номерТелефонаLabel1.Size = new System.Drawing.Size(160, 20);
+            номерТелефонаLabel1.TabIndex = 4;
+            номерТелефонаLabel1.Text = "Номер Телефона:";
+            // 
             // DataGridAbAndSp
             // 
             this.DataGridAbAndSp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridAbAndSp.BackgroundColor = System.Drawing.SystemColors.Control;
             this.DataGridAbAndSp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridAbAndSp.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridAbAndSp.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridAbAndSp.Location = new System.Drawing.Point(3, 40);
             this.DataGridAbAndSp.Name = "DataGridAbAndSp";
             this.DataGridAbAndSp.ReadOnly = true;
@@ -392,6 +423,26 @@
             this.tabPage5.Text = "Добавить абонента";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // номер_телефонаMaskedTextBox
+            // 
+            this.номер_телефонаMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.abonentBindingSource, "Номер телефона", true));
+            this.номер_телефонаMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.номер_телефонаMaskedTextBox.Location = new System.Drawing.Point(856, 112);
+            this.номер_телефонаMaskedTextBox.Mask = "0-000-000-00-00";
+            this.номер_телефонаMaskedTextBox.Name = "номер_телефонаMaskedTextBox";
+            this.номер_телефонаMaskedTextBox.Size = new System.Drawing.Size(224, 27);
+            this.номер_телефонаMaskedTextBox.TabIndex = 9;
+            // 
+            // abonentBindingSource
+            // 
+            this.abonentBindingSource.DataMember = "Abonent";
+            this.abonentBindingSource.DataSource = this.abonentsAndSpeaksDataSet;
+            // 
+            // abonentsAndSpeaksDataSet
+            // 
+            this.abonentsAndSpeaksDataSet.DataSetName = "AbonentsAndSpeaksDataSet";
+            this.abonentsAndSpeaksDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SaveNewAbonent
             // 
             this.SaveNewAbonent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -442,16 +493,6 @@
             this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem1.Text = "Добавить";
-            // 
-            // abonentBindingSource
-            // 
-            this.abonentBindingSource.DataMember = "Abonent";
-            this.abonentBindingSource.DataSource = this.abonentsAndSpeaksDataSet;
-            // 
-            // abonentsAndSpeaksDataSet
-            // 
-            this.abonentsAndSpeaksDataSet.DataSetName = "AbonentsAndSpeaksDataSet";
-            this.abonentsAndSpeaksDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem2
             // 
@@ -864,14 +905,14 @@
             // 
             this.тарифDataGridView.AutoGenerateColumns = false;
             this.тарифDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.тарифDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.тарифDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.тарифDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.тарифDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
@@ -900,6 +941,14 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.TablesForSearch);
+            this.tabPage4.Controls.Add(this.Search);
+            this.tabPage4.Controls.Add(номерТелефонаLabel1);
+            this.tabPage4.Controls.Add(this.номерТелефонаSearch);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Controls.Add(this.DateTimePickerDo);
+            this.tabPage4.Controls.Add(this.DateTimePickerTo);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -907,6 +956,80 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Платеж по датам";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // TablesForSearch
+            // 
+            this.TablesForSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TablesForSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TablesForSearch.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TablesForSearch.Location = new System.Drawing.Point(3, 160);
+            this.TablesForSearch.Name = "TablesForSearch";
+            this.TablesForSearch.RowTemplate.Height = 24;
+            this.TablesForSearch.Size = new System.Drawing.Size(1218, 440);
+            this.TablesForSearch.TabIndex = 7;
+            // 
+            // Search
+            // 
+            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Search.Location = new System.Drawing.Point(752, 48);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(128, 48);
+            this.Search.TabIndex = 6;
+            this.Search.Text = "Найти";
+            this.Search.UseVisualStyleBackColor = true;
+            this.Search.Click += new System.EventHandler(this.Search_Click);
+            // 
+            // номерТелефонаSearch
+            // 
+            this.номерТелефонаSearch.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.разговорBindingSource, "НомерТелефона", true));
+            this.номерТелефонаSearch.DataSource = this.abonentBindingSource;
+            this.номерТелефонаSearch.DisplayMember = "Номер телефона";
+            this.номерТелефонаSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.номерТелефонаSearch.FormattingEnabled = true;
+            this.номерТелефонаSearch.Location = new System.Drawing.Point(32, 72);
+            this.номерТелефонаSearch.Name = "номерТелефонаSearch";
+            this.номерТелефонаSearch.Size = new System.Drawing.Size(200, 28);
+            this.номерТелефонаSearch.TabIndex = 5;
+            this.номерТелефонаSearch.ValueMember = "Номер телефона";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(512, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "По какой число:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(328, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "С какого числа:";
+            // 
+            // DateTimePickerDo
+            // 
+            this.DateTimePickerDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DateTimePickerDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateTimePickerDo.Location = new System.Drawing.Point(520, 72);
+            this.DateTimePickerDo.Name = "DateTimePickerDo";
+            this.DateTimePickerDo.Size = new System.Drawing.Size(128, 27);
+            this.DateTimePickerDo.TabIndex = 1;
+            // 
+            // DateTimePickerTo
+            // 
+            this.DateTimePickerTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DateTimePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateTimePickerTo.Location = new System.Drawing.Point(336, 72);
+            this.DateTimePickerTo.Name = "DateTimePickerTo";
+            this.DateTimePickerTo.Size = new System.Drawing.Size(128, 27);
+            this.DateTimePickerTo.TabIndex = 0;
+            this.DateTimePickerTo.Value = new System.DateTime(2018, 4, 20, 0, 0, 0, 0);
             // 
             // разговорTableAdapter
             // 
@@ -928,26 +1051,6 @@
             // 
             this.тарифTableAdapter.ClearBeforeFill = true;
             // 
-            // номер_телефонаLabel
-            // 
-            номер_телефонаLabel.AutoSize = true;
-            номер_телефонаLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            номер_телефонаLabel.Location = new System.Drawing.Point(672, 112);
-            номер_телефонаLabel.Name = "номер_телефонаLabel";
-            номер_телефонаLabel.Size = new System.Drawing.Size(160, 20);
-            номер_телефонаLabel.TabIndex = 8;
-            номер_телефонаLabel.Text = "Номер телефона:";
-            // 
-            // номер_телефонаMaskedTextBox
-            // 
-            this.номер_телефонаMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.abonentBindingSource, "Номер телефона", true));
-            this.номер_телефонаMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.номер_телефонаMaskedTextBox.Location = new System.Drawing.Point(856, 112);
-            this.номер_телефонаMaskedTextBox.Mask = "0-000-000-00-00";
-            this.номер_телефонаMaskedTextBox.Name = "номер_телефонаMaskedTextBox";
-            this.номер_телефонаMaskedTextBox.Size = new System.Drawing.Size(224, 27);
-            this.номер_телефонаMaskedTextBox.TabIndex = 9;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -966,11 +1069,11 @@
             this.bindingNavigatorAbAndSp.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.abonentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.abonentsAndSpeaksDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.abonentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.abonentsAndSpeaksDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonentDataGridView)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -982,6 +1085,9 @@
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.тарифDataGridView)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TablesForSearch)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1059,6 +1165,13 @@
         private System.Windows.Forms.ToolStripButton сохранитьToolStripAddNewAbonent;
         private System.Windows.Forms.Button SaveNewAbonent;
         private System.Windows.Forms.MaskedTextBox номер_телефонаMaskedTextBox;
+        private System.Windows.Forms.Button Search;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker DateTimePickerDo;
+        private System.Windows.Forms.DateTimePicker DateTimePickerTo;
+        private System.Windows.Forms.ComboBox номерТелефонаSearch;
+        private System.Windows.Forms.DataGridView TablesForSearch;
     }
 }
 

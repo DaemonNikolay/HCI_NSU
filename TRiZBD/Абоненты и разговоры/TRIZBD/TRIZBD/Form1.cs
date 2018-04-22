@@ -22,6 +22,13 @@ namespace TRIZBD
 
 
             Load += AddSpeak_Load;
+            Load += SearchTwoDate;
+        }
+
+        private void SearchTwoDate(object sender, EventArgs e)
+        {
+            DateTimePickerTo.Value = DateTime.Today;
+            DateTimePickerDo.Value = DateTime.Today.AddMilliseconds(1);
         }
 
         private void AddSpeak_Load(object sender, EventArgs e)
@@ -265,6 +272,73 @@ namespace TRIZBD
             if (Char.IsDigit(ch) && ch != 8 && ch != 32)
             {
                 e.Handled = true;
+            }
+        }
+
+        private void Search_Click(object sender, EventArgs e)
+        {
+            if (номерТелефонаSearch.Text == null)
+            {
+                MessageBox.Show("Требуется номер телефона!");
+                return;
+            }
+            if (DateTimePickerTo.Value > DateTimePickerDo.Value)
+            {
+                MessageBox.Show("Дата начала не может быть больше даты конца!");
+                return;
+            }
+
+            connect.DataSource = @"(LocalDB)\MSSQLLocalDB";
+            connect.InitialCatalog = "AbonentsAndSpeaks";
+            string sqlExpression = "AbonentTalk";
+
+            using (SqlConnection cn = new SqlConnection())
+            {
+                try
+                {
+                    cn.ConnectionString = connect.ConnectionString;
+                    cn.Open();
+
+                    SqlCommand command = new SqlCommand(sqlExpression, cn);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter data1 = new SqlParameter
+                    {
+                        ParameterName = "@data1",
+                        Value = DateTimePickerTo.Value.Date,
+                    };
+                    command.Parameters.Add(data1);
+
+                    SqlParameter data2 = new SqlParameter
+                    {
+                        ParameterName = "@data2",
+                        Value = DateTimePickerDo.Value.Date,
+                    };
+                    command.Parameters.Add(data2);
+
+                    SqlParameter namber = new SqlParameter
+                    {
+                        ParameterName = "@namber",
+                        Value = номерТелефонаSearch.Text,
+                    };
+                    command.Parameters.Add(namber);
+
+                    SqlDataAdapter ada = new SqlDataAdapter();
+                    ada.SelectCommand = command;
+
+                    DataSet ds = new DataSet();
+                    ada.Fill(ds, "Разговор");
+
+                    TablesForSearch.DataSource = ds.Tables[0].DefaultView;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    cn.Close();
+                }
             }
         }
     }
