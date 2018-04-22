@@ -27,3 +27,4 @@ C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesin
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\SelfTesing_V2.g.resources
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\SelfTesing_V2.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\SelfTesing_V2.csproj.GenerateResource.Cache
+C:\Users\User\Documents\GitHub\HCI_NSU\English\Projects\SelfTesitng_V2\SelfTesing_V2\obj\Debug\SelfTesing_V2.csprojResolveAssemblyReference.cache
