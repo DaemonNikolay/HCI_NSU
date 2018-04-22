@@ -1,0 +1,11 @@
+CREATE PROC AbonentTalk(
+@data1 date,
+@data2 date,
+@namber nvarchar(50)
+)
+AS
+set @data1 =CONVERT(date,@data1)
+SELECT [НазваниеГорода],Дата,[КолВремени],[ЦенаЗаМин],[КолВремени]*[ЦенаЗаМин] AS 'Сумма' FROM Разговор 
+INNER JOIN Abonent ON Разговор.НомерТелефона=Abonent.[Номер Телефона]
+INNER JOIN Тариф ON Разговор.КодГорода=Тариф.КодГорода
+WHERE Дата BETWEEN @data1 and @data2 and Abonent.[Номер Телефона]=@namber;
