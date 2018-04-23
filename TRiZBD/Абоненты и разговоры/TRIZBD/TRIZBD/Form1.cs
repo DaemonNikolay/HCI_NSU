@@ -19,8 +19,6 @@ namespace TRIZBD
         {
             InitializeComponent();
 
-
-
             Load += AddSpeak_Load;
             Load += SearchTwoDate;
         }
@@ -197,6 +195,8 @@ namespace TRIZBD
             this.Validate();
             this.abonentBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.abonentsAndSpeaksDataSet);
+
+            Form1_Load(sender, e);
         }
 
         private void фИОTextBox_KeyPress(object sender, KeyPressEventArgs e)

@@ -22,7 +22,7 @@ namespace TRIZBD
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("ОШИБКА\n"+ex.ToString());
             }
         }
     }

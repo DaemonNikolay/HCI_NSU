@@ -38,11 +38,11 @@
             System.Windows.Forms.Label адресLabel;
             System.Windows.Forms.Label номер_телефонаLabel;
             System.Windows.Forms.Label номерТелефонаLabel1;
+            System.Windows.Forms.Label названиеГородаLabel2;
+            System.Windows.Forms.Label ценаЗаМинLabel1;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.Label названиеГородаLabel2;
-            System.Windows.Forms.Label ценаЗаМинLabel1;
             this.DataGridAbAndSp = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -60,7 +60,6 @@
             this.номер_телефонаMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.abonentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.abonentsAndSpeaksDataSet = new TRIZBD.AbonentsAndSpeaksDataSet();
-            this.SaveNewAbonent = new System.Windows.Forms.Button();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem2 = new System.Windows.Forms.ToolStripLabel();
@@ -90,6 +89,8 @@
             this.датаDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.колВремениTextBox = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.CostInMinute = new System.Windows.Forms.TextBox();
+            this.NewNameCity = new System.Windows.Forms.ComboBox();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
@@ -118,8 +119,6 @@
             this.tableAdapterManager = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.TableAdapterManager();
             this.abonentTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.AbonentTableAdapter();
             this.тарифTableAdapter = new TRIZBD.AbonentsAndSpeaksDataSetTableAdapters.ТарифTableAdapter();
-            this.NewNameCity = new System.Windows.Forms.ComboBox();
-            this.CostInMinute = new System.Windows.Forms.TextBox();
             номерТелефонаLabel = new System.Windows.Forms.Label();
             датаLabel = new System.Windows.Forms.Label();
             колВремениLabel = new System.Windows.Forms.Label();
@@ -242,6 +241,26 @@
             номерТелефонаLabel1.Size = new System.Drawing.Size(160, 20);
             номерТелефонаLabel1.TabIndex = 4;
             номерТелефонаLabel1.Text = "Номер Телефона:";
+            // 
+            // названиеГородаLabel2
+            // 
+            названиеГородаLabel2.AutoSize = true;
+            названиеГородаLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            названиеГородаLabel2.Location = new System.Drawing.Point(688, 128);
+            названиеГородаLabel2.Name = "названиеГородаLabel2";
+            названиеГородаLabel2.Size = new System.Drawing.Size(163, 20);
+            названиеГородаLabel2.TabIndex = 10;
+            названиеГородаLabel2.Text = "Название Города:";
+            // 
+            // ценаЗаМинLabel1
+            // 
+            ценаЗаМинLabel1.AutoSize = true;
+            ценаЗаМинLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            ценаЗаМинLabel1.Location = new System.Drawing.Point(728, 192);
+            ценаЗаМинLabel1.Name = "ценаЗаМинLabel1";
+            ценаЗаМинLabel1.Size = new System.Drawing.Size(123, 20);
+            ценаЗаМинLabel1.TabIndex = 11;
+            ценаЗаМинLabel1.Text = "Цена За Мин:";
             // 
             // DataGridAbAndSp
             // 
@@ -387,7 +406,6 @@
             this.tabPage5.AutoScroll = true;
             this.tabPage5.Controls.Add(номер_телефонаLabel);
             this.tabPage5.Controls.Add(this.номер_телефонаMaskedTextBox);
-            this.tabPage5.Controls.Add(this.SaveNewAbonent);
             this.tabPage5.Controls.Add(this.bindingNavigator2);
             this.tabPage5.Controls.Add(фИОLabel1);
             this.tabPage5.Controls.Add(this.фИОTextBox);
@@ -421,17 +439,6 @@
             // 
             this.abonentsAndSpeaksDataSet.DataSetName = "AbonentsAndSpeaksDataSet";
             this.abonentsAndSpeaksDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // SaveNewAbonent
-            // 
-            this.SaveNewAbonent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveNewAbonent.Location = new System.Drawing.Point(856, 320);
-            this.SaveNewAbonent.Name = "SaveNewAbonent";
-            this.SaveNewAbonent.Size = new System.Drawing.Size(128, 40);
-            this.SaveNewAbonent.TabIndex = 8;
-            this.SaveNewAbonent.Text = "Сохранить";
-            this.SaveNewAbonent.UseVisualStyleBackColor = true;
-            this.SaveNewAbonent.Click += new System.EventHandler(this.сохранитьToolStripAddNewAbonent_Click);
             // 
             // bindingNavigator2
             // 
@@ -591,6 +598,7 @@
             this.abonentDataGridView.Location = new System.Drawing.Point(16, 80);
             this.abonentDataGridView.Name = "abonentDataGridView";
             this.abonentDataGridView.RowTemplate.Height = 24;
+            this.abonentDataGridView.RowTemplate.ReadOnly = true;
             this.abonentDataGridView.Size = new System.Drawing.Size(576, 504);
             this.abonentDataGridView.TabIndex = 0;
             // 
@@ -725,6 +733,26 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Города и тарифы";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // CostInMinute
+            // 
+            this.CostInMinute.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "ЦенаЗаМин", true));
+            this.CostInMinute.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CostInMinute.Location = new System.Drawing.Point(896, 184);
+            this.CostInMinute.Name = "CostInMinute";
+            this.CostInMinute.Size = new System.Drawing.Size(272, 27);
+            this.CostInMinute.TabIndex = 12;
+            this.CostInMinute.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.колВремениTextBox_KeyPress);
+            // 
+            // NewNameCity
+            // 
+            this.NewNameCity.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "НазваниеГорода", true));
+            this.NewNameCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewNameCity.FormattingEnabled = true;
+            this.NewNameCity.Location = new System.Drawing.Point(896, 120);
+            this.NewNameCity.Name = "NewNameCity";
+            this.NewNameCity.Size = new System.Drawing.Size(272, 28);
+            this.NewNameCity.TabIndex = 11;
             // 
             // bindingNavigator1
             // 
@@ -1003,46 +1031,6 @@
             // 
             this.тарифTableAdapter.ClearBeforeFill = true;
             // 
-            // названиеГородаLabel2
-            // 
-            названиеГородаLabel2.AutoSize = true;
-            названиеГородаLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            названиеГородаLabel2.Location = new System.Drawing.Point(688, 128);
-            названиеГородаLabel2.Name = "названиеГородаLabel2";
-            названиеГородаLabel2.Size = new System.Drawing.Size(163, 20);
-            названиеГородаLabel2.TabIndex = 10;
-            названиеГородаLabel2.Text = "Название Города:";
-            // 
-            // NewNameCity
-            // 
-            this.NewNameCity.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "НазваниеГорода", true));
-            this.NewNameCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NewNameCity.FormattingEnabled = true;
-            this.NewNameCity.Location = new System.Drawing.Point(896, 120);
-            this.NewNameCity.Name = "NewNameCity";
-            this.NewNameCity.Size = new System.Drawing.Size(272, 28);
-            this.NewNameCity.TabIndex = 11;
-            // 
-            // ценаЗаМинLabel1
-            // 
-            ценаЗаМинLabel1.AutoSize = true;
-            ценаЗаМинLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            ценаЗаМинLabel1.Location = new System.Drawing.Point(728, 192);
-            ценаЗаМинLabel1.Name = "ценаЗаМинLabel1";
-            ценаЗаМинLabel1.Size = new System.Drawing.Size(123, 20);
-            ценаЗаМинLabel1.TabIndex = 11;
-            ценаЗаМинLabel1.Text = "Цена За Мин:";
-            // 
-            // CostInMinute
-            // 
-            this.CostInMinute.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.тарифBindingSource, "ЦенаЗаМин", true));
-            this.CostInMinute.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CostInMinute.Location = new System.Drawing.Point(896, 184);
-            this.CostInMinute.Name = "CostInMinute";
-            this.CostInMinute.Size = new System.Drawing.Size(272, 27);
-            this.CostInMinute.TabIndex = 12;
-            this.CostInMinute.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.колВремениTextBox_KeyPress);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1152,7 +1140,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.ToolStripButton сохранитьToolStripAddNewAbonent;
-        private System.Windows.Forms.Button SaveNewAbonent;
         private System.Windows.Forms.MaskedTextBox номер_телефонаMaskedTextBox;
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.Label label2;
