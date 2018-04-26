@@ -211,30 +211,46 @@ namespace SelfTesing_V2
             {
                 using (FileStream fstream = new FileStream($@"{PathRoot}/{nameFile}", FileMode.Create))
                 {
-                    WriteLine(fstream, ($"Name: {InputUserName.Text.Trim()}"));
-                    WriteLine(fstream, ($"Surname: {InputUserSurname.Text.Trim()}"));
-                    WriteLine(fstream, ($"Group: {InputUserGroup.Text.Trim()}"));
+                    StringBuilder answersUnit9 = new StringBuilder();
+                    answersUnit9.Append($"Name: {InputUserName.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"Surname: {InputUserSurname.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"Group: {InputUserGroup.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.1. {Unit8_ComboBox_task_1_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.2. {Unit8_ComboBox_task_1_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.3. {Unit8_ComboBox_task_1_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.4. {Unit8_ComboBox_task_1_4.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.5. {Unit8_ComboBox_task_1_5.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.6. {Unit8_ComboBox_task_1_6.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.7. {Unit8_ComboBox_task_1_7.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"2.1. {Unit8_TextBox_2_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"2.2. {Unit8_TextBox_2_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"2.3. {Unit8_TextBox_2_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"2.4. {Unit8_TextBox_2_4.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"2.5. {Unit8_TextBox_2_5.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"3.1. {Unit8_TextBox_3_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"3.2. {Unit8_TextBox_3_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"3.3. {Unit8_TextBox_3_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"4.1. {Unit8_TextBox_4_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"4.2. {Unit8_TextBox_4_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"4.3. {Unit8_TextBox_4_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"4.4. {Unit8_TextBox_4_4.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"4.5. {Unit8_TextBox_4_5.Text.Trim()}{Environment.NewLine}");
 
-                    WriteLine(fstream, ($"1.1. {Unit8_ComboBox_task_1_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.2. {Unit8_ComboBox_task_1_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.3. {Unit8_ComboBox_task_1_3.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.4. {Unit8_ComboBox_task_1_4.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.5. {Unit8_ComboBox_task_1_5.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.6. {Unit8_ComboBox_task_1_6.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.7. {Unit8_ComboBox_task_1_7.Text.Trim()}"));
-                    WriteLine(fstream, ($"2.1. {Unit8_TextBox_2_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"2.2. {Unit8_TextBox_2_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"2.3. {Unit8_TextBox_2_3.Text.Trim()}"));
-                    WriteLine(fstream, ($"2.4. {Unit8_TextBox_2_4.Text.Trim()}"));
-                    WriteLine(fstream, ($"2.5. {Unit8_TextBox_2_5.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.1. {Unit8_TextBox_3_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.2. {Unit8_TextBox_3_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.3. {Unit8_TextBox_3_3.Text.Trim()}"));
-                    WriteLine(fstream, ($"4.1. {Unit8_TextBox_4_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"4.2. {Unit8_TextBox_4_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"4.3. {Unit8_TextBox_4_3.Text.Trim()}"));
-                    WriteLine(fstream, ($"4.4. {Unit8_TextBox_4_4.Text.Trim()}"));
-                    WriteLine(fstream, ($"4.5. {Unit8_TextBox_4_5.Text.Trim()}"));
+                    byte[] stringToBytesUTF8 = Encoding.UTF8.GetBytes(answersUnit9.ToString());
+                    StringBuilder encodingText = new StringBuilder();
+                    foreach (byte element in stringToBytesUTF8)
+                    {
+                        encodingText.Append(element);
+                    }
+
+                    WriteLine(fstream, encodingText.ToString());
+
+                    ///Декодирование
+
+                    string bytesToString = Encoding.UTF8.GetString(stringToBytesUTF8);
+                    MessageBox.Show(bytesToString);
+
+
                 }
 
                 return "Успех!";
@@ -377,27 +393,41 @@ namespace SelfTesing_V2
             {
                 using (FileStream fstream = new FileStream($@"{PathRoot}/{nameFile}", FileMode.Create))
                 {
-                    WriteLine(fstream, ($"Name: {InputUserName.Text.Trim()}"));
-                    WriteLine(fstream, ($"Surname: {InputUserSurname.Text.Trim()}"));
-                    WriteLine(fstream, ($"Group: {InputUserGroup.Text.Trim()}"));
+                    StringBuilder answersUnit9 = new StringBuilder();
+                    answersUnit9.Append($"Name: {InputUserName.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"Surname: {InputUserSurname.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"Group: {InputUserGroup.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.1.1. {Unit9_TextBox_1_1_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.1.2. {Unit9_TextBox_1_1_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.1.3. {Unit9_TextBox_1_1_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.2.1. {Unit9_TextBox_1_2_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.2.2. {Unit9_TextBox_1_2_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.3.1. {Unit9_TextBox_1_3_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.3.2. {Unit9_TextBox_1_3_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.3.3. {Unit9_TextBox_1_3_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.4.1. {Unit9_TextBox_1_4_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.4.2. {Unit9_TextBox_1_4_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.5.1. {Unit9_TextBox_1_5_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"1.5.2. {Unit9_TextBox_1_5_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"2.1. {Unit9_TextBox_2_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"2.2. {Unit9_TextBox_2_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"3.1. {Unit9_ComboBox_task_3_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"3.2. {Unit9_ComboBox_task_3_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit9.Append($"3.3. {Unit9_ComboBox_task_3_3.Text.Trim()}{Environment.NewLine}");
 
-                    WriteLine(fstream, ($"1.1.1. {Unit9_TextBox_1_1_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.1.2. {Unit9_TextBox_1_1_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.1.3. {Unit9_TextBox_1_1_3.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.2.1. {Unit9_TextBox_1_2_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.2.2. {Unit9_TextBox_1_2_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.3.1. {Unit9_TextBox_1_3_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.3.2. {Unit9_TextBox_1_3_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.3.3. {Unit9_TextBox_1_3_3.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.4.1. {Unit9_TextBox_1_4_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.4.2. {Unit9_TextBox_1_4_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.5.1. {Unit9_TextBox_1_5_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"1.5.2. {Unit9_TextBox_1_5_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"2.1. {Unit9_TextBox_2_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"2.2. {Unit9_TextBox_2_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.1. {Unit9_ComboBox_task_3_1.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.2. {Unit9_ComboBox_task_3_2.Text.Trim()}"));
-                    WriteLine(fstream, ($"3.3. {Unit9_ComboBox_task_3_3.Text.Trim()}"));
+                    byte[] stringToBytesUTF8 = Encoding.UTF8.GetBytes(answersUnit9.ToString());
+                    StringBuilder encodingText = new StringBuilder();
+                    foreach (byte element in stringToBytesUTF8)
+                    {
+                        encodingText.Append(element);
+                    }
+
+                    WriteLine(fstream, encodingText.ToString());
+
+                    ///Декодирование
+
+                    //string bytesToString = Encoding.UTF8.GetString(stringToBytesUTF8);
+                    //MessageBox.Show(bytesToString);
                 }
 
                 return "Успех!";

@@ -17,7 +17,7 @@
             <TabControl x:Name="tabControl" Height="1794" Margin="35,72,7,0" VerticalAlignment="Top" Width="686" VerticalContentAlignment="Top">
                 <TabItem Header="Unit 8">
                     <Grid Background="#FFE5E5E5" Margin="0,0,-0.2,0.2" ScrollViewer.CanContentScroll="True">
-                        <ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Margin="0" Padding="0" Grid.IsSharedSizeScope="True">
+                        <ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Margin="0" Padding="0" Grid.IsSharedSizeScope="True" IsTabStop="True">
 
                             <TextBlock x:Name="textBlock1" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify"><Run Text="1. Look at these extracts from people talking about printing jobs. Which type of printer is each"/><Run Text=" person talking about? Choose from the drop-down menu."/></TextBlock>
                             <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="43,10,0,0" TextWrapping="Wrap" Text="1.1. &quot;Can you order some more toner for the printer on the third floor?&quot;" VerticalAlignment="Top" Height="25" Width="604" FontSize="16"/>
