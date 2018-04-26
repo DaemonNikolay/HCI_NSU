@@ -35,6 +35,9 @@
                         <label>Результат шифрования</label>
                         <textarea rows="7" cols="40" id="OutputCezare" readonly></textarea>
                     </p>
+                    <p>
+                        <button id="SaveInBufferCezare">Копировать результат</button>
+                    </p>
                 </fieldset>
             </form>
         </div>
@@ -55,6 +58,9 @@
                         <label>Результат шифрования</label>
                         <textarea id="OutputXor" cols="40" rows="7" readonly></textarea>
                     </p>
+                    <p>
+                        <button id="SaveInBufferXOR">Копировать результат</button>
+                    </p>
                 </fieldset>
             </form>
         </div>
@@ -70,6 +76,9 @@
                     <p>
                         <label>Результат шифрования</label>
                         <textarea rows="7" cols="40" id="OutputTextRandomly" readonly></textarea>
+                    </p>
+                    <p>
+                        <button id="SaveInBufferRandomly">Копировать результат</button>
                     </p>
                 </fieldset>
             </form>
@@ -94,6 +103,9 @@
                     <p>
                         <label>Результат перестановки</label>
                         <textarea rows="7" cols="40" id="OutputTextBlockPermutation" readonly></textarea>
+                    </p>
+                    <p>
+                        <button id="SaveInBufferBlockPermutation">Копировать результат</button>
                     </p>
                 </fieldset>
             </form>
@@ -166,7 +178,7 @@
                         <textarea rows="7" cols="40" id="OutputTextCombo" readonly></textarea>
                     </p>
                     <p>
-                        <button id="SaveInBuffer">Копировать результат</button>
+                        <button id="SaveInBufferCombo">Копировать результат</button>
                     </p>
                 </fieldset>
             </form>
@@ -174,12 +186,47 @@
     </div>
 
     <script>
-        var button = document.getElementById("SaveInBuffer"),
-            input = document.getElementById("OutputTextCombo");
-
-        button.addEventListener("click", function(event) {
+        var buttonCezare = document.getElementById("SaveInBufferCezare"),
+            inputCezare = document.getElementById("OutputCezare");
+        buttonCezare.addEventListener("click", function(event) {
             event.preventDefault();
-            input.select();
+            inputCezare.select();
+            document.execCommand("copy");
+            alert("Текст скопирован успешно!");
+        });
+
+        var buttonXOR = document.getElementById("SaveInBufferXOR"),
+            inputXOR = document.getElementById("OutputXor");
+        buttonXOR.addEventListener("click", function(event) {
+            event.preventDefault();
+            inputXOR.select();
+            document.execCommand("copy");
+            alert("Текст скопирован успешно!");
+        });
+
+        var buttonRandomly = document.getElementById("SaveInBufferRandomly"),
+            inputRandomly = document.getElementById("OutputTextRandomly");
+        buttonRandomly.addEventListener("click", function(event) {
+            event.preventDefault();
+            inputRandomly.select();
+            document.execCommand("copy");
+            alert("Текст скопирован успешно!");
+        });
+
+        var buttonBlockPermutation = document.getElementById("SaveInBufferBlockPermutation"),
+            inputBlockPermutation = document.getElementById("OutputTextBlockPermutation");
+        buttonBlockPermutation.addEventListener("click", function(event) {
+            event.preventDefault();
+            inputBlockPermutation.select();
+            document.execCommand("copy");
+            alert("Текст скопирован успешно!");
+        });
+
+        var buttonCombo = document.getElementById("SaveInBufferCombo"),
+            inputCombo = document.getElementById("OutputTextCombo");
+        buttonCombo.addEventListener("click", function(event) {
+            event.preventDefault();
+            inputCombo.select();
             document.execCommand("copy");
             alert("Текст скопирован успешно!");
         });
