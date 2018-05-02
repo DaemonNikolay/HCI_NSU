@@ -427,41 +427,35 @@ codes, labels and medium-resolution graphics</b> </td>
 </tr>
 <tr>
 <td>Magnetic storage devices store data by magnetizing particles on a disk or tape.</td>
-<td></td>
+<td>Магнитные запоминающие устройства хранят данные путём намагничивания частиц на диск или ленту.</td>
 </tr>
 <tr>
-<td>A floppy disk is so called because it consists of a flexible sheet of plastic, coated with iron oxide — a magnetizable material. A floppy disk drive spins at 360  evolutions per minute (rpm), so it's relatively slow. However, a hard drive spins at over 7,200 rpm and stores data on a stack of metal rotating disks called platters. This means you can store much more data and retrieve information much faster.</td>
-<td></td>
+<td>A floppy disk is so called because it consists of a flexible sheet of plastic, coated with iron oxide - a magnetizable material. A floppy disk drive spins at 360  evolutions per minute (rpm), so it's relatively slow. However, a hard drive spins at over 7,200 rpm and stores data on a stack of metal rotating disks called platters. This means you can store much more data and retrieve information much faster.</td>
+<td>Дискета называется так, потому что состоит из гибкого листа пластика, покрытого оксидом железа - намагничиваемого материала. Дисковод вращается со скоростью 360 оборотов в минуту (об/мин), поэтому он относительно медленный. Однако, вращение диска в 7200 оборотов в минуту и хранение данных в стеке металлических вращающихся дисков названы пластинами жёсткого диска. Это значит, что Ыы можете хранить гораздо больше данных и извлекать информацию намного быстрее.</td>
 </tr>
 <tr>
 <td>New disks need to be formatted before you can use them, unless they come preformatted from the manufacturer. When the disk is formatted, the operating system (OS) organizes the disk surface into circular tracks and divides each track into sectors. The OS creates a directory which will record the specific location of files. When you save a file, the OS moves the read/write head of the drive towards empty sectors, records the data and writes an entry for the directory. Later on, when you open that file, the OS looks for its entry in the directory, moves the read/write heads to the correct sector, and reads the file in the RAM area. However, formatting erases any existing files on a disk, so do not format disks on which data that you don't want to lose is stored.</td>
-<td></td>
+<td>Новые диски должны быть отформатированы перед их использованием, если они не были предварительно отформатированы производителем. Когда диск отформатирован, операционная система (ОС) объединяет поверхность диска в круговые дорожки и делит каждую дорожку на сектора. ОС создает директорию, в которую будут записываться расположения файлов. При сохранении файла операционная система перемещает головку чтения/записи диска на пустые сектора, записывает данные и записывает каждый вход для директории(?). Позже, когда вы открываете этот файл, ОС ищет его запись в директории, перемещает головку чтения/записи в нужный сектор и считает файл в область ОЗУ. Однако, форматирование стирает все существующие файлы на диске, поэтому не форматируйте диски, на которых хранятся данные, которые Вы не хотите потерять.</td>
 </tr>
 <tr>
 <td>The OS allows you to create one or more partitions on your hard drive, in effect dividing it into several logical parts. Partitions let you install more than one operating system (e.g. Windows and Linux) on your computer. You may also decide to split your hard drive because you want to store the OS and programs on one partition and your data files on another; this allows you to reinstall the OS when a problem occurs, without affecting the data partition.</td>
-<td></td>
+<td>ОС позволяет создать один или несколько разделов на жёстком диске, фактически разделив его на несколько логических разделов. Разделы позволяют устанавливать на компьютер несколько операционных систем (например, Windows и Linux). Вы также можете разделить Ваш жёсткий диск, потому что хотите сохранить ОС и программы на одном разделе и файлы данных на другой; это позволяет переустановить ОС, при возникновении проблем, не затрагивая раздел с данными.</td>
 </tr>
 <tr>
 <td>The average time required for the read/write heads to move and find data is called seek time (or access time) and it is measured in milliseconds (ms); most hard drives have a seek time of 7 to 14 ms. Don't confuse this with transfer rate - the average speed required to transmit data from the disk to the CPU, measured in megabytes per second.</td>
-<td></td>
+<td>Среднее время, необходимое головкам чтения/записи для перемещения и поиска данных, называется временем поиска (или временем доступа) и измеряется в миллисекундах (мс); большинство жёстких дисков имеют время поиска от 7 до 14 мс. Не путайте это со скоростью передачи - средней скоростью, необходимой для передачи данных с диска на процессор, измеряемое в мегабайтах в секунду.</td>
 </tr>
 <tr>
 <td>How to protect your hard drive<br />
-■ Don't hit or move the computer while the hard drive
-is spinning. Hard drives are very sensitive to vibration
-and shocks, especially when they are operating; when
-the read/write head touches the rotating disk, it can
-scratch and damage the disk surface.This is known as
-head crash.<br />
-■ You shouldn't turn your computer off and on quickly.
-Wait at least ten seconds to ensure that the drive has
-stopped spinning.<br />
-■ Check your hard drive regularly for logical and physical
-errors. To check and repair a drive, you can use a disk
-diagnosis utility like Windows ScanDisk.<br />
-■ To minimize the risk of data loss or corruption, you
-should install an up-to-date virus scanner. You should
-also back up your hard drive regularly</td>
-<td></td>
+■ Don't hit or move the computer while the hard drive is spinning. Hard drives are very sensitive to vibration and shocks, especially when they are operating; when the read/write head touches the rotating disk, it can scratch and damage the disk surface.This is known as head crash.<br />
+■ You shouldn't turn your computer off and on quickly. Wait at least ten seconds to ensure that the drive has stopped spinning.<br />
+■ Check your hard drive regularly for logical and physical errors. To check and repair a drive, you can use a disk diagnosis utility like Windows ScanDisk.<br />
+■ To minimize the risk of data loss or corruption, you should install an up-to-date virus scanner. You should also back up your hard drive regularly</td>
+<td>Как защитить жесткий диск<br />
+■ Не бейте и не перемещайте компьютер во время вращения головки жёсткого диска. Жесткие диски очень чувствительны к вибрации и ударам, особенно когда они работают; когда головка чтения/записи касается вращающегося диска, она может поцарапать и повредить поверхность диска.Это известно как головная авария.<br />
+■ Не следует быстро включать и выключать компьютер. Подождите не менее десяти секунд, чтобы убедиться, что головка диска перестала вращаться.<br />
+■ Регулярно проверяйте жесткий диск на наличие логических и физических ошибок. Для проверки и восстановления диска можно использовать утилиту диагностики диска, например Windows ScanDisk.<br />
+■ Чтобы свести к минимуму риск потери или повреждения данных, необходимо установить современный антивирусный сканер. Также следует регулярно создавать резервные копии жёсткого диска.
+</td>
 </tr>
 </table>
