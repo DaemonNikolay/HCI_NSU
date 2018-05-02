@@ -446,19 +446,19 @@ codes, labels and medium-resolution graphics</b> </td>
 <td></td>
 </tr>
 <tr>
-<td>How to protect your hard drive
+<td>How to protect your hard drive<br />
 ■ Don't hit or move the computer while the hard drive
 is spinning. Hard drives are very sensitive to vibration
 and shocks, especially when they are operating; when
 the read/write head touches the rotating disk, it can
 scratch and damage the disk surface.This is known as
-head crash.
+head crash.<br />
 ■ You shouldn't turn your computer off and on quickly.
 Wait at least ten seconds to ensure that the drive has
-stopped spinning.
+stopped spinning.<br />
 ■ Check your hard drive regularly for logical and physical
 errors. To check and repair a drive, you can use a disk
-diagnosis utility like Windows ScanDisk.
+diagnosis utility like Windows ScanDisk.<br />
 ■ To minimize the risk of data loss or corruption, you
 should install an up-to-date virus scanner. You should
 also back up your hard drive regularly</td>
