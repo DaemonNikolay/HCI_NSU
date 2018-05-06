@@ -15,6 +15,18 @@ if (!$result) {
 }
 
 ?>
+    <div>
+        <a href="FormInsert.php"><input class="inputStandard" type="button" value="Добавить"/></a>
+    </div>
+
+    <div>
+        <input type="text" id="search_login" placeholder="Поиск по логину..."/>
+        <a id="search" href="SearchUser.php?login="><input onclick="Replace_link();" id="buttonSeacrh"
+                                                           class="inputStandard"
+                                                           type="button"
+                                                           value="Найти"/></a>
+    </div>
+
     <table border="1">
         <tr>
             <th hidden>Id</th>
@@ -48,6 +60,13 @@ if (!$result) {
         }
         ?>
     </table>
+
+    <script>
+        function Replace_link() {
+            document.querySelector('#search').setAttribute('href', 'SearchUser.php?login=' + document.getElementById("search_login").value);
+            document.getElementById("search_login").value = "";
+        }
+    </script>
 <?php
 
 

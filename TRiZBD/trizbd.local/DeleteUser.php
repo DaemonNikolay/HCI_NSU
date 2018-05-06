@@ -6,7 +6,7 @@ require_once "Connection.php";
 $id = $_REQUEST['id'];
 $sql = "DELETE FROM user WHERE id=$id";
 
-$r = mysqli_query($link, $sql) or die("error delete");
+$query = mysqli_query($link, $sql) or die("error delete");
 
 mysqli_close($link);
 
