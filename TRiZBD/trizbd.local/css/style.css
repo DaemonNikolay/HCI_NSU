@@ -31,7 +31,7 @@ th {
 }
 
 th:after {
-    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .08));
     content: '';
     display: block;
     height: 25%;
@@ -59,4 +59,32 @@ td {
     padding: 10px 15px;
     position: relative;
     transition: all 300ms;
+}
+
+.field {
+    clear: both;
+    text-align: right;
+}
+
+label {
+    float: left;
+    padding-right: 15px;
+}
+
+form {
+    float: left;
+    width: 33%;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.inputForm {
+    width: 70%;
+}
+
+.inputStandard {
+    width: 110px;
+    height: 40px;
 }

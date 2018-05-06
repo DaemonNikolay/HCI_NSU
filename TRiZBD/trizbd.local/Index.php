@@ -40,7 +40,7 @@ if (!$result) {
                 echo "<td>" . $row['sex'] . "</td>";
                 echo "<td>" . $row['password'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";
-                echo "<td>" . "<a href=EditUser.php?id=" . $row['id'] . ">Изменить</a></td>";
+                echo "<td>" . "<a href=FormEdit.php?id=" . $row['id'] . ">Изменить</a></td>";
                 echo "<td>" . "<a href=DeleteUser.php?id=" . $row['id'] . ">Удалить</a></td>";
                 ?>
             </tr>
