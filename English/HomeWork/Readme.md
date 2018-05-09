@@ -466,6 +466,8 @@ codes, labels and medium-resolution graphics</b> </td>
 
 Стр. 51 (5,6)
 
+### 5
+
 **magnet** - магнит : **noun** - сущ.;
 **magnetic** - магнитные : **adjective** - прилагательное;
 **magnetically** - магнетически : **adverbs** - нар.;
@@ -486,3 +488,11 @@ codes, labels and medium-resolution graphics</b> </td>
 2. **Fragmentation** slows down the speed at which data is accessed because the disk drive has to work harder to find the parts of a file stored in many different locations = Фрагментация замедляет скорость, с которой осуществляется доступ к данным, так как диск должен работать усерднее, чтобы найти части файла, хранящиеся в разных местах;
 3. To reorganize your hard drive, you can use a disk optimizer or **defragmenter**; this will reorder your files into continuous
 clusters = Для реорганизации жёсткого диска, можно использовать оптимизатор диска или дефрагментатор; это позволит переупорядочить файлы в последовательные кластеры.
+
+### 6
+
+**Why the head crash happened** - You treated him carelessly. Perhaps, inflicted blunt blows to the computer case for performance gains. = **Почему произошла авария головы** - She относилась к нему небрежно. Возможно, наносила тупые удары по корпусу компьютера для повышения производительности.
+
+**What precautions she should take with her new PC to avoid similar problems in the future** - I strongly recommend that you do not touch the computer case yourself. Applies with awe, reverence and humility to the computer. = **Какие меры предосторожности она должна принять со своим новым ПК, чтобы избежать подобных проблем в будущем** - Я настоятельно рекомендую тебе не трогать корпус компьютера самостоятельно. Относится с трепетом, почтением и смирением к компьютеру.
+
+**What precautions she should take with her new PC to avoid similar problems in the future** - I recommend using the cloud for data backup. It not would suffer from your hands, legs and other limbs. There are free versions. = **Какие меры предосторожности она должна принять с ее новым ПК, чтобы избежать подобных проблем в будущем** - Я рекомендую использовать облако для резервного копирования данных. Оно не пострадает от твоих рук, ног и иных конечностей. Есть бесплатные версии.
