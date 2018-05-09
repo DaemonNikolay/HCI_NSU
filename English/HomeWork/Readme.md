@@ -468,21 +468,21 @@ codes, labels and medium-resolution graphics</b> </td>
 
 ### 5
 
-**magnet** - магнит : **noun** - сущ.;
-**magnetic** - магнитные : **adjective** - прилагательное;
-**magnetically** - магнетически : **adverbs** - нар.;
-**magnetism** - магнетизм : **noun** - сущ.;
-**magnetize** - намагнитить : **verbs** - глагол;
-**magnetized** - намагниченный : **adjective** - прил.;
+* **magnet** - магнит : **noun** - сущ.;
+* **magnetic** - магнитные : **adjective** - прилагательное;
+* **magnetically** - магнетически : **adverbs** - нар.;
+* **magnetism** - магнетизм : **noun** - сущ.;
+* **magnetize** - намагнитить : **verbs** - глагол;
+* **magnetized** - намагниченный : **adjective** - прил.;
 
 1. **magnetism** is the science of magnetic phenomena and properties = магнетизм это наука о магнитных явлениях и свойствах;
 2. Floppy disks and hard drives are **magnetics** storage devices = Дискеты и жесткие диски являются магнитными устройствами хранения данных;
 3. Data is recorded on a disk in the form of **magnetized** spots called bits = Данные записываются на диск в виде намагниченных пятен, называемых битами;
 
-**fragment** - фрагмент : **noun** - сущ.;
-**fragmentation** - фрагментация : **verbs** - глагол;
-**defragmenter** - дефрагментатор : **noun** - сущ.;
-**fragmented** - фрагментированный : **adverbs** - прил.;
+* **fragment** - фрагмент : **noun** - сущ.;
+* **fragmentation** - фрагментация : **verbs** - глагол;
+* **defragmenter** - дефрагментатор : **noun** - сущ.;
+* **fragmented** - фрагментированный : **adverbs** - прил.;
 
 1. After you create, delete and modify a lot of files, the hard drive becomes **fragmented**, with bits and pieces spread all over the disk. = После создания, удаления и изменения большого количества файлов жёсткий диск становится фрагментированным, с битами и кусками, разбросанными по всему диску;
 2. **Fragmentation** slows down the speed at which data is accessed because the disk drive has to work harder to find the parts of a file stored in many different locations = Фрагментация замедляет скорость, с которой осуществляется доступ к данным, так как диск должен работать усерднее, чтобы найти части файла, хранящиеся в разных местах;
@@ -491,7 +491,7 @@ clusters = Для реорганизации жёсткого диска, мож
 
 ### 6
 
-**Why the head crash happened** - You treated him carelessly. Perhaps, inflicted blunt blows to the computer case for performance gains. = **Почему произошла авария головы** - She относилась к нему небрежно. Возможно, наносила тупые удары по корпусу компьютера для повышения производительности.
+**Why the head crash happened** - You treated him carelessly. Perhaps, inflicted blunt blows to the computer case for performance gains. = **Почему произошла авария головы** - Ты относилась к нему небрежно. Возможно, наносила тупые удары по корпусу компьютера для повышения производительности.
 
 **What precautions she should take with her new PC to avoid similar problems in the future** - I strongly recommend that you do not touch the computer case yourself. Applies with awe, reverence and humility to the computer. = **Какие меры предосторожности она должна принять со своим новым ПК, чтобы избежать подобных проблем в будущем** - Я настоятельно рекомендую тебе не трогать корпус компьютера самостоятельно. Относится с трепетом, почтением и смирением к компьютеру.
 
