@@ -475,7 +475,7 @@ codes, labels and medium-resolution graphics</b> </td>
 * **magnetize** - намагнитить : **verbs** - глагол;
 * **magnetized** - намагниченный : **adjective** - прил.;
 
-1. **magnetism** is the science of magnetic phenomena and properties = магнетизм это наука о магнитных явлениях и свойствах;
+1. **Magnetism** is the science of magnetic phenomena and properties = Магнетизм это наука о магнитных явлениях и свойствах;
 2. Floppy disks and hard drives are **magnetics** storage devices = Дискеты и жесткие диски являются магнитными устройствами хранения данных;
 3. Data is recorded on a disk in the form of **magnetized** spots called bits = Данные записываются на диск в виде намагниченных пятен, называемых битами;
 
@@ -485,9 +485,9 @@ codes, labels and medium-resolution graphics</b> </td>
 * **fragmented** - фрагментированный : **adverbs** - прил.;
 
 1. After you create, delete and modify a lot of files, the hard drive becomes **fragmented**, with bits and pieces spread all over the disk. = После создания, удаления и изменения большого количества файлов жёсткий диск становится фрагментированным, с битами и кусками, разбросанными по всему диску;
-2. **Fragmentation** slows down the speed at which data is accessed because the disk drive has to work harder to find the parts of a file stored in many different locations = Фрагментация замедляет скорость, с которой осуществляется доступ к данным, так как диск должен работать усерднее, чтобы найти части файла, хранящиеся в разных местах;
+2. **Fragmentation** slows down the speed at which data is accessed because the disk drive has to work harder to find the parts of a file stored in many different locations = Фрагментация замедляет скорость, с которой осуществляется доступ к данным, потому что диск должен работать усерднее, чтобы найти части файла, хранящиеся в разных местах;
 3. To reorganize your hard drive, you can use a disk optimizer or **defragmenter**; this will reorder your files into continuous
-clusters = Для реорганизации жёсткого диска, можно использовать оптимизатор диска или дефрагментатор; это позволит переупорядочить файлы в последовательные кластеры.
+clusters = Для реорганизации жёсткого диска, можно использовать оптимизатор диска или дефрагментатор; это позволит переупорядочить файлы в последовательные группы.
 
 ### 6
 
