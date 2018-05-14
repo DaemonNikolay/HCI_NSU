@@ -955,7 +955,7 @@ namespace SelfTesing_V2 {
         
         #line 797 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox InputUserGroup;
+        internal System.Windows.Controls.ComboBox InputUserGroup;
         
         #line default
         #line hidden
@@ -1351,7 +1351,7 @@ namespace SelfTesing_V2 {
             this.textBlock2 = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 115:
-            this.InputUserGroup = ((System.Windows.Controls.TextBox)(target));
+            this.InputUserGroup = ((System.Windows.Controls.ComboBox)(target));
             return;
             }
             this._contentLoaded = true;
