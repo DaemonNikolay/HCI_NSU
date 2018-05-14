@@ -1,0 +1,25 @@
+Name: FDS
+Surname: WR
+Group: XCZ
+1.1. holds
+1.2. holds
+1.3. read/write
+1.4 holds
+1.5. head crash
+1.6. storage
+1.7. head crash
+1.8. read/write
+1.9. formatted
+1.10. Give Java!
+1.11. holds
+1.12. hard
+1.13. hard
+1.14. storage
+2.1. Access time
+2.2. Transfer rate
+2.3. seek time
+2.4. tracks; sectors
+2.4 second. partition
+2.5. Transfer rate
+2.6. directory
+
