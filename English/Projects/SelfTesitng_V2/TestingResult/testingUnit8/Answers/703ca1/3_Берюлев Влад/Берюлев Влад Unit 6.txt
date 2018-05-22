@@ -1,0 +1,42 @@
+Beryulev Vlad 703ca1
+Unit 6
+
+¹1
+
+1. scanner;
+2. camcoder;
+3. digital camera;
+
+¹2
+
+1. Opinion;
+2. Fact;
+3. Opinion;
+4. Fact;
+5. Fact;
+
+¹3
+
+1. best;
+2. sharpest;
+3. highest;
+4. brighest;
+5. most natural;
+
+¹4
+
+1. additional;
+2. player;
+3. controller;
+4. processor;
+5. optimized;
+6. powerful;
+
+¹5
+
+1. processor;
+2. powerful;
+3. controller;
+4. optimazed;
+5. additional;
+6. player;

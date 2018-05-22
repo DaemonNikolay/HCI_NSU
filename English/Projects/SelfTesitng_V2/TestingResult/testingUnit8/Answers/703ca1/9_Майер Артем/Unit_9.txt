@@ -1,0 +1,30 @@
+Artyom Mayer
+Unit 999999
+	1.	Braille: printer
+			 keyboard
+			 embosser
+		Screen: magnifier
+			reader
+		Keyboard: ergonomic
+			  expanded
+			  on-screen
+		Switch: pneumatic
+			adaptive
+		System:	voice recognition
+			eyegaze
+	2.	Blind users:	Braille keyboard
+				Braille embosser
+				Braille printer
+				voice recognition system
+				screen reader
+		Motor-impared users:
+					ergonomic keyboard
+					expanded keyboard
+	`				on-screen keyboard
+					eyegaze system
+					adaptive switch
+					pneumatic switch
+					voice recognition system
+	3.	1) Visual alerts
+		2) Textphones
+		3) Electronic notetakers

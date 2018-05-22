@@ -1,0 +1,24 @@
+Provkin Kirill 703ca1
+Unit 5
+
+¹1
+	1. Features; Leyboard;
+	2. Works; Mouse;
+	3. For; Graphics tablet;
+	4. Used; Game controller;
+	5. By; Trackball;
+	6. Allows, to; Scanner;
+	7. Can; Light pen;
+	8. Which; Microphone;
+¹2
+	1. Return;
+	2. Backspace;
+	3. Arrow;
+	4. Shift;
+	5. Caps Lock;
+¹3
+	1. double-click;
+	2. click;
+	3. select;
+	4. drag;
+	5. double-click;

@@ -1,0 +1,23 @@
+Name: ANDREY
+Surname: LASTOVSKIY
+Group: 603C
+1.1. laser
+1.2. platesetter
+1.3. thermal transfer
+1.4. inkjet
+1.5. imagesetter
+1.6. dot-matrix
+1.7. platesetter
+2.1. more expensive
+2.2. more good
+2.3. smaller
+2.4. more noisy
+2.5. --
+3.1. such as; for instance;
+3.1. to begin with; finally;
+3.1. since; because; then;
+4.1. since
+4.2. such as
+4.3. then
+4.4. finally
+4.5. finally

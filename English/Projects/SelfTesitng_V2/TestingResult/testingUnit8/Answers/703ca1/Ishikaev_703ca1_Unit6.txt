@@ -1,0 +1,45 @@
+Ишикаев Илья 703са
+
+Тест №6
+
+№1
+
+1. scanner;
+2. camcorder;
+3. digital camera;
+
+№2
+
+1. Opinion;
+2. Fact;
+3. Opinion;
+4. Opinion;	-1
+5. Fact;
+
+№3
+
+1. the best		
+2. the sharpest
+3. the highest
+4. the brightest
+5. the most natural
+
+№4
+
+1. additional
+2. player
+3. controller
+4. processor
+5. optimized
+6. powerful
+
+№5
+
+1. powerful;
+2. processor;
+3. controller;
+4. optimized;
+5. additional;
+6. player;		5-
+
+//task 2, subtask 4: text starts with tech characteristics, but ends with "fine details"; presumably opinion

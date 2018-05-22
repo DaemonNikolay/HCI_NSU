@@ -1,0 +1,36 @@
+Ишикаев Илья 703са
+
+Тест №7
+
+№1
+
+1. esolution;
+2. verage;	-1
+3. creen;
+4. amera;	-1
+5. rightness;
+
+№2
+
+1. pixel;
+2. plasma screen;
+3. liquid crystal display (LCD);
+4. video adapter;
+5. video projector;
+
+№3
+
+1. ache;		-1
+2. strain;		-1
+3. repetitive;
+Get;
+Ask;
+4. footrest;
+5. swivel;
+should be;
+should be;
+Sit;
+6. idea;
+shouldn't work;
+7. copyholder;
+Don't forget;			-4балла/4

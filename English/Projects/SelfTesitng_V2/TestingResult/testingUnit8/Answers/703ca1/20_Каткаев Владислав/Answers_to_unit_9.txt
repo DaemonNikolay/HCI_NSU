@@ -1,0 +1,20 @@
+Name: VLADISLAV
+Surname: KATKAEV
+Group: 603C
+1.1.1. printer
+1.1.2. keyboard
+1.1.3. embosser
+1.2.1. magnifiers
+1.2.2. reader
+1.3.1. ergonomic
+1.3.2. expanded
+1.3.3. on-screen
+1.4.1. pneumatic
+1.4.2. adaptive
+1.5.1. voice
+1.5.2. eyegaze
+2.1. braille printer; braille keyboard; braille embosser;
+2.2. screen reader; voice recognition; eyegaze;
+3.1. Visual alerts
+3.2. Textphones
+3.3. Electronic notetakers

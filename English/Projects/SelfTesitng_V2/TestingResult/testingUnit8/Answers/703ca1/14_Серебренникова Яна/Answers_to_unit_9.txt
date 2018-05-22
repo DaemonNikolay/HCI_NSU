@@ -1,0 +1,20 @@
+Name: YANA
+Surname: SEREBRENNIKOVA
+Group: 703CA1
+1.1.1. rinte
+1.1.2. eyboar
+1.1.3. mbosse
+1.2.1. agnifie
+1.2.2. eade
+1.3.1. rgonomi
+1.3.2. xpande
+1.3.3. o-scree
+1.4.1. neumati
+1.4.2. daptiv
+1.5.1. oic
+1.5.2. yegaz
+2.1. braille embosser;braille keyboard;braille printer
+2.2. eyegaze system:pneumatic system;voice-recognition system;
+3.1. Visual alerts
+3.2. Textphones
+3.3. Electronic notetakers
