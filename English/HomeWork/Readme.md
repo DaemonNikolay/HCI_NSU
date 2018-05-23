@@ -551,3 +551,14 @@ clusters = Для реорганизации жёсткого диска, мож
 <td>Поскольку результаты нерегулярны, программу придется переписать.</td>
 </tr>
 </table>
+
+### 3
+
+1. Most people prefer a colour screen to a `mono`chrome screen. - Большинство людей предпочитают цветной экран монохромному.
+2. `Sub`script is a character or symbol written below and to the right of a number or letter, often used in science. - Подстрочный символ или символ, написанный ниже и справа от цифры или буквы, часто используемые в науке.
+3. A `mega`byte equals approximately one million bytes. - Мегабайт равен примерно миллиону байт.
+4. Once you finish your program, your program, you will have to test it and `de`bug it to remove all the mistakes. - После того, как вы закончите свою программу Вы должны проверить её и отладить, чтобы удалить все ошибки.
+5. The introductions of `semi`conductor technology revolutionized the computer industry. - Внедрение полупроводниковых технологий произвело революцию в компьютерной индустрии
+6. If a computer system has two or more central processors which are under common control, it is called a `multi`processor system. - Если компьютерная система имеет два или более центральных процессоров, находящихся под общим управлением, то она называется многопроцессорной системой.
+7. The `de`imal system is a number system with a base of 10. - Десятичная система счисления - это система счисления с основанием 10.
+8. When the user and the computer are in active communication on a graphics system, we refer to this as `inter`active graphics. - Когда пользователь и компьютер активно общаются на графической системе, то называется это интерактивной графикой.
