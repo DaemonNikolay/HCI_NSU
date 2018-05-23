@@ -496,3 +496,58 @@ clusters = Для реорганизации жёсткого диска, мож
 **What precautions she should take with her new PC to avoid similar problems in the future** - I strongly recommend that you do not touch the computer case yourself. Applies with awe, reverence and humility to the computer. = **Какие меры предосторожности она должна принять со своим новым ПК, чтобы избежать подобных проблем в будущем** - Я настоятельно рекомендую тебе не трогать корпус компьютера самостоятельно. Относится с трепетом, почтением и смирением к компьютеру.
 
 **What precautions she should take with her new PC to avoid similar problems in the future** - I recommend using the cloud for data backup. It not would suffer from your hands, legs and other limbs. There are free versions. = **Какие меры предосторожности она должна принять с ее новым ПК, чтобы избежать подобных проблем в будущем** - Я рекомендую использовать облако для резервного копирования данных. Оно не пострадает от твоих рук, ног и иных конечностей. Есть бесплатные версии.
+
+***
+
+# 24.05.2018
+
+## Задание 2-3 не понятно откуда...
+
+### 2
+
+<table>
+<tr>
+<th>English</th>
+<th>Русский</th>
+</tr>
+<tr>
+<td>Floppy disks are inexpensive and reuseable</td>
+<td>Дискеты недорогие и многоразовые</td>
+</tr>
+<tr>
+<td>If a printer malfunctions, you should check the interface cable</td>
+<td>Если принтер неисправен, проверьте интерфейсный кабель.</td>
+</tr>
+<tr>
+<td>The multiplexor was not working because someone had disconnected it by mistake</td>
+<td>Мультиплексор не работал, потому что кто-то отключил его по ошибке</td>
+</tr>
+<tr>
+<td>Improper installation of the antiglare shield wil make it impossible to read what is on the screen</td>
+<td>Неправильная установка antiglare shield сделает невозможным чтение того, что находится на экране</td>
+</tr>
+<tr>
+<td>After you transfer text using the 'cut and paste' feature, you may have to reformat the text you have inserted</td>
+<td>После переноса текста с помощью функции "вырезать и вставить" может потребоваться переформатировать вставленный текст</td>
+</tr>
+<tr>
+<td>You can maximize your chances of finding a job if you are billingual or even trillingual</td>
+<td>Вы можете максимализировать свои шансы найти работу, если вы владеете двумя или даже тремя языками</td>
+</tr>
+<tr>
+<td>Peripheral devices can be either input devices (such as keyboards) or output devices (such as printers)</td>
+<td>Периферийными устройствами могут быть устройства ввода (например, клавиатуры) или устройства вывода (например, принтеры)</td>
+</tr>
+<tr>
+<td>Your pay rise is retroactive to the beginning of June and you will receive a biannual bonus</td>
+<td>Ваш рост заработной платы имеет обратную силу до начала июня и вы получите полугодовой бонус</td>
+</tr>
+<tr>
+<td>The octal and hexadecimal systems are number systems used as a form of shorthand in reading groups of four binary didgits</td>
+<td>Восьмиричная и шестнадцатеричная системы счисления, используемые как форма стенограммы в группах чтения 4 бинарных чисел.</td>
+</tr>
+<tr>
+<td>As the results are irregular, the program will have to be rewritten</td>
+<td>Поскольку результаты нерегулярны, программу придется переписать.</td>
+</tr>
+</table>
