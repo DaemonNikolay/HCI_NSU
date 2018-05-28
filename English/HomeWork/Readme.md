@@ -540,7 +540,7 @@ clusters = Для реорганизации жёсткого диска, мож
 </tr>
 <tr>
 <td>Your pay rise is retroactive to the beginning of June and you will receive a biannual bonus</td>
-<td>Ваш рост заработной платы имеет обратную силу до начала июня и вы получите полугодовой бонус</td>
+<td>Вы получите задним числом годовой бонус</td>
 </tr>
 <tr>
 <td>The octal and hexadecimal systems are number systems used as a form of shorthand in reading groups of four binary didgits</td>
