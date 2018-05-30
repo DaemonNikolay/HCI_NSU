@@ -779,6 +779,127 @@
                         </Button>
                     </ListBox>
                 </TabItem>
+                <TabItem Header="Unit 11" HorizontalAlignment="Left" Height="20" VerticalAlignment="Bottom" Width="53" Margin="-1.6,-2,0,2">
+                    <ListBox x:Name="listBox_Copy2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Margin="0" Padding="0" Grid.IsSharedSizeScope="True">
+
+                        <TextBlock x:Name="textBlock7" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Text="1. Type in the missing letters to make a term related to optical storage."/>
+                        <TextBlock x:Name="textBlock3_Copy27" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="36"><Run Text="1. optical d"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_1_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=";"/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy28" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="36"><Run Text="2. laser b"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_1_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=";"/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy29" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="36"><Run Text="3. backward-c"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_1_3" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=";"/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy30" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="36"><Run Text="4. double-s "/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_1_4" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=";"/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy31" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="36"><Run Text="5. dual l"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_1_5" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=";"/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy32" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="36"><Run Text="6. multi-f"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_1_6" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=";"/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy33" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="36"><Run Text="7. Blu-r"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_1_7" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=";"/></TextBlock>
+                        
+                        <TextBlock x:Name="textBlock8" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Text="2. Complete these extracts from an ICT textbook by typing in terms from Exercise 1. You may have to use the plural form."/>
+                        <TextBlock x:Name="textBlock3_Copy34" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="48"><Run Text="1"/><Run Text=". Portable DVD players usually support "/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_2_1_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="playback; this means the user can watch a"/><Run Text=" "/><Run Text="wider variety of different file types (DivX, MP4, etc.)."/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy35" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="52"><Run Text="2"/><Run Text="."/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_2_2_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=" differ from magnetic ones, in terms of both internal structure and storage capacity."/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy36" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" Height="56" TextAlignment="Justify"><Run Text="3. CDs and DVDs are read using a red"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_2_3_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=". In "/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_2_3_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=" discs, however, it is blue-violet, hence the name."/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy37" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="51"><Run Text="4. Unlike a CD, a DVD can be "/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_2_4_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="and"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_2_4_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=", giving it a capacity of up to 17GB."/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy38" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="52"><Run Text="5. DVD drives are"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_2_5_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=", meaning that they can play older technologies such as CD-ROMs."/></TextBlock>
+
+                        <TextBlock x:Name="textBlock9" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Text="3. Label the three columns of the table with the correct title. Choose from the drop-down menu."/>
+                        <TextBlock x:Name="textBlock3_Copy39" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Center" Height="143"><Run Text=""/><InlineUIContainer>
+                                <ComboBox x:Name="comboBox_3_1" Width="120">
+                                    <TabItem Content="Making contrasts"/>
+                                    <TabItem Content="Indicating addition"/>
+                                    <TabItem Content="Explaining results or effects"/>
+                                    <TabItem Content="...I love Nikulux..."/>
+                                </ComboBox>
+                            </InlineUIContainer><LineBreak/><Run Text="furthermore"/><LineBreak/><Run Text="besides"/><LineBreak/><Run Text="and"/><LineBreak/><Run Text="in addition"/><LineBreak/><Run Text="moreover"/><LineBreak/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy40" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="16" Margin="247,-147,0,0" Padding="0" TextAlignment="Center" Height="143"><Run Text=""/><InlineUIContainer>
+                                <ComboBox x:Name="comboBox_3_2" Width="120">
+                                    <TabItem Content="Making contrasts"/>
+                                    <TabItem Content="Indicating addition"/>
+                                    <TabItem Content="Explaining results or effects"/>
+                                    <TabItem Content="...I love Nikulux..."/>
+                                </ComboBox>
+                            </InlineUIContainer><LineBreak/><Run Text="however"/><LineBreak/><Run Text="although"/><LineBreak/><Run Text="whereas"/><LineBreak/><Run Text="but"/><LineBreak/><Run Text="on the other hand"/><LineBreak/></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy41" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="16" Margin="450,-151,0,0" Padding="0" TextAlignment="Center" Height="162"><Run Text=""/><InlineUIContainer>
+                                <ComboBox x:Name="comboBox_3_3" Width="120">
+                                    <TabItem Content="Making contrasts"/>
+                                    <TabItem Content="Indicating addition"/>
+                                    <TabItem Content="Explaining results or effects"/>
+                                    <TabItem Content="...I love Nikulux..."/>
+                                </ComboBox>
+                            </InlineUIContainer><LineBreak/><Run Text="therefore"/><LineBreak/><Run Text="so"/><LineBreak/><Run Text="consequently"/><LineBreak/><Run Text="as a result"/><LineBreak/><Run Text="thus"/><LineBreak/><Run Text="because"/></TextBlock>
+
+                        <TextBlock x:Name="textBlock10" Margin="22,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="81" Width="625" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" TextAlignment="Justify" Text="4. Complete these descriptions of optical storage technology by typing in a connector from Exercise 3. More than one answer may be possible. Then decide if the sentences are true or false. "/>
+                        <TextBlock x:Name="textBlock3_Copy42" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="81"><Run Text="1."/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_4_1" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=", to CDs and DVDs, there are other types of optical storage; Blu-ray and HD-DVD, for example. "/><LineBreak/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_1_1" Content="True" Margin="0,12,0,0"/>
+                            </InlineUIContainer><Run Text="      "/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_1_2" Content="False" Margin="0,12,0,0"/>
+                            </InlineUIContainer></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy43" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="81"><Run Text="2. CDs are 120 mm in diameter and 12 mm thick. DVDs,"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_4_2" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=", are 122 mm in diameter and 12.5 mm thick"/><LineBreak/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_2_1" Content="True" Margin="0,12,0,0"/>
+                            </InlineUIContainer><Run Text="      "/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_2_2" Content="False" Margin="0,12,0,0"/>
+                            </InlineUIContainer></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy44" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="81"><Run Text="3. DVDs have more tracks, and the pits used to store data are smaller; "/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_4_3" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text=", they have a greater storage capacity than CDs."/><LineBreak/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_3_1" Content="True" Margin="0,12,0,0"/>
+                            </InlineUIContainer><Run Text="      "/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_3_2" Content="False" Margin="0,12,0,0"/>
+                            </InlineUIContainer></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy45" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="81"><Run Text="4. DVDs can be played on CD players,"/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_4_4" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="there's no need to invest in new hardware."/><LineBreak/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_4_1" Content="True" Margin="0,12,0,0"/>
+                            </InlineUIContainer><Run Text="      "/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_4_2" Content="False" Margin="0,12,0,0"/>
+                            </InlineUIContainer></TextBlock>
+                        <TextBlock x:Name="textBlock3_Copy46" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="16" Margin="43,10,0,0" Padding="0" TextAlignment="Justify" Height="104"><Run Text="4. Blu-ray may soon become the dominant optical storage technology, "/><InlineUIContainer>
+                                <TextBox x:Name="Unit11_TextBox_4_5" Height="24" TextWrapping="Wrap" Width="163" Margin="4,0,4,-6" Padding="0" FontStyle="Italic" FontSize="14" CharacterCasing="Lower"/>
+                            </InlineUIContainer><Run Text="Toshiba, Microsoft and the DVD Forum are supporting HD-DVD technology instead."/><LineBreak/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_5_1" Content="True" Margin="0,12,0,0"/>
+                            </InlineUIContainer><Run Text="      "/><InlineUIContainer>
+                                <RadioButton x:Name="radioButton_4_5_2" Content="False" Margin="0,12,0,0"/>
+                            </InlineUIContainer></TextBlock>
+
+
+                        <Button x:Name="Unit11_CreateFileWithAnswers" Content="Сформировать файл с ответами одиннадцатого юнита" HorizontalAlignment="Center" Width="625" Height="62" Cursor="Hand" FontSize="14" TextOptions.TextHintingMode="Animated" FontStretch="Condensed" FontWeight="Bold" BorderThickness="2" BorderBrush="#FF3D00FF" Foreground="Black" VerticalAlignment="Top" Click="Unit10_CreateFileWithAnswers_Click" Margin="22,0,0,0">
+                            <Button.Background>
+                                <RadialGradientBrush>
+                                    <GradientStop Color="#FFFF6F6F" Offset="0"/>
+                                    <GradientStop Color="#FF3C53FF" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Button.Background>
+                        </Button>
+                    </ListBox>
+                </TabItem>
             </TabControl>
             <ToolBar x:Name="toolBar" Margin="10,0,-17.2,0" Height="60" VerticalAlignment="Top" HorizontalAlignment="Center">
                 <ToolBar.Background>

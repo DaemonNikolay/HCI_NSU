@@ -627,5 +627,132 @@ namespace SelfTesing_V2
 
             return "0";
         }
+
+        /// <summary>
+        /// Unit 11
+        /// </summary>
+        /// 
+
+        private void Unit11_CreateFileWithAnswers_Click(object sender, RoutedEventArgs e)
+        {
+            var Unit10_isAllFieldsFilled = Unit11_IsAllFieldsFilled();
+            if (Unit10_isAllFieldsFilled == "0")
+            {
+                if (!IsOk())
+                {
+                    return;
+                }
+
+                CreateDirectory();
+
+                var result = Unit11_WriteInFile(fileNameUnitTen);
+                if (result == "Успех!")
+                {
+                    MessageBox.Show($"Ответы записаны в файл {fileNameUnitTen}");
+                }
+                else
+                {
+                    MessageBox.Show(result);
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Не заполнено поле {Unit11_isAllFieldsFilled}");
+            }
+        }
+
+        private String Unit11_WriteInFile(String nameFile)
+        {
+            try
+            {
+                using (FileStream fstream = new FileStream($@"{PathRoot}/{nameFile}", FileMode.Create))
+                {
+                    StringBuilder answersUnit10 = new StringBuilder();
+                    answersUnit10.Append($"Name: {InputUserName.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"Surname: {InputUserSurname.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"Group: {InputUserGroup.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.1. {Unit10_ComboBox_task_1_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.2. {Unit10_ComboBox_task_1_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.3. {Unit10_ComboBox_task_1_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.4 {Unit10_ComboBox_task_1_4.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.5. {Unit10_ComboBox_task_1_5.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.6. {Unit10_ComboBox_task_1_6.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.7. {Unit10_ComboBox_task_1_7.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.8. {Unit10_ComboBox_task_1_8.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.9. {Unit10_ComboBox_task_1_9.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.10. {Unit10_ComboBox_task_1_10.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.11. {Unit10_ComboBox_task_1_11.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.12. {Unit10_ComboBox_task_1_12.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.13. {Unit10_ComboBox_task_1_13.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"1.14. {Unit10_ComboBox_task_1_14.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"2.1. {Unit10_ComboBox_task_2_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"2.2. {Unit10_ComboBox_task_2_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"2.3. {Unit10_ComboBox_task_2_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"2.4. {Unit10_ComboBox_task_2_4.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"2.4 second. {Unit10_ComboBox_task_2_4_second.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"2.5. {Unit10_ComboBox_task_2_5.Text.Trim()}{Environment.NewLine}");
+                    answersUnit10.Append($"2.6. {Unit10_ComboBox_task_2_6.Text.Trim()}{Environment.NewLine}");
+
+                    WriteLine(fstream, answersUnit10.ToString());
+                }
+
+                return "Успех!";
+            }
+            catch (Exception ex)
+            {
+                return $"Error: {Environment.NewLine}{ex}";
+            }
+        }
+
+        private String Unit11_IsAllFieldsFilled()
+        {
+            if (InputUserName.Text.Length == 0)
+            {
+                return "Name";
+            }
+            if (InputUserSurname.Text.Length == 0)
+            {
+                return "Surname";
+            }
+            if (InputUserGroup.Text.Length == 0)
+            {
+                return "Group";
+            }
+
+            if (Unit10_ComboBox_task_1_1.Text.Length == 0)
+            {
+                return "1.1";
+            }
+            if (Unit11_TextBox_1_1.Text.Length == 0)
+            {
+                return "1.1";
+            }
+            if(Unit11_TextBox_1_2.Text.Length == 0)
+            {
+                return "1.2";
+            }
+            if (Unit11_TextBox_1_3.Text.Length == 0)
+            {
+                return "1.3";
+            }
+            if (Unit11_TextBox_1_4.Text.Length == 0)
+            {
+                return "1.4";
+            }
+            if (Unit11_TextBox_1_5.Text.Length == 0)
+            {
+                return "1.5";
+            }
+            if (Unit11_TextBox_1_6.Text.Length == 0)
+            {
+                return "1.6";
+            }
+            if (Unit11_TextBox_1_7.Text.Length == 0)
+            {
+                return "1.7";
+            }
+
+            return "0";
+        }
     }
 }
