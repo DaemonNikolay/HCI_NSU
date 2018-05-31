@@ -25,6 +25,7 @@ namespace SelfTesing_V2
         private const String fileNameUnitEight = "Answers_to_unit_8.txt";
         private const String fileNameUnitNine = "Answers_to_unit_9.txt";
         private const String fileNameUnitTen = "Answers_to_unit_10.txt";
+        private const String fileNameUnitEleven = "Answers_to_unit_11.txt";
 
         public static string PathRoot
         {
@@ -635,8 +636,8 @@ namespace SelfTesing_V2
 
         private void Unit11_CreateFileWithAnswers_Click(object sender, RoutedEventArgs e)
         {
-            var Unit10_isAllFieldsFilled = Unit11_IsAllFieldsFilled();
-            if (Unit10_isAllFieldsFilled == "0")
+            var Unit11_isAllFieldsFilled = Unit11_IsAllFieldsFilled();
+            if (Unit11_isAllFieldsFilled == "0")
             {
                 if (!IsOk())
                 {
@@ -645,10 +646,10 @@ namespace SelfTesing_V2
 
                 CreateDirectory();
 
-                var result = Unit11_WriteInFile(fileNameUnitTen);
+                var result = Unit11_WriteInFile(fileNameUnitEleven);
                 if (result == "Успех!")
                 {
-                    MessageBox.Show($"Ответы записаны в файл {fileNameUnitTen}");
+                    MessageBox.Show($"Ответы записаны в файл {fileNameUnitEleven}");
                 }
                 else
                 {
@@ -667,33 +668,46 @@ namespace SelfTesing_V2
             {
                 using (FileStream fstream = new FileStream($@"{PathRoot}/{nameFile}", FileMode.Create))
                 {
-                    StringBuilder answersUnit10 = new StringBuilder();
-                    answersUnit10.Append($"Name: {InputUserName.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"Surname: {InputUserSurname.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"Group: {InputUserGroup.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.1. {Unit10_ComboBox_task_1_1.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.2. {Unit10_ComboBox_task_1_2.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.3. {Unit10_ComboBox_task_1_3.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.4 {Unit10_ComboBox_task_1_4.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.5. {Unit10_ComboBox_task_1_5.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.6. {Unit10_ComboBox_task_1_6.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.7. {Unit10_ComboBox_task_1_7.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.8. {Unit10_ComboBox_task_1_8.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.9. {Unit10_ComboBox_task_1_9.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.10. {Unit10_ComboBox_task_1_10.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.11. {Unit10_ComboBox_task_1_11.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.12. {Unit10_ComboBox_task_1_12.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.13. {Unit10_ComboBox_task_1_13.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"1.14. {Unit10_ComboBox_task_1_14.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"2.1. {Unit10_ComboBox_task_2_1.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"2.2. {Unit10_ComboBox_task_2_2.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"2.3. {Unit10_ComboBox_task_2_3.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"2.4. {Unit10_ComboBox_task_2_4.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"2.4 second. {Unit10_ComboBox_task_2_4_second.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"2.5. {Unit10_ComboBox_task_2_5.Text.Trim()}{Environment.NewLine}");
-                    answersUnit10.Append($"2.6. {Unit10_ComboBox_task_2_6.Text.Trim()}{Environment.NewLine}");
+                    StringBuilder answersUnit11 = new StringBuilder();
 
-                    WriteLine(fstream, answersUnit10.ToString());
+                    answersUnit11.Append($"Name: {InputUserName.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"Surname: {InputUserSurname.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"Group: {InputUserGroup.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"1.1. {Unit11_TextBox_1_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"1.2. {Unit11_TextBox_1_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"1.3. {Unit11_TextBox_1_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"1.4. {Unit11_TextBox_1_4.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"1.5. {Unit11_TextBox_1_5.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"1.6. {Unit11_TextBox_1_6.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"1.7. {Unit11_TextBox_1_7.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"2.1.1. {Unit11_TextBox_2_1_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"2.2.1. {Unit11_TextBox_2_2_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"2.3.1. {Unit11_TextBox_2_3_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"2.3.2. {Unit11_TextBox_2_3_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"2.4.1. {Unit11_TextBox_2_4_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"2.4.2. {Unit11_TextBox_2_4_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"2.5.1. {Unit11_TextBox_2_5_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"3.1. {Unit11_comboBox_3_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"3.2. {Unit11_comboBox_3_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"3.3. {Unit11_comboBox_3_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"4.1. {Unit11_TextBox_4_1.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"4.1.1. {radioButton_4_1_1.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.1.2. {radioButton_4_1_2.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.2. {Unit11_TextBox_4_2.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"4.2.1. {radioButton_4_2_1.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.2.2. {radioButton_4_2_2.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.3. {Unit11_TextBox_4_3.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"4.3.1. {radioButton_4_3_1.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.3.2. {radioButton_4_3_2.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.4. {Unit11_TextBox_4_4.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"4.4.1. {radioButton_4_4_1.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.4.2. {radioButton_4_4_2.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.5. {Unit11_TextBox_4_5.Text.Trim()}{Environment.NewLine}");
+                    answersUnit11.Append($"4.5.1. {radioButton_4_5_1.IsChecked}{Environment.NewLine}");
+                    answersUnit11.Append($"4.5.2. {radioButton_4_5_2.IsChecked}{Environment.NewLine}");
+
+
+                    WriteLine(fstream, answersUnit11.ToString());
                 }
 
                 return "Успех!";
@@ -719,15 +733,11 @@ namespace SelfTesing_V2
                 return "Group";
             }
 
-            if (Unit10_ComboBox_task_1_1.Text.Length == 0)
-            {
-                return "1.1";
-            }
             if (Unit11_TextBox_1_1.Text.Length == 0)
             {
-                return "1.1";
+                return "1.1fdsf";
             }
-            if(Unit11_TextBox_1_2.Text.Length == 0)
+            if (Unit11_TextBox_1_2.Text.Length == 0)
             {
                 return "1.2";
             }
@@ -750,6 +760,62 @@ namespace SelfTesing_V2
             if (Unit11_TextBox_1_7.Text.Length == 0)
             {
                 return "1.7";
+            }
+            if (Unit11_TextBox_2_1_1.Text.Length == 0)
+            {
+                return "2.1.1";
+            }
+            if (Unit11_TextBox_2_3_1.Text.Length == 0)
+            {
+                return "2.3.1";
+            }
+            if (Unit11_TextBox_2_3_2.Text.Length == 0)
+            {
+                return "2.3.1";
+            }
+            if (Unit11_TextBox_2_4_1.Text.Length == 0)
+            {
+                return "2.4.1";
+            }
+            if (Unit11_TextBox_2_4_2.Text.Length == 0)
+            {
+                return "2.4.2";
+            }
+            if (Unit11_TextBox_2_5_1.Text.Length == 0)
+            {
+                return "2.5.1";
+            }
+            if (Unit11_comboBox_3_1.Text.Length == 0)
+            {
+                return "3.1";
+            }
+            if (Unit11_comboBox_3_2.Text.Length == 0)
+            {
+                return "3.2";
+            }
+            if (Unit11_comboBox_3_3.Text.Length == 0)
+            {
+                return "3.3";
+            }
+            if (Unit11_TextBox_4_1.Text.Length == 0)
+            {
+                return "4.1";
+            }
+            if (Unit11_TextBox_4_2.Text.Length == 0)
+            {
+                return "4.2";
+            }
+            if (Unit11_TextBox_4_3.Text.Length == 0)
+            {
+                return "4.3";
+            }
+            if (Unit11_TextBox_4_4.Text.Length == 0)
+            {
+                return "4.4";
+            }
+            if (Unit11_TextBox_4_5.Text.Length == 0)
+            {
+                return "4.5";
             }
 
             return "0";
