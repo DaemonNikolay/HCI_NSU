@@ -43,19 +43,30 @@
   </tr>
   <tr>
     <td>Flash memory is used in several ways:
-    * Many PCs have their BIOS (basic input/output system) stored on a flash memory chip so it can be updated if necessary.
-    * Modems use flash memory because it allows the manufacturer to support new protocols.
-    * USB flash drives are used to save and move MP3s and other data files between computers. They are more easily transported than external hard drives because they use solid-state technology, meaning that they don't have fragile moving parts that can break if dropped. However, USB flash drives have less storage capacity than hard drives.
-    * New U3 smart drives allow users to store both applications and data. They have two drive partitions and can carry applications that run on the host computer without requiring installation.
-    * Flash memory cards are used to store images on cameras, to back up data on PDAs, to transfer games in video consoles, to record voice and music on MP3 players or to store movies on MP4 players. They are as small as a stamp, and capacity can range from 8MB to several gigabytes. The only limitation is that flash cards are often not interchangeable between devices. Some formats include: CompactFlash, Secure Digital, MultiMedia Card, miniSD card, and xD-Picture Card. Sony has its own product called the Memory Stick, used in its digital still cameras, video camcorders and the PlayStation Portable. The photos stored in a digital camera can be offloaded to a computer via cable or wirelessly. Another option is to have a flash card reader permanently connected to your PC; you simply eject the card from the camera and put it into the reader instead of having to plug the camera in.</td>
-    <td></td>
+    <ul>
+        <li> Many PCs have their BIOS (basic input/output system) stored on a flash memory chip so it can be updated if necessary.</li>
+        <li> Modems use flash memory because it allows the manufacturer to support new protocols.</li>
+        <li> USB flash drives are used to save and move MP3s and other data files between computers. They are more easily transported than external hard drives because they use solid-state technology, meaning that they don't have fragile moving parts that can break if dropped. However, USB flash drives have less storage capacity than hard drives.</li>
+        <li> New U3 smart drives allow users to store both applications and data. They have two drive partitions and can carry applications that run on the host computer without requiring installation.</li>
+        <li> Flash memory cards are used to store images on cameras, to back up data on PDAs, to transfer games in video consoles, to record voice and music on MP3 players or to store movies on MP4 players. They are as small as a stamp, and capacity can range from 8MB to several gigabytes. The only limitation is that flash cards are often not interchangeable between devices. Some formats include: CompactFlash, Secure Digital, MultiMedia Card, miniSD card, and xD-Picture Card. Sony has its own product called the Memory Stick, used in its digital still cameras, video camcorders and the PlayStation Portable. The photos stored in a digital camera can be offloaded to a computer via cable or wirelessly. Another option is to have a flash card reader permanently connected to your PC; you simply eject the card from the camera and put it into the reader instead of having to plug the camera in.</li>
+        </ul>
+    </td>
+    <td>Flash-память используется несколькими способами:
+    <ul>
+        <li>Многие ПК имеют свой БСВВ (базовую систему ввода/вывода) хранящуюся на чипе flash-памяти также обновляемый, при необходимости.</li>
+        <li>Модемы используют flash-память, потому что это позволяет производителю поддерживать новые протоколы.</li>
+        <li>USB-флешки используются для сохранения и перемещения MP3 и остальных данных файлов между компьютерами. Их проще перемещать чем жёсткие диски, потому что они используют твердотельные технологии, это означает, что у них отсутствуют хрупкие детали, которые могут быть повреждены при падении. Однако, USB-флешки имеют менее ёмкое хранилище, нежели жёсткий диск.</li>
+        <li>Новые умные устройства U3 позволяют пользователям хранить рядом приложения и данные. Они имеют два раздела диска и позволяют перемещать приложения, работающие на центральном компьютере, не требуя обязательной установки.</li>
+        <li>Карты flash-памяти используются для хранения изображений на камере, сохранения данных на КПК, перемещения игр видео-консолей, записи голоса и музыки на MP3 плеерах или хранения фильмов на MP4 плеерах. Они малы как почтовая марка, и ёмкость может варьироваться от 8МВ до нескольких GB. Единственное ограничение для flash-карт, частая не сменность между устройствами. Имеются следующие форматы: CompactFlash, Secure Digital, MultiMedia Card, miniSD card, and xD-Picture Card. Sony раполагает собственный продукт называемый Memory Stick, используемая в цифровых фотокамерах, видеокамерах и портативных PS. Фотографии, хранимые в цифровой камере, можно выгрузить на компьютер с помощью кабеля или беспроводного соединения. Другой вариант - это иметь считыватель flash-карт, постоянно подключённый к ПК; Вы просто извлекаете карту из камеры и помещаете в считыватель, вместо того, чтобы подключать камеру.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
-    <td>The future of hard drives may be hybrid hard drives. Hybrid hard drives ыcombine a magnetic hard disk and flash memory into one device. This allows computers to boot, or start, more quickly, and also reduces power consumption.</td>
-    <td></td>
+    <td>The future of hard drives may be hybrid hard drives. Hybrid hard drives combine a magnetic hard disk and flash memory into one device. This allows computers to boot, or start, more quickly, and also reduces power consumption.</td>
+    <td>Перспектива жёстких дисков стать гибридными хардами. Гибридные харды являются комбинацией магнитного жёсткого диска и flash-памяти в одном устройстве. Это позволяет загружаться, или запускаться, быстрее, а также снижает энергопотребление</td>
   </tr>
   <tr>
     <td>SanDisk's card readers read and write to just about every flash memory card.</td>
-    <td></td>
+    <td>Кардридеры SanDisk читают и записывают практически на любую карту flash-память.</td>
   </tr>
 </table>
