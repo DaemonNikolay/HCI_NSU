@@ -19,3 +19,43 @@
 | I would like you to do it charging                                   	| Я хочу, чтобы они сделали зарядку                    	|
 | It's important for you to do it me coffee                            	| Для тебя важно сделать мне кофе                      	|
 | Sleep - It's very difficult for me to do it                          	| Сон - это очень трудно для меня сделать              	|
+
+# 26.09.2018
+
+## Задание: сделать перевод на странице 58
+
+<table>
+  <tr>
+    <th>English</th>
+    <th>Русский</th>
+  </tr>
+  <tr>
+    <td>Flash memory is a type of non-volatile memory that can be electronically erased and reprogrammed. Its name was invented by Toshiba to express how much faster it could be erased - 'in a flash', which means 'very quickly'.</td>
+    <td>Flash-память является не энергозависимой памятью, которую можно очистить и перепрограммировать. Её название создано Toshiba, чтобы выразить, на сколько быстрой она может быть стёртой - 'в мгновение ока', что означает 'очень быстро'.</td>
+  </tr>
+  <tr>
+    <td>Unlike RAM, which is volatile, flash memory retains the information stored in the chip when the power is turned off. This makes it ideal for use in digital cameras, laptops, network switches, video game cards, mobile phones and portable multimedia players. In addition, it offers fast read access times (although not as fast as RAM), with transfer rates of 12MB per second. Unlike ROM chips, flash memory chips are rewritable, so you can update programs via software.</td>
+    <td>В отличие от оперативной памяти, энергозависимой, flash-память содержит информацию хранящуюся на чипе когда на ней электричество включено. Это делает её идеальной для использования в цифровой камере, laptop'ах, сетевых коммутаторах, игровых картах, мобильных телефонах и портативных мультимедиа плеерах. В добавок, она обладает скоростным считыванием (хоть и не так быстро, как оперативная память), с передачей в 12МВ в секунду. В отличие от чипа постоянной памяти, чип flash-памяти перезаписываем, так что вы можете обновить программы посредством ПО.</td>
+  </tr>
+  <tr>
+    <td>Inside the chip, data is stored in several floating gate transistors, called cells. Each cell traditionally stores one bit of data (1 = erased and 0 = programmed). New devices have a multi-level cell structure so they can store more that one bit per cell. The chips are constructed with either NOR or NAND gates. NOR chips function like a computer's main memory, while NAND works like a hard drive. For example, in a camera, NOR flash contains the camera's internal software, while NAND flash is used to store the images.</td>
+    <td>Внутри чипа, информация хранится в нескольких транзисторах с плавающей точкой, вызываемые ячейки. Традиционно каждый ячейка хранит один бит информации (1 = стёртый, 0 = запрограммированный). Новые устройства имеют многоуровневые ячейки со структурой хранения более одного бита на ячейку. Чипы сконструированы с NOR и NAND входами. NOR чипы работают как основная память компьютера, пока NAND работает подобно жёсткому диску. Для примера, в камере, в NOR flash содержится ПО камеры, пока NAND flash используется для хранения изображений.</td>
+  </tr>
+  <tr>
+    <td>Flash memory is used in several ways:
+    * Many PCs have their BIOS (basic input/output system) stored on a flash memory chip so it can be updated if necessary.
+    * Modems use flash memory because it allows the manufacturer to support new protocols.
+    * USB flash drives are used to save and move MP3s and other data files between computers. They are more easily transported than external hard drives because they use solid-state technology, meaning that they don't have fragile moving parts that can break if dropped. However, USB flash drives have less storage capacity than hard drives.
+    * New U3 smart drives allow users to store both applications and data. They have two drive partitions and can carry applications that run on the host computer without requiring installation.
+    * Flash memory cards are used to store images on cameras, to back up data on PDAs, to transfer games in video consoles, to record voice and music on MP3 players or to store movies on MP4 players. They are as small as a stamp, and capacity can range from 8MB to several gigabytes. The only limitation is that flash cards are often not interchangeable between devices. Some formats include: CompactFlash, Secure Digital, MultiMedia Card, miniSD card, and xD-Picture Card. Sony has its own product called the Memory Stick, used in its digital still cameras, video camcorders and the PlayStation Portable. The photos stored in a digital camera can be offloaded to a computer via cable or wirelessly. Another option is to have a flash card reader permanently connected to your PC; you simply eject the card from the camera and put it into the reader instead of having to plug the camera in.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>The future of hard drives may be hybrid hard drives. Hybrid hard drives ыcombine a magnetic hard disk and flash memory into one device. This allows computers to boot, or start, more quickly, and also reduces power consumption.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SanDisk's card readers read and write to just about every flash memory card.</td>
+    <td></td>
+  </tr>
+</table>
