@@ -70,3 +70,31 @@
     <td>Кардридеры SanDisk читают и записывают практически на любую карту flash-память.</td>
   </tr>
 </table>
+
+# 03.10.2018
+
+## Задание: паревести текст на странице 59 и разобраться в разнице между словами в скобках
+
+
+<table>
+  <tr>
+    <th>English</th>
+    <th>Русский</th>
+  </tr>
+  <tr>
+    <td>Olympus WS-320M digital voice recorder</td>
+    <td>Цифровой голосовой магнитофон Olympus WS-320M</td>
+  </tr>
+  <tr>
+    <td>Slim, attractive, and highly functional, the Olympus WS-320M digital voice recorder packs 1GB of internal flash memory into its 1 (lighted/lightweight/lighten) housing, letting you record up to 277 hours of high-quality audio in WMA format. It's ideal for 2 (record/recordable/recording) notes or long lectures, interviewing people, or capturing song ideas before they disappear. As an added bonus, the WS-320M can store up to 266 WMA or MP3 songs for high-quality stereo 3 (player/playback/playoff).</td>
+    <td>Тонкий, привлекательный, и крайне функциональный, цифровой голосовой магнитофон Olympus WS-320M укомплектован 1GB встроенной памяти в (лёгоньком/<br>легковесном</br>/облегчённом) корпусе позволяющий записывать до 277 часов высококачественного аудио в WMA формате. Это идеальный (запись/записываемый/записывающий) записыватель или длинных лекций, интервьюирование людей, или захват звуковых идей до их исчезновения. Как добавленным бонусом, WS-320M обладает хранилищем до 266 WMA или MP3 песен для высококачественного стерео (плеера/воспроизведения/решающей встречи).</td>
+  </tr>
+  <tr>
+    <td>The WS-320M features five separate file 4 (folds/folding/folders), capable of holding 199 files each,so you can organize nearly 1,000 files by subject, theme or other category. Users also have the choice of four recording modes: HQ for high-quality audio, LP and SP for extended recording times, and ST HQ for stereo recording. And thanks to the voice 5 (activation/activate/active) option, users don't need to press a single button to start recording - the WS-320M will record as soon as the built-in microphone picks up sound.</td>
+    <td>Особенности WS-320M пять, разделённый файл (морщины/фольцовка/папки), способный держать 199 любых файлов, так вы можете организовать почти 1000 файлов субъекта, тем или других категорий. Пользователи также имеют выбор между четырьмя опциями записи: HQ для высококачественного аудио, LP и SP для расширения времени записи, и ST HQ для стерео записи. И спасибо голосовой (активации/активировать/активный) опциям, пользователям не требуется нажимать одиночные кнопки, чтобы запустить запись - WS-320M будет записывать как только подхватит звук.</td>
+  </tr>
+  <tr>
+    <td>Perhaps the most convenient feature, however, is the built-in USB 6 (connector/connect/connected), which eliminates the need for a USB cable. Once this is connected, you can 7 (downloadable/download/upload) music files, images or documents from your PC, in effect turning the recorder into a small hard drive. You can even transfer voice recordings to your computer for 8 (store/storage/storeroom) or multimedia use.</td>
+    <td></td>
+  </tr>
+</table>
