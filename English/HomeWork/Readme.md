@@ -95,6 +95,6 @@
   </tr>
   <tr>
     <td>Perhaps the most convenient feature, however, is the built-in USB 6 (connector/connect/connected), which eliminates the need for a USB cable. Once this is connected, you can 7 (downloadable/download/upload) music files, images or documents from your PC, in effect turning the recorder into a small hard drive. You can even transfer voice recordings to your computer for 8 (store/storage/storeroom) or multimedia use.</td>
-    <td></td>
+    <td>Возможно самой удобной особенностью, однако, встроенный USB (коннтектор/соединение/соединённый), которая устраняет потребность в USB кабеле. Как только соединили, Вы можете (скачиваемый/скачать/загрузить) музыкальные файлы, изоброажения или документы с ПК, по сути, рекордер превращается в малоразмерный жёсткий диск. Вы можете передать записанный голос на компьютер в (хранить/хранилище/чулан) или использовать мультимедиа.</td>
   </tr>
 </table>
