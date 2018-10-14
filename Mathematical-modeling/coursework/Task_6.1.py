@@ -124,7 +124,7 @@ def search_min_last_line_primary_table(last_line_primary_table: PrettyTable) -> 
     return min(last_line_primary_table.__dict__['_rows'][0])
 
 
-def search_posistion_min_last_line_primary_table(last_line_primary_table: PrettyTable, min_value: float):
+def search_posistion_min_last_line_primary_table(last_line_primary_table: PrettyTable, min_value: float) -> int:
     position_min_value: list = last_line_primary_table.__dict__['_rows'][0]
     return position_min_value.index(min_value)
 
@@ -147,22 +147,25 @@ def search_optimal_technology(primary_table: PrettyTable, count_rows: int) -> di
 
     old_value: float = sys.maxsize
     optimal_technology: float = 0
+    position_y: int = sys.maxsize
     for i, value in enumerate(B):
         elem_list_optimal_technology = float(list_optimal_technology[i])
         temp = value / elem_list_optimal_technology
         if temp < old_value:
             old_value = temp
             optimal_technology = elem_list_optimal_technology
+            position_y = i
 
     result: dict = {
         "value": optimal_technology,
-        "position": position_min_value_last_line_primary_table
+        "position_x": position_min_value_last_line_primary_table,
+        "position_y": position_y
     }
 
     return result
 
 
-def formula_recounting(first: float, second: float, optimal_tech: float, diagonal_value: float):
+def formula_recounting(first: float, second: float, optimal_tech: float, diagonal_value: float) -> float:
     return (first * optimal_tech - second * diagonal_value) / optimal_tech
 
 
@@ -172,17 +175,31 @@ def recounting_tables(primary_table: PrettyTable, optimal_technology: dict) -> L
     copy_table.header = False
 
     names_columns: List[str] = copy_table.field_names
-    position_optimal_tech: int = optimal_technology.get('position')
-    value_optimal_tech: float = optimal_technology.get('value')
-
     values_table: List[List[float]] = []
     for index, elements in enumerate(copy_table):
         values_table.append([])
         for name_column in names_columns:
             values_table[index].append(float(elements.get_string(fields=[name_column])))
 
-    
+    table: PrettyTable = PrettyTable()
+    table.field_names = copy_table.field_names
 
+    position_optimal_tech_x: int = optimal_technology.get('position_x')
+    position_optimal_tech_y: int = optimal_technology.get('position_y')
+    row: List[float] = []
+
+    for elements in values_table:
+        for index, element in enumerate(elements):
+            first: float = element
+            second: float = values_table[position_optimal_tech_y][index]
+            optimal_tech: float = optimal_technology.get('value')
+            diagonal_value: float = elements[position_optimal_tech_x]
+            row.append(formula_recounting(first, second, optimal_tech, diagonal_value))
+
+        table.add_row(row)
+        row.clear()
+
+    print(table)
 
 def solution_task(A: List[List[int]], B: List[int], C: List[int]) -> List[PrettyTable]:
     primary_table: PrettyTable = generate_primary_table(A, B, C)
