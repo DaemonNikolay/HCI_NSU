@@ -129,7 +129,7 @@ def search_posistion_min_last_line_primary_table(last_line_primary_table: Pretty
     return position_min_value.index(min_value)
 
 
-def search_optimal_technology(primary_table: PrettyTable, count_rows: int) -> dict:
+def search_optimal_technology(primary_table: PrettyTable, count_rows: int, B: List) -> dict:
     copy_primary_table: PrettyTable = primary_table.copy()
     copy_primary_table.header = False
     copy_primary_table.border = False
@@ -169,7 +169,7 @@ def formula_recounting(first: float, second: float, optimal_tech: float, diagona
     return (first * optimal_tech - second * diagonal_value) / optimal_tech
 
 
-def recounting_tables(primary_table: PrettyTable, optimal_technology: dict) -> List[PrettyTable]:
+def recounting_tables(primary_table: PrettyTable, optimal_technology: dict) -> PrettyTable:
     copy_table: PrettyTable = primary_table.copy()
     copy_table.border = False
     copy_table.header = False
@@ -186,9 +186,13 @@ def recounting_tables(primary_table: PrettyTable, optimal_technology: dict) -> L
 
     position_optimal_tech_x: int = optimal_technology.get('position_x')
     position_optimal_tech_y: int = optimal_technology.get('position_y')
-    row: List[float] = []
 
-    for elements in values_table:
+    file = open('out.txt', 'a')
+
+
+
+    for i, elements in enumerate(values_table):
+        row: List[float] = []
         for index, element in enumerate(elements):
             first: float = element
             second: float = values_table[position_optimal_tech_y][index]
@@ -196,18 +200,48 @@ def recounting_tables(primary_table: PrettyTable, optimal_technology: dict) -> L
             diagonal_value: float = elements[position_optimal_tech_x]
             row.append(formula_recounting(first, second, optimal_tech, diagonal_value))
 
+            # log = f"{position_optimal_tech_y} {index} = { values_table[position_optimal_tech_y][index]}"
+            log = f"x{i+1}{index+1} = ({first} * {optimal_tech} - {second} * {diagonal_value}) / {optimal_tech} = {formula_recounting(first, second, optimal_tech, diagonal_value)}"
+
+            file.write(log)
+            file.write('\n')
+        file.write('\n')
         table.add_row(row)
-        row.clear()
+
 
     print(table)
 
+    file.close()
+    breakpoint()
+
+    return table
+
+
+def select_b_from_final_table(final_table: PrettyTable) -> List[float]:
+    copy_table: PrettyTable = final_table.copy()
+    copy_table.header = False
+    copy_table.border = False
+    new_b: str = copy_table.get_string(fields="B")
+
+    list_new_b: List[float] = []
+    result: List[float] = []
+    for element in new_b.replace(' ', '').split('\n'):
+        result.append(float(element))
+
+    return result
+
+
 def solution_task(A: List[List[int]], B: List[int], C: List[int]) -> List[PrettyTable]:
     primary_table: PrettyTable = generate_primary_table(A, B, C)
-    optimal_technology: dict = search_optimal_technology(primary_table, len(B))
-    final_tables: List[PrettyTable] = recounting_tables(primary_table, optimal_technology)
+    optimal_technology: dict = search_optimal_technology(primary_table, len(B), B)
+    final_table: PrettyTable = recounting_tables(primary_table, optimal_technology)
 
-    # print(primary_table)
-    # print(optimal_technology.get("value"))
+    for i in range(0, 1):
+        print(final_table)
+        new_b: List[float] = select_b_from_final_table(final_table)
+        optimal_technology = search_optimal_technology(final_table, len(B), B)
+        # print(optimal_technology)
+        # final_table = recounting_tables(final_table, optimal_technology)
 
 
 if __name__ == '__main__':
@@ -215,7 +249,7 @@ if __name__ == '__main__':
         [5, 2, 7, 6, 8, 7, 9],
         [7, 4, 8, 5, 7, 6, 4],
         [3, 4, 7, 3, 5, 8, 9],
-        [9, 3, 6, 5, 3, 9, 6]
+        [9, 3, 6, 3, 3, 9, 6]
     ]
 
     B: List[int] = [215, 220, 270, 260]
