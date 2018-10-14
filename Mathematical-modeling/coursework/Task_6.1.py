@@ -10,7 +10,7 @@ def generate_z(C: List[int]) -> str:
         elif i == 0:
             z = f"{element}*x{i+1}"
 
-    return f"z = {z}"
+    return z
 
 
 def generate_system_equations(A: List[List[int]], B: List[int]) -> List[str]:
@@ -45,7 +45,7 @@ def solution_task(A: List[List[int]], B: List[int], C: List[int]) -> PrettyTable
 
     first_table: PrettyTable = PrettyTable()
 
-    names_columns:List[str] = []
+    names_columns: List[str] = []
     for i in range(length_columns):
         names_columns.append(f"T{i+1}")
     names_columns.append("B")
@@ -85,6 +85,11 @@ if __name__ == '__main__':
     B: List[int] = [215, 220, 270, 260]
     C: List[int] = [8, 5, 7, 8, 6, 9, 8]
 
-    g = solution_task(A, B, C)
-
-    print(g)
+    print(f"z = {generate_z(C)} \n")
+    for element in generate_system_equations(A, B):
+        print(element)
+    print('\n')
+    for element in generate_x_zero(len(B)):
+        print(element)
+    print('\n')
+    print(solution_task(A, B, C))
